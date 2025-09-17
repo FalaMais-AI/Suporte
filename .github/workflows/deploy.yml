@@ -5,12 +5,12 @@ on:
     branches:
       - main
     paths:
-      - Docs/**
+      - docs/**
       - .github/workflows/deploy.yml
 
 defaults:
   run:
-    working-directory: Docs
+    working-directory: docs
 
 jobs:
   build:
@@ -26,13 +26,13 @@ jobs:
           cache-dependency-path: '**/package-lock.json'
 
       - name: Install dependencies
-        run: cd docs && npm ci
+        run:  npm ci
       - name: Build website
-        run: cd docs && npm run build
+        run:  npm run build
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/build
+          path: build
 
   deploy:
     name: Deploy to GitHub Pages
