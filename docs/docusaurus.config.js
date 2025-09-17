@@ -23,7 +23,7 @@ const config = {
   url: 'https://FalaMais-AI.github.io', // URL base do seu GitHub Pages
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/Suporte/ ',
+  baseUrl: '/Suporte/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
