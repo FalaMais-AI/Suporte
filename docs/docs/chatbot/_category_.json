@@ -2,6 +2,7 @@
   "label": "Automação e ChatBot",
   "position": 7,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "This description can be used in the swizzled DocCard"
   }
 }

@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'FalaMais.AI',
   tagline: 'Página de suporte do FalaMais.AI',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/iconeSemFundo.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -68,12 +68,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Fala Mais.AI',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Logo Fala Mais.AI',
+          src: 'img/logo.png',
+          href: '/',
         },
         items: [
           {
@@ -85,7 +85,6 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
         links: [
           {
             title: 'Contato',
