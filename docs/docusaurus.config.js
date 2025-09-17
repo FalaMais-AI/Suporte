@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'FalaMais.AI',
-  tagline: 'Gestão de atendimento',
+  tagline: 'Página de suporte do FalaMais.AI',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -40,8 +40,8 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'pt-br',
+    locales: ['pt-br'],
   },
 
   presets: [
@@ -80,7 +80,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Suporte',
           },
         ],
       },
@@ -88,42 +88,41 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Contato',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                html: 'contato@falamais.ai',
+              },
+              {
+                label: 'WhatsApp',
+                href: 'https://wa.me/5561996853842',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Redes Sociais',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Instagram',
+                href: 'https://www.instagram.com/fala.mais.ai/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/falamais-ai/',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Mais',
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Site',
+                href: 'https://falamais.ai/?fbclid=PAZXh0bgNhZW0CMTEAAafSALIM-Y8aNgolzgpxYpzpmcXQakakLbRZC55fRtHpts4SaRhx2B3S2nCQQA_aem_uBYIdBS-vAdbTG3aUYZ5CQ',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} FalaMais.AI. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,

@@ -1,0 +1,8 @@
+{
+  "label": "Configuração SuperAdmin",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Descrição das funcionalidades do SuperAdmin."
+  }
+}
