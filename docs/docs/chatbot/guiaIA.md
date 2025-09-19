@@ -7,7 +7,7 @@ sidebar_label: 'Guia do Assistente de IA'
 
 ## Seção 1: Informações Fundamentais da Empresa
 
-Esta seção deve cobrir os dados básicos que o assistente de IA precisa para funcionar como um representante do seu cliente.
+Esta seção deve cobrir os dados básicos que o assistente de IA precisa para funcionar como um representante do seu produto/serviço.
 
 * *Identificação e Contato:*
     * *Nome da Empresa:* O nome completo e oficial.
