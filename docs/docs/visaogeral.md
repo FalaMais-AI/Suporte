@@ -14,7 +14,7 @@ sidebar_position: 2
   width="100%"
 ></iframe>
 
-O **Fala Mais.Ai** é uma plataforma de gestão de atendimento que unifica e centraliza a comunicação com clientes em diversos canais, como WhatsApp, Instagram, Telegram e chats de sites, em uma única interface, trazendo a IA como grande diferencial na rotina de atendimento. 
+O **Fala Mais.Ai** é uma plataforma de gestão de atendimento que unifica e centraliza a comunicação com clientes em diversos canais, como *WhatsApp*, *Instagram*, *Telegram* e chats de sites, em uma única interface, trazendo a IA como grande diferencial na rotina de atendimento. 
 
 Com o **Fala Mais.Ai** é possível otimizar a rotina de trabalho das equipes e aumentar a eficiência dos processos de vendas e suporte.
 
@@ -22,8 +22,7 @@ Com o **Fala Mais.Ai** é possível otimizar a rotina de trabalho das equipes e 
 
 Oferecemos um painel de controle completo e personalizável, que fornece uma visão geral do desempenho da equipe. Nele, é possível acompanhar o status dos atendimentos, identificar os canais mais utilizados pelos clientes e analisar o tempo de resposta da equipe. Os dados são apresentados em gráficos dinâmicos, ajudando os gestores a tomar decisões mais estratégicas.
 
-A gestão de atendimentos é feita em uma interface intuitiva, que se assemelha a aplicativos de mensagem como o WhatsApp, permitindo gerenciar conversas privadas e em grupo. O sistema divide as interações em categorias como pendentes, abertas e resolvidas, facilitando a organização. 
-
+A gestão de atendimentos é feita em uma interface **intuitiva**, que se assemelha a aplicativos de mensagem como o *WhatsApp*, permitindo gerenciar conversas privadas e em grupo. O sistema divide as interações em categorias como pendentes, abertas e resolvidas, facilitando a **organização**. 
 
 :::info
 

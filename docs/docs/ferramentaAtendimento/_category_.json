@@ -1,0 +1,8 @@
+{
+  "label": "Ferramentas do Atendimento",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Descrição das funcionalidades do Atendimento."
+  }
+}
