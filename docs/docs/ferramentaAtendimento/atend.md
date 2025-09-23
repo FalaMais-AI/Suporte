@@ -1,6 +1,8 @@
 ---
-sidebar_position: 1
-sidebar_label: 'Visão Geral sobre as ferramentas'
+sidebar_position: 2
+sidebar_label: 'Atendimento'
 ---
+
+# Lista de atendimento
 
 ferramentas atendimento
