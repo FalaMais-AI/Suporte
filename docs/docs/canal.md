@@ -5,3 +5,6 @@ sidebar_label: 'Canais'
 
 # Canais de Comunicação
 
+:::note nota
+Disponível 
+:::

@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'FalaMais.AI',
+  title: 'Página de Suporte',
   tagline: 'Página de suporte do FalaMais.AI',
   favicon: 'img/iconeSemFundo.png',
 
@@ -78,6 +78,12 @@ const config = {
             position: 'left',
             label: 'Suporte',
           },
+          // {
+          //   type: 'docSidebar', // Optional, u change in the sidebars.js
+          //   sidebarId: 'testeSidebar',
+          //   position: 'left',
+          //   label: 'Teste',
+          // },
         ],
       },
       footer: {
