@@ -7,7 +7,7 @@ sidebar_label: 'Aniversários'
 
 :::warning Aviso
 
-Para ativar e personalizar a **Mensagem Automática de Aniversário**, você deve ativar a configuração correspondente no momento de criação do [**canal**](canal.md) ou ao editar um **[canal](canal.md)** já existente. Depois de ativada, você poderá escolher a mensagem que será enviada. 
+Para ativar e personalizar a **Mensagem Automática de Aniversário**, você deve ativar a configuração correspondente no momento de criação do [**canal**](canal/canal.md) ou ao editar um **[canal](canal/canal.md)** já existente. Depois de ativada, você poderá escolher a mensagem que será enviada. 
 
 ![alt text](assetsNiver/image-2.png)
 

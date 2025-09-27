@@ -88,7 +88,7 @@ Aqui você pode acompanhar o desempenho da sua equipe, monitorando as atividades
 | **Atendendo**          | Atendimentos em andamento.                                                |
 | **Finalizados**        | Atendimentos fechados.                                                    |
 | **Total**              | Total de atendimentos por usuário.                                        |
-| **Média de Avaliações**| Os clientes podem dar uma nota de 0 a 5 para o atendimento. Para ter uma visão mais abrangente acesse [**Avaliações**](canal.md). |
+| **Média de Avaliações**| Os clientes podem dar uma nota de 0 a 5 para o atendimento. Para ter uma visão mais abrangente acesse [**Avaliações**](canal/canal.md). |
 | **T.M.R**             | Tempo Médio da 1° Resposta                                                |
 | **T.M.A**              | Tempo Médio de Atendimento                                                |
 
