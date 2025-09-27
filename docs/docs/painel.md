@@ -77,9 +77,9 @@ Aqui é possível acompanhar a quantidade de atendimentos realizados ao longo do
 
 ##  Desempenho da Equipe
 
-![Imagem Equipes](assets/equipe.png)
+Aqui você pode acompanhar o desempenho da sua equipe, monitorando as atividades de cada usuário cadastrado na plataforma dentro do período selecionado.
 
-Aqui você tem acesso ao desempenho da sua equipe:
+![alt text](assets/image.png)
 
 | Campo              | Descrição                                                                     |
 |--------------------|-------------------------------------------------------------------------------|

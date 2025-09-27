@@ -1,6 +1,6 @@
 ---
-sidebar_position: 8
-sidebar_label: 'Painel de atendimento'
+sidebar_position: 3
+sidebar_label: 'Painel de Atendimento'
 ---
 
 # Visão Geral dos Atendimentos

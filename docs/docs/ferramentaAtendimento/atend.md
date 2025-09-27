@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-sidebar_label: 'Atendimento'
+sidebar_label: 'Tela de Atendimento'
 ---
 
 # Lista de Atendimento
