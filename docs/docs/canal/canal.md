@@ -1,6 +1,6 @@
 ---
-sidebar_position: 7
-sidebar_label: 'Canais'
+sidebar_position: 1
+sidebar_label: 'Tipos de Canais'
 ---
 
 # Canais de Comunicação
@@ -57,5 +57,3 @@ Além do WhatsApp, o **FalaMais.AI** permite centralizar diversos outros pontos 
   - Integre uma conta de telefonia **VoIP (SIP)** para realizar e receber chamadas convencionais dentro do **FalaMais.AI**.  
 - **Notificações** **do** **Aplicativo**  
   - Canal interno para envio de **notificações push** aos atendentes que utilizam o aplicativo mobile do **FalaMais.AI**.  
-
-## Adição de um canal

@@ -118,7 +118,7 @@ const config = {
             items: [
               {
                 label: 'Site',
-                href: 'https://falamais.ai/?fbclid=PAZXh0bgNhZW0CMTEAAafSALIM-Y8aNgolzgpxYpzpmcXQakakLbRZC55fRtHpts4SaRhx2B3S2nCQQA_aem_uBYIdBS-vAdbTG3aUYZ5CQ',
+                href: 'https://falamais.ai/',
               },
             ],
           },
