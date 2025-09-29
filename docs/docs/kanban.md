@@ -11,8 +11,7 @@ sidebar_label: 'Kanban'
 O FalaMais.AI oferece duas visualizações Kanban distintas, cada uma dedicada a um objetivo específico:
 
 - **Kanban** **de** **Atendimentos** (Página Atual): Usa Etiquetas (Tags) para organizar visualmente os atendimentos em andamento. É a ferramenta ideal para a gestão operacional da sua equipe de suporte.
-- [**Kanban** **de** **Oportunidades**](funil.md): Utiliza as Etapas do Funil para organizar as oportunidades de negócio. É a ferramenta para a **gestão de processos comerciais. **
-- 
+- [**Kanban** **de** **Oportunidades**](funil.md): Utiliza as Etapas do Funil para organizar as oportunidades de negócio. É a ferramenta para a **gestão de processos comerciais.**
 :::
 
 Ao abrir a ferramenta, você será apresentado à tela de seleção, que oferece duas abas principais na parte superior:
