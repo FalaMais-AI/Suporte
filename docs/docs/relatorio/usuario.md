@@ -2,11 +2,12 @@
 sidebar_position: 7
 sidebar_label: 'Resumo por Usuário'
 ---
+
 # Resumo de Atendimentos por Usuário
 
-![alt text](assets/image-17.png)
-
 ## Funcionalidades da Página
+
+![alt text](assets/image-17.png)
 
 Gere um relatório que resume os dados de atendimento de cada usuário no sistema. Utilize essa visão para monitorar a performance da sua equipe.
 
