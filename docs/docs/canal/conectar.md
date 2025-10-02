@@ -76,8 +76,18 @@ Por último, você encontra as opções de **sincronização**, **desconexão** 
 
 ## Transfêrencia de Canais
 
-Você poderá **transferir** os atendimentos entre canais
+Você poderá **transferir** os atendimentos entre canais.
 
 ![alt text](image-9.png)
+
+Ao selecionar o canal de origem para a transferência, você também deve escolher o canal de destino que receberá os atendimentos.
+
+---
+
+> Essa ação é irreversível.
+> 
+> A transferência de atendimentos pode apresentar problemas de sincronia, caso o volume de atendimentos seja alto ou entre tipos (APIs) diferentes de canais. Ness caso, realize um backup dos atendimentos antes, e não delete o canal antigo antes de ter certeza de que todos os atendimentos foram transferidos.
+
+---
 
 ![alt text](image-10.png)
