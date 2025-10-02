@@ -17,6 +17,8 @@ Vamos iniciar um overview de toda a área do atendimento. Para começar, vamos f
 
 ![alt text](assets1/image.png)
 
+### Perfil
+
 Clicando em Perfil, abrirá um pop up para editar as informações do usuário. Observe o exemplo:
 
 ![alt text](assets1/image-1.png)
@@ -25,15 +27,23 @@ E clicando em Sair, realizará o logout sem precisar retornar ao menu. Aliás, p
 
 ![alt text](assets1/image-2.png)
 
+### Chat Interno
+
 Clicando no botão abaixo, você será direcionado ao [Chat Interno](../organizacaoInterna/chat.md).
 
 ![alt text](assets1/image-3.png)
+
+### Tarefa
 
 Clicando no botão abaixo, você poderá criar um [Tarefa Nova](../organizacaoInterna/tarefa.md).
 
 ![alt text](assets1/image-4.png)
 
 ![alt text](assets1/image-5.png)
+
+### Botões de Atendimento
+
+Abaixo, você encontra uma série de botões de ação que auxiliam tanto na listagem quanto no atendimento.
 
 | Descrição                       | Aparência                                          |
 |---------------------------------|----------------------------------------------------|
