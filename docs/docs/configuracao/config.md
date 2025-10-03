@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+sidebar_label: 'Configurações Gerais'
 ---
 
 # Configurações Gerais
@@ -80,6 +81,3 @@ Para isso, você precisa configurar corretamente:
 | Usuário                | Conta de e-mail |
 | Senha                  | Senha do e-mail |
 | Protocolo de Segurança | Ativar protocolo seguro. |
-
-
-## Pagamentos (Caso Esteja Ativo)
