@@ -57,8 +57,9 @@ const config = {
     'docusaurus-plugin-image-zoom',
     {
       selector: '.markdown img', // ou uma classe específica
-      options: {
-        background: 'rgba(0,0,0,0.7)',
+      background: {
+        light: 'rgb(255, 255, 255)',
+        dark: 'rgb(50, 50, 50)'
       },
     },
   ],
