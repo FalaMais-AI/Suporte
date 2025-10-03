@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # Configurações Gerais
@@ -7,7 +7,7 @@ sidebar_position: 2
 A seguir apresentamos uma **descrição** detalhada das **configurações** gerais do painel.
 Essas opções permitem personalizar o comportamento do sistema de acordo com as necessidades da sua operação, oferecendo maior controle sobre a forma como os atendimentos são exibidos, gerenciados e distribuídos entre os usuários.
 
-![alt text](image.png)
+![alt text](assets/image.png)
 
 | Tipo de Permissão | Descrição |
 |-------------------|-----------|
@@ -57,6 +57,20 @@ Essas opções permitem personalizar o comportamento do sistema de acordo com as
 | Habilitar envio de mensagem Waba fora da janela (não garante a entrega) | Habilita o envio de mensagens WABA após o envio de qualquer template, mesmo que a janela de conversas não esteja aberta. Não garante a entrega da mensagem. Consulte políticas Waba |
 
 ## SMTP
+
+Nessa seção teremos a configuração do SMTP
+
+O **SMTP** (*Simple Mail Transfer Protocol*) é um protocolo de comunicação usado para enviar e-mails pela internet. Ele funciona como um “carteiro digital”: pega a mensagem do remetente e a entrega ao servidor de e-mail do destinatário.
+
+Ativar **SMTP** no sistema significa que ele poderá enviar mensagens automáticas (como notificações, alertas, relatórios ou confirmações) diretamente para os usuários por e-mail.
+
+Para isso, você precisa configurar corretamente:
+
+* **Servidor SMTP** → geralmente fornecido pelo serviço de e-mail (ex: Gmail, Outlook, seu próprio host).
+* **Porta SMTP** → porta de comunicação (mais comuns: 587 com TLS, 465 com SSL, 25 sem criptografia).
+* **Usuário e Senha** → credenciais da conta de e-mail que fará o envio.
+* **Protocolo de Segurança** → define se a conexão usará SSL/TLS para criptografar o tráfego.
+
 
 | Tipo de Permissão         | Descrição |
 |----------------------------|----------------------------------------| 
