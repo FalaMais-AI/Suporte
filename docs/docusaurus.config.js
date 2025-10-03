@@ -41,8 +41,7 @@ const config = {
       }),
     ],
   ],
-
-  // ✅ Aqui é o lugar certo para o plugin
+  
   themes: [
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
@@ -52,6 +51,18 @@ const config = {
       }),
     ],
   ],
+
+  plugins: [
+  [
+    'docusaurus-plugin-image-zoom',
+    {
+      selector: '.markdown img', // ou uma classe específica
+      options: {
+        background: 'rgba(0,0,0,0.7)',
+      },
+    },
+  ],
+],
 
   themeConfig: {
     navbar: {
