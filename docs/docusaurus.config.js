@@ -32,9 +32,10 @@ const config = {
       'classic',
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: require.resolve('./sidebars.js'),
         },
         blog: false,
+        pages: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -71,7 +72,7 @@ const config = {
       logo: {
         alt: 'Logo Fala Mais.AI',
         src: 'img/logo.png',
-        href: '/',
+        href: '/docs/intro',
       },
       items: [
         {
@@ -99,8 +100,11 @@ const config = {
           ],
         },
         {
-          title: 'Mais',
-          items: [{label: 'Site', href: 'https://falamais.ai/'}],
+          title: 'Saiba Mais',
+          items: [
+            {label: 'Site', href: 'https://falamais.ai/'},
+            {label: 'YouTube', href: 'https://www.youtube.com/@FalaMais_ai'},
+          ],
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} FalaMais.AI. Built with Docusaurus.`,
