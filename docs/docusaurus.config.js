@@ -54,19 +54,6 @@ const config = {
     ],
   ],
 
-  plugins: [
-  [
-    'docusaurus-plugin-image-zoom',
-    {
-      selector: '.markdown img', // ou uma classe específica
-      background: {
-        light: 'rgb(255, 255, 255)',
-        dark: 'rgb(50, 50, 50)'
-      },
-    },
-  ],
-],
-
   themeConfig: {
     navbar: {
       title: 'Fala Mais.AI',
