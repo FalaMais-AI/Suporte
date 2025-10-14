@@ -33,6 +33,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/',
         },
         blog: false,
         pages: false,
@@ -72,7 +73,7 @@ const config = {
       logo: {
         alt: 'Logo Fala Mais.AI',
         src: 'img/logo.png',
-        href: '/docs/intro',
+        href: '/',
       },
       items: [
         {
