@@ -33,7 +33,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // routeBasePath: '/',
+          routeBasePath: '/',
         },
         blog: false,
         pages: false,
@@ -53,13 +53,14 @@ const config = {
         // ... Your options.
         // `hashed` is recommended as long-term-cache of index file is possible.
         hashed: true,
+        docsRouteBasePath: '/', // importante quando as docs estão na raiz
 
         // For Docs using Chinese, it is recomended to set:
         // language: ["en", "zh"],
 
         // Customize the keyboard shortcut to focus search bar (default is "mod+k"):
         // searchBarShortcutKeymap: "s", // Use 'S' key
-        // searchBarShortcutKeymap: "ctrl+shift+f", // Use Ctrl+Shift+F
+        searchBarShortcutKeymap: "ctrl+shift+f", // Use Ctrl+Shift+F
 
         // If you're using `noIndex: true`, set `forceIgnoreNoIndex` to enable local index:
         // forceIgnoreNoIndex: true,
@@ -98,7 +99,7 @@ const config = {
       logo: {
         alt: 'Logo Fala Mais.AI',
         src: 'img/logo.png',
-        href: '/docs/intro',
+        href: '/',
       },
       items: [
         {
