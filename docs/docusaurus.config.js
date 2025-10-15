@@ -33,7 +33,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/',
+          // routeBasePath: '/',
         },
         blog: false,
         pages: false,
@@ -43,7 +43,30 @@ const config = {
       }),
     ],
   ],
-  
+
+  themes: [
+   
+    [
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      ({
+        // ... Your options.
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+
+        // For Docs using Chinese, it is recomended to set:
+        // language: ["en", "zh"],
+
+        // Customize the keyboard shortcut to focus search bar (default is "mod+k"):
+        // searchBarShortcutKeymap: "s", // Use 'S' key
+        // searchBarShortcutKeymap: "ctrl+shift+f", // Use Ctrl+Shift+F
+
+        // If you're using `noIndex: true`, set `forceIgnoreNoIndex` to enable local index:
+        // forceIgnoreNoIndex: true,
+      }),
+    ],
+  ],
+
   // themes: ['@docusaurus/theme-search-algolia'],
 
   themeConfig: {
@@ -75,7 +98,7 @@ const config = {
       logo: {
         alt: 'Logo Fala Mais.AI',
         src: 'img/logo.png',
-        href: '/',
+        href: '/docs/intro',
       },
       items: [
         {
