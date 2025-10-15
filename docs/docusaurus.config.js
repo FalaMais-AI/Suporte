@@ -44,7 +44,7 @@ const config = {
     ],
   ],
   
-  themes: ['@docusaurus/theme-search-algolia'],
+  // themes: ['@docusaurus/theme-search-algolia'],
 
   themeConfig: {
     //   algolia: {
