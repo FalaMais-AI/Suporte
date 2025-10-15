@@ -47,6 +47,7 @@ const config = {
   // themes: ['@docusaurus/theme-search-algolia'],
 
   themeConfig: {
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     //   algolia: {
     //   // The application ID provided by Algolia
     //   appId: 'YOUR_APP_ID',
