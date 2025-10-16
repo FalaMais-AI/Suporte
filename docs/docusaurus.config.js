@@ -19,7 +19,11 @@ const config = {
 
   trailingSlash: false,
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn', // ou 'throw' / 'ignore'
+    },
+  },
   deploymentBranch: 'gh-pages',
 
   i18n: {

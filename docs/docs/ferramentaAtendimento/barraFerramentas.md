@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Barra de Ferramentas
 
-![Barra de Ferramenta](assets/barraFe.png)
+![alt text](assets/barra.png)
 
 No topo da página, você encontra uma barra de ferramentas rápidas que oferece diversas funcionalidades para facilitar o uso no dia-a-dia.
 
@@ -43,6 +43,16 @@ Envie mensagens avulsas para qualquer usuário, mesmo sem ter iniciado um atendi
 ## Ligações
 
 Após configurar o *Wavoip*, é possível realizar ligações diretamente pela plataforma.
+
+## Tutoriais
+
+Nesta aba está disponível a nossa Central de Suporte: guias passo a passo, vídeos curtos e documentação para resolver dúvidas comuns. 
+
+![alt text](assets/image-2.png)
+
+Clique no cartão abaixo para abrir a página de suporte e acessar artigos, tutoriais e opções de contato com a equipe. O link será aberto em uma nova aba do navegador.
+
+![alt text](assets/image-1.png)
 
 ## Perfil
 
