@@ -6,7 +6,7 @@ sidebar_position: 2
 
 <iframe
   src="https://www.youtube.com/embed/qtgYKlTYCnA"
-  title="Overview do sistema - FalaMais Ai"
+  title="Overview do sistema - FalaMais.AI"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen
@@ -14,9 +14,9 @@ sidebar_position: 2
   width="100%"
 ></iframe>
 
-O **Fala Mais.Ai** é uma plataforma de gestão de atendimento que unifica e centraliza a comunicação com clientes em diversos canais, como *WhatsApp*, *Instagram*, *Telegram* e chats de sites, em uma única interface, trazendo a IA como grande diferencial na rotina de atendimento. 
+O **FalaMais.AI** é uma plataforma de gestão de atendimento que unifica e centraliza a comunicação com clientes em diversos canais, como *WhatsApp*, *Instagram*, *Telegram* e chats de sites, em uma única interface, trazendo a IA como grande diferencial na rotina de atendimento. 
 
-Com o **Fala Mais.Ai** é possível otimizar a rotina de trabalho das equipes e aumentar a eficiência dos processos de vendas e suporte.
+Com o **FalaMais.AI** é possível otimizar a rotina de trabalho das equipes e aumentar a eficiência dos processos de vendas e suporte.
 
 ## Principais Funcionalidades
 
@@ -30,7 +30,7 @@ A gestão de atendimentos é feita em uma interface **intuitiva**, que se asseme
 
 :::
 
-O **Fala Mais.Ai** também se destaca pela sua capacidade de gestão de contatos e oportunidades de negócio. 
+O **FalaMais.AI** também se destaca pela sua capacidade de gestão de contatos e oportunidades de negócio. 
 
 Direto da tela de atendimento, é possível **adicionar etiquetas** aos contatos, atribuí-los a usuários específicos e **criar oportunidades** para o funil de vendas. Esse funil é totalmente personalizável, e o sistema permite criar automações que, por exemplo, **disparam mensagens automáticas** quando um *lead* avança para uma nova etapa.
 
@@ -46,6 +46,6 @@ Outro recurso muito útil é o **disparo de mensagens em massa**, que facilita o
 
 Para automatizar a comunicação, o sistema conta com um **chatbot com inteligência artificial.** Ele pode ser configurado para realizar o pré-atendimento, responder a perguntas frequentes e até mesmo reconhecer áudios. Essa automação libera a equipe para focar em atendimentos mais complexos e em *leads* mais qualificados.
 
-Além dessas funcionalidades centrais, o **Fala Mais.Ai** oferece outras ferramentas, como um **chat interno** para a comunicação da equipe, **gestão de tarefas** no formato Kanban, **relatórios detalhados** de desempenho e a possibilidade de criar **mensagens rápidas** pré-configuradas para agilizar as respostas. O sistema foi projetado para ser um hub completo, eliminando a necessidade de usar múltiplas plataformas e centralizando todas as operações em um único lugar.
+Além dessas funcionalidades centrais, o **FalaMais.AI** oferece outras ferramentas, como um **chat interno** para a comunicação da equipe, **gestão de tarefas** no formato Kanban, **relatórios detalhados** de desempenho e a possibilidade de criar **mensagens rápidas** pré-configuradas para agilizar as respostas. O sistema foi projetado para ser um hub completo, eliminando a necessidade de usar múltiplas plataformas e centralizando todas as operações em um único lugar.
 
 **Nos próximos artigos falaremos sobre o uso detalhado da ferramenta!**

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-sidebar_label: 'Grupos'
+sidebar_label: 'Grupos em Massa'
 ---
 
 # Gestão de Grupos em Massa
@@ -172,7 +172,7 @@ Selecione a conexão e acione o botão **Ligar/Desligar** e depois **Salve** sua
 
 ![alt text](assetsGupo/image-16.png)
 
-## Mensagems de Saudação
+## Mensagens de Saudação
 
 Aqui você poderá gerenciar as mensagens de saudação aos grupos.
 
