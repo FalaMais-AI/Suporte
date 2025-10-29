@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-sidebar_label: 'Gerenciando os fluxos'
+sidebar_label: 'Gerenciando os Fluxos'
 ---
 
 # ChatBot
