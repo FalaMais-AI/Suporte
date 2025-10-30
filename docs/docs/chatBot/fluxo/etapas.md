@@ -5,7 +5,7 @@ sidebar_label: 'Etapas de Criação'
 
 # Etapas para Criação de um Fluxo de Chatbot
 
-Este documento descreve, de forma prática e ampliada, o processo de criação de um fluxo no construtor visual do chatbot. A ideia é apresentar a tela, os principais elementos (nós), as configurações mais importantes e boas práticas para validar e publicar seu fluxo.
+Nessa seção iremos descrever de forma prática e ampliada, o processo de criação de um fluxo no construtor visual do chatbot. A ideia é apresentar a tela, os principais elementos (**nós**), as configurações mais importantes e boas práticas para validar e publicar seu fluxo.
 
 ## Visão geral da tela
 
