@@ -1,6 +1,7 @@
 // @ts-check
 import {themes as prismThemes} from 'prism-react-renderer';
 
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Página de Suporte',
@@ -49,7 +50,6 @@ const config = {
   ],
 
   themes: [
-   
     [
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
       require.resolve("@easyops-cn/docusaurus-search-local"),
@@ -70,34 +70,41 @@ const config = {
         // forceIgnoreNoIndex: true,
       }),
     ],
+    // Theme required by docusaurus-plugin-openapi-docs to render API explorer
+    'docusaurus-theme-openapi-docs',
   ],
 
-  // themes: ['@docusaurus/theme-search-algolia'],
+  // plugins: [
+  //   [
+  //     'docusaurus-plugin-openapi-docs',
+  //     {
+  //       id: 'openapi',
+  //       docsPluginId: 'classic',
+  //       config: {
+  //         petstore: {
+  //           specPath: 'api/petstore.yaml',
+  //           outputDir: 'docs/docsApi',
+  //           sidebarOptions: {
+  //             groupPathsBy: 'tag',
+  //           },
+  //           label: 'TESTE',
+  //           hideSendButton: false,
+  //           showSchemas: true,
+  //         },
+  //       },
+  //     },
+  //   ],
+  // ],
 
   themeConfig: {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    //   algolia: {
-    //   // The application ID provided by Algolia
-    //   appId: 'YOUR_APP_ID',
-    //   // Public API key: it is safe to commit it
-    //   apiKey: 'YOUR_SEARCH_API_KEY',
-    //   indexName: 'YOUR_INDEX_NAME',
-    //   // Optional: see doc section below
-    //   contextualSearch: true,
-    //   // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-    //   externalUrlRegex: 'external\\.com|domain\\.com',
-    //   // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
-    //   replaceSearchResultPathname: {
-    //     from: '/docs/', // or as RegExp: /\/docs\//
-    //     to: '/',
-    //   },
-    //   // Optional: Algolia search parameters
-    //   searchParameters: {},
-    //   // Optional: path for search page that enabled by default (`false` to disable it)
-    //   searchPagePath: 'search',
-    //   // Optional: whether the insights feature is enabled or not on Docsearch (`false` by default)
-    //   insights: false,
-    // },
+    docs: {
+      sidebar: {
+        // Permite que a sidebar seja recolhida/expandida pelo usuário
+        hideable: true,
+        autoCollapseCategories: true,
+      },
+    },
     navbar: {
       title: 'Fala Mais.AI',
       logo: {
@@ -112,6 +119,11 @@ const config = {
           position: 'left',
           label: 'Suporte',
         },
+        // {
+        //   to: '/docsApi',
+        //   position: 'left',
+        //   label: 'API',
+        // },
       ],
     },
     footer: {
