@@ -106,7 +106,7 @@ const config = {
       },
     },
     navbar: {
-      title: 'Fala Mais.AI',
+     // title: 'Fala Mais.AI',
       logo: {
         alt: 'Logo Fala Mais.AI',
         src: 'img/logo.png',
@@ -117,7 +117,7 @@ const config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Suporte',
+          label: 'Início',
         },
         // {
         //   to: '/docsApi',

@@ -38,7 +38,6 @@ E logo ao lado você verá os seguintes botões:
 | Caso tenha o arquivo em ***json***, importe aqui. | ![alt text](assets/image-5.png)|
 | Exclua o fluxo de atendimento. | ![alt text](assets/image-9.png)|
 
-
 ## Construtor de Fluxo - Conceitos Fundamentais
 
 O construtor trabalha com quatro elementos.
@@ -80,4 +79,3 @@ Dentro de cada etapa, você pode combinar uma ou mais interações.
 **Chamar Typebot**: delega a conversa a um fluxo do Typebot.  
 **Chamar ChatGPT (ou outra IA)**: aciona um modelo de IA integrado para interagir com o cliente.  
 **Criar Evento no Google Agenda**: adiciona um evento na agenda integrada com título, participantes e data.
-

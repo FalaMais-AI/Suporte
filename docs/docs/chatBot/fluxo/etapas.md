@@ -26,7 +26,7 @@ Além desses, normalmente você terá botões para salvar, testar, desfazer/refa
 
 Os fluxos são montados a partir de nós que representam ações, mensagens, decisões e integrações. Abaixo estão os nós mais comuns e como usá-los:
 
-### Início: 
+### Início
 
 ![inicio](assets/image-16.png)
 
@@ -60,7 +60,7 @@ Ao concluir o preenchimento, clique em **Salvar**.
 
 ![alt text](assets/image-19.png)
 
-### Boas Vindas!
+### Boas Vindas
 
 Edite a mensagem de Boas Vindas clicando no bloco a seguir:
 
