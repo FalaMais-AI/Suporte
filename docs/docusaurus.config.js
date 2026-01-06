@@ -150,7 +150,7 @@ const config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} FalaMais.AI. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} FalaMais.AI.`,
     },
     prism: {
       theme: prismThemes.github,
