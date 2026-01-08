@@ -10,6 +10,8 @@ sidebar_position: 3
 
 <iframe width="700" height="410" src="https://www.youtube.com/embed/Bedlh7HeViE?si=8rIkWE30TbAtajnL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+--- 
+
 O painel de controle é a sua tela inicial, o primeiro espaço que você vê ao fazer *login*. 
 
 <!-- *colocar imagem talvez* -->

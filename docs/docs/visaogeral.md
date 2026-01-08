@@ -14,6 +14,8 @@ sidebar_position: 2
   width="100%"
 ></iframe>
 
+---
+
 O **FalaMais.AI** é uma plataforma de gestão de atendimento que unifica e centraliza a comunicação com clientes em diversos canais, como *WhatsApp*, *Instagram*, *Telegram* e chats de sites, em uma única interface, trazendo a IA como grande diferencial na rotina de atendimento. 
 
 Com o **FalaMais.AI** é possível otimizar a rotina de trabalho das equipes e aumentar a eficiência dos processos de vendas e suporte.
