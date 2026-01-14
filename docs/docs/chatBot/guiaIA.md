@@ -3,7 +3,7 @@ sidebar_position: 1
 sidebar_label: 'Guia do Assistente de IA'
 ---
 
-# Guia de Boas Práticas para o Assistente de IA
+# Boas Práticas para o Assistente de IA
 
 ## Seção 1: Informações Fundamentais da Empresa
 
