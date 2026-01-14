@@ -40,7 +40,7 @@ Direto da tela de atendimento, é possível **adicionar etiquetas** aos contatos
 
 :::info
 
-**Você pode criar mais de um funil e atribuir regras e automações específicas para cada um! Consulte nosso artigo sobre [Funil](funil/funil) e veja como aproveitar ao máximo essa funcionalidade.**
+**Você pode criar mais de um funil e atribuir regras e automações específicas para cada um! Consulte nosso artigo sobre [Funil](funil/visao) e veja como aproveitar ao máximo essa funcionalidade.**
 
 :::
 
