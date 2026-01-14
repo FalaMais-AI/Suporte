@@ -40,13 +40,13 @@ Direto da tela de atendimento, é possível **adicionar etiquetas** aos contatos
 
 :::info
 
-**Você pode criar mais de um funil e atribuir regras e automações específicas para cada um! Consulte nosso artigo sobre [Funil](/funil/funil) e veja como aproveitar ao máximo essa funcionalidade.**
+**Você pode criar mais de um funil e atribuir regras e automações específicas para cada um! Consulte nosso artigo sobre [Funil](funil/funil) e veja como aproveitar ao máximo essa funcionalidade.**
 
 :::
 
 A plataforma integra-se com outras ferramentas essenciais, como o **Google Calendário**, permitindo que a equipe agende reuniões e compromissos diretamente de dentro do sistema. 
 
-Outro recurso muito útil é o **disparo de mensagens em massa**, que facilita o envio de comunicados para listas segmentadas de contatos, inclusive com o envio de áudios. [Consulte a página onde falamos sobre essa função](/ferramentaAtendimento/disparosMassa) e veja algumas regras e boas práticas.
+Outro recurso muito útil é o **disparo de mensagens em massa**, que facilita o envio de comunicados para listas segmentadas de contatos, inclusive com o envio de áudios. [Consulte a página onde falamos sobre essa função](ferramentaAtendimento/disparosMassa) e veja algumas regras e boas práticas.
 
 Para automatizar a comunicação, o sistema conta com um **chatbot com inteligência artificial.** Ele pode ser configurado para realizar o pré-atendimento, responder a perguntas frequentes e até mesmo reconhecer áudios. Essa automação libera a equipe para focar em atendimentos mais complexos e em *leads* mais qualificados.
 
