@@ -23,7 +23,7 @@ Clicando em Perfil, abrirá um pop up para editar as informações do usuário. 
 
 ![alt text](assets1/image-1.png)
 
-E clicando em Sair, realizará o logout sem precisar retornar ao menu. Aliás, para fazer esse retorno, basta clicar no botão de [Home](../painel.md)
+E clicando em Sair, realizará o logout sem precisar retornar ao menu. Aliás, para fazer esse retorno, basta clicar no botão de [Home](../dash.md)
 
 ![alt text](assets1/image-2.png)
 
