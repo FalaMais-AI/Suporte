@@ -22,14 +22,14 @@ const config = {
   onBrokenLinks: 'throw',
   markdown: {
     hooks: {
-      onBrokenMarkdownLinks: 'warn', // ou 'throw' / 'ignore'
+      onBrokenMarkdownLinks: 'throw', // ou 'throw' / 'ignore'
     },
   },
   deploymentBranch: 'gh-pages',
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'pt-BR',
+    locales: ['pt-BR'],
   },
 
   presets: [
@@ -96,7 +96,21 @@ const config = {
   //   ],
   // ],
 
+  // docusaurus.config.js
+  plugins: [require.resolve('docusaurus-plugin-image-zoom')],
+
   themeConfig: {
+    zoom: {
+      selector: '.markdown :not(em) > img',
+      background: {
+        light: 'rgb(255, 255, 255)',
+        dark: 'rgb(50, 50, 50)',
+      },
+      config: {
+        margin: 24,
+        scrollOffset: 0,
+      },
+    },
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     docs: {
       sidebar: {

@@ -1,10 +1,10 @@
 ---
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 # Campos Personalizados
 
-![alt text](image.png)
+![Tela de campos personalizados](image.png)
 
 Permite criar campos adicionais para enriquecer informações dos contatos.
 
@@ -24,7 +24,7 @@ Campos personalizados podem ser preenchidos em:
 
 Ao clicar em Gerenciar campos, abre-se o painel lateral.
 
-![alt text](image-1.png)
+![Painel de gerenciamento de campos](image-1.png)
 
 ### Criar novo campo
 

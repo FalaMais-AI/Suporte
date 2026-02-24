@@ -22,11 +22,11 @@ Ele foi projetado para **responder** rapidamente às **seguintes** **perguntas**
 - Quais os horários de maior demanda?
 - Como está a performance da equipe?
 
-![img](../docs/dash/image.png)
+![Tela do Dashboard com indicadores principais](../docs/dash/image.png)
 
 ### Filtro de Período
 
-![img](../docs/dash/image3.png)
+![Filtro de período do Dashboard](../docs/dash/image3.png)
 
 No canto superior direito da tela é possível selecionar o **período** de **análise**:
 
@@ -51,7 +51,7 @@ Indicadores em **vermelho** representam **queda** de **desempenho**.
 
 Os **cards** **superiores** apresentam os indicadores estratégicos da operação.
 
-![img](../docs/dash/image1.png)
+![Cards de métricas principais do Dashboard](../docs/dash/image1.png)
 
 ### Novas Conversas
 
@@ -126,7 +126,7 @@ Por meio dessas visualizações é **possível** analisar volume de conversas, d
 Cada **gráfico** foi projetado para **apoiar** tanto a **gestão** operacional diária quanto o **planejamento** estratégico da equipe.
 
 
-![img](../docs/dash/image2.png)
+![Gráficos do Dashboard de atendimentos](../docs/dash/image2.png)
 
 ### Atendimentos da Semana
 

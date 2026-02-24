@@ -1,5 +1,5 @@
 ---
-sidebar_position: 11
+sidebar_position: 10
 sidebar_label: 'Aparência'
 ---
 
@@ -7,7 +7,7 @@ sidebar_label: 'Aparência'
 
 Permite personalizar o tema visual da interface.
 
-![alt text](image-7.png)
+![Tela de configuração de aparência](image-7.png)
 
 Opções disponíveis:
 - Claro
@@ -15,4 +15,3 @@ Opções disponíveis:
 - Sistema (segue configuração do sistema operacional)
 
 A alteração é aplicada imediatamente ao usuário atual.
-

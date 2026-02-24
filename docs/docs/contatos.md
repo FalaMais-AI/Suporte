@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Contatos
 
-![alt text](contatos/edit.png)
+![Tela do módulo Contatos](contatos/edit.png)
 
 O módulo Contatos centraliza todas as informações relacionadas aos leads e clientes da plataforma.
 
@@ -97,7 +97,7 @@ O Lead Score indica o nível de qualificação do contato.
 
 ## Aba Negociações
 
-![alt text](contatos/image.png)
+![Aba Negociações do contato](contatos/image.png)
 
 Exibe negociações vinculadas ao contato.
 
@@ -112,7 +112,7 @@ Ações disponíveis:
 
 ### Criar Nova Negociação
 
-![img](contatos/edit2.png)
+![Modal de criação de negociação](contatos/edit2.png)
 
 A funcionalidade Nova Negociação permite criar uma oportunidade comercial vinculada ao contato.
 
@@ -215,7 +215,7 @@ A negociação será:
 
 ## Aba Atividade
 
-![alt text](contatos/image-1.png)
+![Aba Atividade do contato](contatos/image-1.png)
 
 Exibe o histórico completo de interações e alterações relacionadas ao contato.
 
@@ -234,7 +234,7 @@ Também é possível visualizar:
 
 ## Aba Notas
 
-![alt text](contatos/image-2.png)
+![Aba Notas do contato](contatos/image-2.png)
 
 Permite adicionar observações internas sobre o contato.
 

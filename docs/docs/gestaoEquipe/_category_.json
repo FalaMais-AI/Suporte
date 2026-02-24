@@ -1,8 +1,0 @@
-{
-  "label": "Gestão de Equipe",
-  "position": 11,
-  "link": {
-    "type": "generated-index",
-    "description": "Esta seção agrupa toda a documentação essencial para a gestão de pessoal: a criação de usuários, a organização desses usuários em equipes e a configuração de filas de atendimento para direcionar e distribuir as conversas de forma eficiente."
-  }
-}

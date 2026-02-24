@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Mensagens
 
-![img](edit.png)
+![Tela da aba Mensagens](edit.png)
 
 A aba **Mensagens** é o centro de atendimento em tempo real da plataforma.
 
@@ -136,7 +136,6 @@ Exibe ações recentes relacionadas ao contato, como:
 
 Serve como histórico rápido de contexto.
 
-
 ## Fluxo de Atendimento
 
 1. Conversa entra na Fila.
@@ -147,7 +146,6 @@ Serve como histórico rápido de contexto.
    - Criar negociação
    - Adicionar notas
 5. Finalizar clicando em Resolver.
-
 
 # Encerramento da Conversa
 
