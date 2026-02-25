@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Comportamento"
+description: "Define como a IA responde operacionalmente às mensagens."
 ---
 
 # Comportamento

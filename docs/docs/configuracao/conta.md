@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Conta"
+description: "A aba Conta permite gerenciar suas informações pessoais dentro da plataforma."
 ---
 
 # Conta

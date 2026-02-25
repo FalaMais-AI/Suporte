@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
 slug: "/"
+title: "Bem-vindo"
+description: "Central de ajuda do FalaMais.AI com visão geral e recursos principais da plataforma."
 ---
 
 # Bem-vindo

@@ -1,6 +1,8 @@
 ---
 sidebar_position: 2
 sidebar_label: 'Dashboard'
+title: "Dashboards de relatório"
+description: "Um **Dashboard** é um painel visual composto por relatórios adicionados como widgets."
 ---
 
 # Dashboards de relatório

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 9
+title: "Integrações"
+description: "A aba Integrações permite conectar sistemas externos e configurar autenticações técnicas."
 ---
 
 # Integrações

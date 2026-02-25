@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Funil"
+description: "O **Funil de Oportunidades** é a área responsável por gerenciar negociações em formato visual (Kanban), organizadas por etapas do processo comercial."
 ---
 
 # Funil 

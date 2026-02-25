@@ -1,6 +1,8 @@
 ---
 sidebar_position: 5
 sidebar_label: 'Canais'
+title: "Canais — WhatsApp"
+description: "A seção **Canais** permite gerenciar as conexões de WhatsApp utilizadas no sistema."
 ---
 
 # Canais — WhatsApp

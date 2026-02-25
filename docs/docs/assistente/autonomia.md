@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Autonomia"
+description: "A seção **Nível de Autonomia** define o quanto a IA pode agir automaticamente dentro do sistema."
 ---
 
 # Autonomia

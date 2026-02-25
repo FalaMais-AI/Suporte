@@ -1,6 +1,8 @@
 ---
 sidebar_position: 11
 sidebar_label: 'Copiloto Interno'
+title: "Assistente IA (Copiloto Interno)"
+description: "O **Assistente IA** é o copiloto interno do FalaMais.AI."
 ---
 
 # Assistente IA (Copiloto Interno)

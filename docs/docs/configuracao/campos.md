@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Campos Personalizados"
+description: "Permite criar campos adicionais para enriquecer informações dos contatos."
 ---
 
 # Campos Personalizados

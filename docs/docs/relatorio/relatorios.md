@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Relatórios"
+description: "A área de **Relatórios** permite criar análises personalizadas a partir dos dados do sistema e organizá-las visualmente em **Dashboards**."
 ---
 
 # Relatórios

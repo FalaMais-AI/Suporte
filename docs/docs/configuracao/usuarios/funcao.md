@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Funções"
+description: "A aba **Funções** define os níveis de permissão do sistema."
 ---
 
 # Funções

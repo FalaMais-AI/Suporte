@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Usuários"
+description: "A aba **Usuários** mostra todos os membros cadastrados na empresa."
 ---
 
 # Usuários

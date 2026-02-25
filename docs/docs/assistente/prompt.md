@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Prompt"
+description: "A aba **Prompt** define a personalidade, contexto e regras que a IA seguirá durante as conversas."
 ---
 
 # Prompt

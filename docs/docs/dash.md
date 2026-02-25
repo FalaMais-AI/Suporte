@@ -1,10 +1,22 @@
 ---
 sidebar_position: 3
+title: "Dashboard"
+description: "A **DashBoard** é a sua tela inicial, o primeiro espaço que você vê ao fazer *login*."
 ---
 
 # Dashboard
 
-<iframe width="700" height="410" src="https://www.youtube.com/embed/Bedlh7HeViE?si=8rIkWE30TbAtajnL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="video-responsive">
+  <iframe
+    src="https://www.youtube.com/embed/Bedlh7HeViE?si=8rIkWE30TbAtajnL"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+    loading="lazy"
+  ></iframe>
+</div>
 
 --- 
 
@@ -22,11 +34,11 @@ Ele foi projetado para **responder** rapidamente às **seguintes** **perguntas**
 - Quais os horários de maior demanda?
 - Como está a performance da equipe?
 
-![Tela do Dashboard com indicadores principais](../docs/dash/image.png)
+![Tela do Dashboard com indicadores principais](./dash/image.png)
 
 ### Filtro de Período
 
-![Filtro de período do Dashboard](../docs/dash/image3.png)
+![Filtro de período do Dashboard](./dash/image3.png)
 
 No canto superior direito da tela é possível selecionar o **período** de **análise**:
 
@@ -51,7 +63,7 @@ Indicadores em **vermelho** representam **queda** de **desempenho**.
 
 Os **cards** **superiores** apresentam os indicadores estratégicos da operação.
 
-![Cards de métricas principais do Dashboard](../docs/dash/image1.png)
+![Cards de métricas principais do Dashboard](./dash/image1.png)
 
 ### Novas Conversas
 
@@ -126,7 +138,7 @@ Por meio dessas visualizações é **possível** analisar volume de conversas, d
 Cada **gráfico** foi projetado para **apoiar** tanto a **gestão** operacional diária quanto o **planejamento** estratégico da equipe.
 
 
-![Gráficos do Dashboard de atendimentos](../docs/dash/image2.png)
+![Gráficos do Dashboard de atendimentos](./dash/image2.png)
 
 ### Atendimentos da Semana
 

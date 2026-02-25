@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Mensagens"
+description: "Guia da aba Mensagens: filas, conversa ativa, painel lateral e fluxo de atendimento."
 ---
 
 # Mensagens
@@ -19,7 +21,7 @@ Aqui é possível:
 - Utilizar recursos de IA
 - Acompanhar insights e atividades
 
-# Estrutura da Tela
+## Estrutura da Tela
 
 A aba de Mensagens é dividida em três áreas principais:
 
@@ -27,7 +29,7 @@ A aba de Mensagens é dividida em três áreas principais:
 2. Conversa Ativa (centro)
 3. Painel Lateral de Informações (direita)
 
-## Lista de Conversas
+### Lista de Conversas
 
 Localizada no lado esquerdo da tela.
 
@@ -42,13 +44,13 @@ Funcionalidades disponíveis:
 - Indicador de mensagens na Fila.
 - Botão **Pegar** para assumir um atendimento da fila.
 
-### Fila de Atendimento
+#### Fila de Atendimento
 
 Conversas que ainda não foram atribuídas ficam na **Fila**.
 
 Ao clicar em **Pegar**, o atendimento passa a ser responsabilidade do atendente.
 
-## Conversa Ativa
+### Conversa Ativa
 
 Exibida no centro da tela quando uma conversa é selecionada.
 
@@ -59,14 +61,14 @@ Informações exibidas:
 - Canal de origem
 - Status (ex: Pegou na fila)
 
-### Ações disponíveis no topo:
+#### Ações disponíveis no topo:
 
 - **IA Pausada** → Pausa o atendimento automatizado.
 - **Resolver** → Finaliza o atendimento.
 - **Voltar para fila** → Remove da responsabilidade e retorna à fila.
 - Ícones adicionais de interação (ex: histórico, busca).
 
-### Campo de envio de mensagem
+#### Campo de envio de mensagem
 
 Na parte inferior da conversa:
 
@@ -77,11 +79,11 @@ Na parte inferior da conversa:
 
 Permite comunicação direta com o cliente em tempo real.
 
-## Painel Lateral
+### Painel Lateral
 
 Exibe informações estratégicas do contato durante o atendimento.
 
-### Perfil
+#### Perfil
 
 Botões rápidos:
 
@@ -89,7 +91,7 @@ Botões rápidos:
 - Notas → Visualiza ou adiciona observações.
 - Em breve → Funcionalidades adicionais futuras.
 
-### Tags
+#### Tags
 
 Permite adicionar ou remover tags no contato durante o atendimento.
 
@@ -97,7 +99,7 @@ Importante:
 O botão de tags nesta tela gerencia apenas as tags vinculadas ao contato atual.
 O gerenciamento geral (criação e mesclagem) é feito em Configurações > Tags.
 
-### Funil de Vendas
+#### Funil de Vendas
 
 Permite:
 
@@ -108,7 +110,7 @@ Se o contato ainda não tiver negociação ativa, será exibida a opção:
 
 **Novo lead**
 
-### Insights da IA
+#### Insights da IA
 
 Área dedicada à análise automática da conversa.
 
@@ -125,7 +127,7 @@ Quando disponível, permite clicar em:
 
 Esses dados auxiliam na priorização e abordagem estratégica.
 
-### Atividade Recente
+#### Atividade Recente
 
 Exibe ações recentes relacionadas ao contato, como:
 
@@ -147,7 +149,7 @@ Serve como histórico rápido de contexto.
    - Adicionar notas
 5. Finalizar clicando em Resolver.
 
-# Encerramento da Conversa
+## Encerramento da Conversa
 
 Ao clicar em Resolver:
 

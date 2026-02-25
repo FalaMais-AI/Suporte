@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Equipes"
+description: "A aba **Equipes** permite organizar usuários em grupos."
 ---
 
 # Equipes

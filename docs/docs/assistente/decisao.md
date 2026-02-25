@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Decisões da IA"
+description: "Área de auditoria e monitoramento."
 ---
 
 # Decisões da IA

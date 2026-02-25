@@ -1,5 +1,7 @@
 ---
 sidebar_position: 7
+title: "Pagamentos"
+description: "A seção **Pagamentos** permite gerenciar informações relacionadas ao plano contratado, status da assinatura, método de pagamento e histórico de faturas."
 ---
 
 # Pagamentos

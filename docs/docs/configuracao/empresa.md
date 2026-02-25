@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Empresa"
+description: "A aba Empresa concentra configurações operacionais relacionadas ao funil e à satisfação do atendimento."
 ---
 
 # Empresa

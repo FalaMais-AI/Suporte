@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Filas"
+description: "As **Filas** organizam como as conversas entram no sistema e são distribuídas entre atendentes."
 ---
 
 # Filas

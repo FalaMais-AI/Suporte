@@ -1,6 +1,8 @@
 ---
 sidebar_position: 11
 sidebar_label: 'Segurança'
+title: "Segurança"
+description: "Gerencie credenciais de acesso à plataforma."
 ---
 
 # Segurança

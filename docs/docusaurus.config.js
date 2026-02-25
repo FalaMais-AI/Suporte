@@ -1,6 +1,4 @@
-// @ts-check
 import {themes as prismThemes} from 'prism-react-renderer';
-
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -70,31 +68,7 @@ const config = {
         // forceIgnoreNoIndex: true,
       }),
     ],
-    // Theme required by docusaurus-plugin-openapi-docs to render API explorer
-    'docusaurus-theme-openapi-docs',
   ],
-
-  // plugins: [
-  //   [
-  //     'docusaurus-plugin-openapi-docs',
-  //     {
-  //       id: 'openapi',
-  //       docsPluginId: 'classic',
-  //       config: {
-  //         petstore: {
-  //           specPath: 'api/petstore.yaml',
-  //           outputDir: 'docs/docsApi',
-  //           sidebarOptions: {
-  //             groupPathsBy: 'tag',
-  //           },
-  //           label: 'TESTE',
-  //           hideSendButton: false,
-  //           showSchemas: true,
-  //         },
-  //       },
-  //     },
-  //   ],
-  // ],
 
   // docusaurus.config.js
   plugins: [require.resolve('docusaurus-plugin-image-zoom')],
@@ -133,11 +107,6 @@ const config = {
           position: 'left',
           label: 'Início',
         },
-        // {
-        //   to: '/docsApi',
-        //   position: 'left',
-        //   label: 'API',
-        // },
       ],
     },
     footer: {
@@ -145,7 +114,7 @@ const config = {
         {
           title: 'Contato',
           items: [
-            {html: 'contato@falamais.ai'},
+            {label: 'contato@falamais.ai', href: 'mailto:contato@falamais.ai'},
             {label: 'WhatsApp', href: 'https://wa.me/5561996853842'},
           ],
         },

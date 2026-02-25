@@ -1,20 +1,23 @@
 ---
 sidebar_position: 2
+title: "Visão Geral"
+description: "Tour rápido e visão integrada dos módulos e recursos do FalaMais.AI."
 ---
 
 # Visão Geral
 
 Assista a um tour rápido pelo sistema FalaMais.AI:
 
-<iframe
-  src="https://www.youtube.com/embed/qtgYKlTYCnA"
-  title="Overview do sistema - FalaMais.AI"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen
-  height="450"
-  width="100%"
-></iframe>
+<div class="video-responsive">
+  <iframe
+    src="https://www.youtube.com/embed/qtgYKlTYCnA"
+    title="Overview do sistema - FalaMais.AI"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy"
+  ></iframe>
+</div>
 
 ---
 
@@ -132,5 +135,3 @@ O FalaMais.AI conecta:
 - Inteligência Artificial
 
 Tudo funciona de forma integrada, permitindo que o atendimento evolua naturalmente para oportunidades comerciais, que por sua vez alimentam métricas e análises estratégicas.
-
-
