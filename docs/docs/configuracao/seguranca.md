@@ -3,10 +3,11 @@ sidebar_position: 11
 sidebar_label: 'Segurança'
 ---
 
-
 # Segurança
 
 Gerencie credenciais de acesso à plataforma.
+
+![alt text](img/image-10.png)
 
 ## Email de acesso
 

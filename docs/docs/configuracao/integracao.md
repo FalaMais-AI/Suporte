@@ -6,6 +6,7 @@ sidebar_position: 9
 
 A aba Integrações permite conectar sistemas externos e configurar autenticações técnicas.
 
+![alt text](img/image-12.png)
 
 ## API e Documentação
 

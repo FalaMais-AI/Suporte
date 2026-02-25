@@ -7,7 +7,7 @@ sidebar_label: 'Aparência'
 
 Permite personalizar o tema visual da interface.
 
-![Tela de configuração de aparência](image-7.png)
+![Tela de configuração de aparência](img/image-7.png)
 
 Opções disponíveis:
 - Claro

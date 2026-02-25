@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Tags
 
-![Tela de tags](image-2.png)
+![Tela de tags](img/image-2.png)
 
 As Tags permitem organizar, segmentar e classificar contatos dentro da plataforma.
 
@@ -25,7 +25,7 @@ Tags ajudam a acionar:
 
 Ao clicar em Gerenciar tags, abre-se o painel lateral de controle.
 
-![Painel de gerenciamento de tags](image-3.png)
+![Painel de gerenciamento de tags](img/image-3.png)
 
 ### Criar nova tag
 
@@ -60,7 +60,7 @@ Esse recurso é especialmente útil quando existem:
 - Erros de padronização
 - Segmentações criadas de forma redundante
 
-![Tela de mesclagem de tags](image-4.png)
+![Tela de mesclagem de tags](img/image-4.png)
 
 ### Como funciona a mesclagem?
 

@@ -10,7 +10,7 @@ Aqui você pode atualizar sua foto de perfil, nome, telefone e fuso horário uti
 
 Essas informações impactam sua identificação interna e o funcionamento correto de registros baseados em horário.
 
-![Tela de configurações da conta](image-6.png)
+![Tela de configurações da conta](img/image-6.png)
 
 ## Foto de Perfil
 

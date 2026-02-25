@@ -6,7 +6,7 @@ sidebar_position: 2
 
 A aba Empresa concentra configurações operacionais relacionadas ao funil e à satisfação do atendimento.
 
-![Tela de configurações da empresa](image-5.png)
+![Tela de configurações da empresa](img/image-5.png)
 
 ## Manutenção do Funil
 

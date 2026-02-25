@@ -9,6 +9,8 @@ A aba Notificações permite controlar como e quando você recebe alertas dentro
 
 Essas configurações são individuais por usuário e impactam sua experiência operacional diária.
 
+![alt text](img/image-13.png)
+
 ## Preferências de Notificação
 
 Permite ativar ou desativar diferentes tipos de alertas.

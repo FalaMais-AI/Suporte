@@ -11,6 +11,8 @@ Ajuda a:
 - Padronizar comunicação
 - Reduzir tempo de resposta
 
+![alt text](img/image-11.png)
+
 ## Lista de mensagens
 
 Cada mensagem exibe:
