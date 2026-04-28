@@ -10,8 +10,8 @@ const config = {
     v4: true,
   },
 
-  url: 'https://FalaMais-AI.github.io',
-  baseUrl: '/Suporte/',
+  url: 'https://academy.falamais.ai',
+  baseUrl: '/',
 
   organizationName: 'FalaMais-AI',
   projectName: 'Suporte',
