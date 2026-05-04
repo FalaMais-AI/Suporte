@@ -18,7 +18,7 @@ Essa configuração impacta diretamente:
 Recomendação geral:
 Começar em modo **Híbrido** e liberar autonomia gradualmente.
 
-![Tela de configuração do nível de autonomia](image-2.png)
+![Tela de configuração do nível de autonomia](img/image-2.png)
 
 ## Básico
 
@@ -92,6 +92,21 @@ Recomendado apenas quando:
 
 Requer revisão periódica.
 
+## Direcionamento por time/cargo
+
+No modo Híbrido, é possível restringir quais ações a IA executa com base no time ou cargo do atendente responsável pela conversa.
+
+Como funciona:
+
+- Quando o prompt autoriza uma ação e a conversa pertence a um atendente do time configurado, a IA pode executar normalmente.
+- Se a conversa for de um time diferente, a ação é bloqueada.
+
+Isso garante que a IA aja de acordo com o perfil de cada equipe — sem conversas rotativas ou ações fora do contexto certo.
+
+:::tip Exemplo
+O time comercial pode ter autonomia para criar negociações, enquanto o time de suporte não tem essa permissão.
+:::
+
 ## Copiloto Interno
 
 A seção **Copiloto Interno** controla como a IA lida com agendamentos automáticos.
@@ -101,7 +116,7 @@ Não altera a autonomia do WhatsApp.
 Afeta apenas comportamento interno relacionado a agenda.
 :::
 
-![Configurações do Copiloto Interno](image-3.png)
+![Configurações do Copiloto Interno](img/image-3.png)
 
 ### Objetivo do Copiloto
 
@@ -144,6 +159,37 @@ Use apenas quando:
 - O fluxo de qualificação é extremamente confiável.
 - A operação já está validada.
 - Existe monitoramento ativo.
+
+## Execução Segura
+
+Mesmo que uma ação esteja autorizada no prompt, a IA ainda passa por várias verificações antes de executar qualquer coisa.
+
+Para uma ação ser executada, é necessário que:
+
+1. O prompt mencione a funcionalidade (via `@` ou texto direto)
+2. A intenção do cliente naquele momento justifique a ação
+3. O usuário responsável tenha permissão para isso
+4. O plano contratado suporte a funcionalidade
+5. As políticas internas do sistema permitam a execução
+
+Se qualquer uma dessas condições não for atendida, a ação é bloqueada — e o registro aparece em **Decisões da IA** para consulta.
+
+Isso existe para garantir que a IA não tome ações inesperadas mesmo em ambientes com alta autonomia.
+
+## Análise de Cobertura
+
+Após salvar o prompt, o sistema analisa automaticamente quais funcionalidades estão cobertas pelo texto.
+
+Essa análise mostra:
+
+- Quais ações a IA está autorizada a executar com base no conteúdo do prompt
+- Se alguma funcionalidade está habilitada na autonomia mas não está mencionada no prompt
+
+Útil para identificar lacunas entre o que está configurado e o que o prompt realmente instrui a IA a fazer.
+
+:::tip Dica
+Sempre salve o prompt antes de verificar a análise de cobertura, pois ela é gerada com base na versão mais recente.
+:::
 
 ## Alerta de Risco
 

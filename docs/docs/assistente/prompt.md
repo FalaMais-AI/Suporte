@@ -8,7 +8,7 @@ description: "A aba **Prompt** define a personalidade, contexto e regras que a I
 
 A aba **Prompt** define a personalidade, contexto e regras que a IA seguirá durante as conversas.
 
-![Tela da aba Prompt](print.png)
+![Tela da aba Prompt](img/print.png)
 
 ## Objetivo
 
@@ -49,6 +49,27 @@ Podem ser usadas dentro do prompt:
 
 Essas variáveis tornam a conversa personalizada.
 
+## Gerenciar Prompts
+
+É possível ter vários prompts salvos na plataforma — por exemplo, um para o time comercial e outro para o suporte.
+
+O prompt marcado como **Ativo** é o que a IA usa nas conversas.
+
+### Criar um novo prompt
+
+Clique no botão **+ Novo** para abrir o formulário de criação.
+
+Você vai preencher:
+
+- **Nome do prompt** — identifica o cenário, ex: "Vendas consultivas"
+- **Publicar ao criar** — se ativado, a IA já começa a usar esse prompt imediatamente
+
+### Selecionar o prompt ativo
+
+Use o seletor acima do editor para alternar entre os prompts salvos.
+
+Ao trocar, o sistema aplica o novo prompt nas próximas conversas.
+
 ## Testar IA
 
 No painel lateral é possível:
@@ -59,7 +80,7 @@ No painel lateral é possível:
 
 Ideal para testes antes de ativar oficialmente.
 
-![Painel de teste da IA](image-1.png)
+![Painel de teste da IA](img/image-1.png)
 
 ## Link Compartilhável
 

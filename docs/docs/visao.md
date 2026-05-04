@@ -6,7 +6,7 @@ description: "Tour rápido e visão integrada dos módulos e recursos do FalaMai
 
 # Visão Geral
 
-Assista a um tour rápido pelo sistema FalaMais.AI:
+{/* Assista a um tour rápido pelo sistema FalaMais.AI:
 
 <div class="video-responsive">
   <iframe
@@ -17,7 +17,7 @@ Assista a um tour rápido pelo sistema FalaMais.AI:
     allowfullscreen
     loading="lazy"
   ></iframe>
-</div>
+</div> */}
 
 ---
 

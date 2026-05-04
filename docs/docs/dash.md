@@ -6,7 +6,7 @@ description: "A **DashBoard** é a sua tela inicial, o primeiro espaço que voc�
 
 # Dashboard
 
-<div class="video-responsive">
+{/* <div class="video-responsive">
   <iframe
     src="https://www.youtube.com/embed/Bedlh7HeViE?si=8rIkWE30TbAtajnL"
     title="YouTube video player"
@@ -16,7 +16,7 @@ description: "A **DashBoard** é a sua tela inicial, o primeiro espaço que voc�
     allowfullscreen
     loading="lazy"
   ></iframe>
-</div>
+</div> */}
 
 --- 
 
@@ -30,11 +30,16 @@ Ele foi projetado para **responder** rapidamente às **seguintes** **perguntas**
 
 - Quantas conversas recebemos?
 - Estamos respondendo com agilidade?
-- Estamos resolvendo no primeiro contato?
+- Por que os atendimentos estão sendo encerrados?
+- Quantos novos contatos chegaram?
 - Quais os horários de maior demanda?
 - Como está a performance da equipe?
 
 ![Tela do Dashboard com indicadores principais](./dash/image.png)
+
+### Conversas Ativas
+
+No canto superior direito da tela, ao lado dos filtros de período, existe um indicador em tempo real que mostra quantas conversas estão acontecendo neste momento na plataforma. Esse número é atualizado automaticamente, sem precisar recarregar a página.
 
 ### Filtro de Período
 
@@ -106,18 +111,28 @@ Um tempo de resolução muito alto pode indicar:
 - Necessidade de treinamento
 - Problemas de roteamento
 
-### FCR (First Contact Resolution)
+### Atendimentos por Demanda
 
-**Representa** a **porcentagem** de **atendimentos** resolvidos no primeiro contato.
+Mostra o total de **conversas encerradas** no período e detalha o motivo pelo qual cada uma foi finalizada.
 
-O que significa?
-Quanto maior o FCR:
-- Menor retrabalho
-- Maior satisfação do cliente
-- Maior eficiência da equipe
+Abaixo do número total, o card exibe uma lista com a distribuição percentual dos motivos de encerramento. Exemplos de motivos que podem aparecer:
 
-**Exemplo**:
-Se o FCR for 70%, significa que 70% das conversas foram resolvidas sem necessidade de retorno posterior.
+- **Sem resposta** → O cliente não respondeu e a conversa foi encerrada automaticamente.
+- **Sem motivo informado** → A conversa foi encerrada sem que um motivo fosse registrado pelo atendente.
+- **Fora do horário** → O atendimento foi encerrado por conta do horário de funcionamento.
+
+Essa métrica ajuda a entender não apenas quantos atendimentos foram concluídos, mas também **por que** foram encerrados, revelando padrões que podem indicar pontos de melhoria na operação.
+
+### Novos Contatos
+
+Exibe o total de **contatos que enviaram a primeira mensagem** para a plataforma no período selecionado.
+
+Diferente de "Novas Conversas", que conta todas as conversas iniciadas, esta métrica foca especificamente em **pessoas que nunca haviam entrado em contato antes**, representando o crescimento real da base de clientes.
+
+Como usar esse dado:
+- Medir o alcance de campanhas de aquisição
+- Acompanhar o crescimento da base de contatos
+- Identificar períodos de maior entrada de novos clientes
 
 ### CSAT (Customer Satisfaction)
 
@@ -140,13 +155,18 @@ Cada **gráfico** foi projetado para **apoiar** tanto a **gestão** operacional 
 
 ![Gráficos do Dashboard de atendimentos](./dash/image2.png)
 
-### Atendimentos da Semana
+### Atendimentos da Semana / Atendimentos do Período
 
-Este gráfico apresenta o **volume** de **conversas** **distribuído** por dia da semana.
+Este gráfico muda de nome dependendo do período selecionado:
+
+- Quando o período é **14D, 30D ou Personalizado**, ele se chama **"Atendimentos do Período"** e exibe um gráfico de linha mostrando a evolução do volume de conversas ao longo das datas do intervalo selecionado.
+
+No canto superior direito do gráfico é exibido o total de conversas do período.
 
 Como interpretar:
-- Barras mais altas indicam maior volume.
-- Ajuda a identificar padrões recorrentes.
+- Picos indicam dias de maior volume.
+- Quedas podem indicar menor demanda ou problemas de operação.
+- Ajuda a identificar padrões recorrentes ao longo do tempo.
 
 Aplicação prática:
 - Ajustar escala de atendentes
@@ -155,12 +175,14 @@ Aplicação prática:
 
 ### Top Atendentes
 
-Exibe os **atendentes** com melhor **desempenho** no período selecionado.
+Exibe os **atendentes** com melhor **desempenho** no período selecionado, ordenados pelo índice de satisfação.
 
-Informações disponíveis:
+No canto superior direito do card aparece o indicador **"X online"**, mostrando quantos atendentes estão conectados à plataforma naquele momento. O ponto colorido ao lado do nome de cada atendente também indica o status: verde para online e cinza para offline.
+
+Informações exibidas por atendente:
 - Nome do atendente
 - Número de conversas atendidas
-- Tempo médio de atendimento
+- Tempo mediano de atendimento
 - Índice de satisfação (%)
 
 Objetivo estratégico:
@@ -168,23 +190,29 @@ Objetivo estratégico:
 - Identificar padrões de excelência
 - Detectar oportunidades de melhoria
 
-### Atendimentos por Canal
+### Por Canal
 
-Apresenta a **distribuição** das **conversas** conforme canal.
+Apresenta a **distribuição** das **conversas** conforme o canal de atendimento.
+
+Cada linha exibe:
+- **Nome do canal** (ex: Comercial - Novo)
+- **Tempo mediano de atendimento** naquele canal
+- **Volume total de conversas** no período
 
 Aplicações:
 - Entender de onde vem a maior demanda
-- Identificar gargalos por área
-- Avaliar impacto de campanhas específicas
+- Identificar gargalos por canal
+- Avaliar impacto de campanhas específicas em cada origem
 
 ### Horários de Pico
 
-Mostra o **volume** de **atendimentos** **distribuído** por hora ao longo do dia.
+Mostra o **volume** de **atendimentos** **distribuído** por hora ao longo do dia, usando cores para facilitar a leitura:
 
-O sistema identifica automaticamente:
-- Horário de menor volume
-- Horário de médio volume
-- Horário de pico
+- **Cinza** → Volume baixo
+- **Verde** → Volume médio
+- **Laranja** → Volume alto (pico)
+
+No canto superior direito do card é destacado automaticamente o **horário de maior pico** do dia (ex: "Pico: 11h"), facilitando a identificação imediata do momento de maior demanda.
 
 Importância:
 - Ajustar escala de atendimento
@@ -198,6 +226,10 @@ Lista as **ações** recentes **realizadas** na **plataforma**, como:
 - Mudança de etapa no funil
 - Atualizações de status
 - Movimentações internas
+
+Cada item exibe a descrição da ação e há quanto tempo ela aconteceu (ex: 22 min, 1h).
+
+No canto superior direito do card existe o botão **"Ver tudo"**, que abre o histórico completo de atividades da operação, sem limitar aos itens exibidos no resumo.
 
 Finalidade:
 - Auditoria operacional

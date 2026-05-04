@@ -8,7 +8,7 @@ description: "Define como a IA responde operacionalmente às mensagens."
 
 Define como a IA responde operacionalmente às mensagens.
 
-![Configurações de comportamento da IA](print2.png)
+![Configurações de comportamento da IA](img/print2.png)
 
 ## Ativar IA
 

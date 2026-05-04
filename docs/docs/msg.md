@@ -35,14 +35,16 @@ Localizada no lado esquerdo da tela.
 
 Funcionalidades disponíveis:
 
-- Campo de busca por nome, telefone ou trecho da conversa.
+- **Campo de busca** → Localiza conversas por nome do contato, telefone ou trecho da mensagem.
+- **Filtro e ordenação** → Ícone de funil ao lado da busca que permite ordenar e filtrar as conversas da lista.
+- **Botão "+"** → Inicia uma nova conversa com um contato.
 - Filtros rápidos:
-  - Todos
-  - IA Pausada
-  - IA Ativa
-  - Encerrados
-- Indicador de mensagens na Fila.
-- Botão **Pegar** para assumir um atendimento da fila.
+  - **Todos** → Exibe todas as conversas em atendimento.
+  - **IA Pausada** → Mostra conversas onde a IA foi pausada manualmente.
+  - **IA Ativa** → Mostra conversas onde a IA está respondendo automaticamente.
+  - **Encerrados** → Conversas que foram finalizadas.
+- **Indicador de Fila** → Mostra quantas conversas estão aguardando atendimento.
+- **Botão "Pegar"** → Aparece em conversas da fila, permitindo ao atendente assumir o atendimento.
 
 #### Fila de Atendimento
 
@@ -63,21 +65,32 @@ Informações exibidas:
 
 #### Ações disponíveis no topo:
 
-- **IA Pausada** → Pausa o atendimento automatizado.
-- **Resolver** → Finaliza o atendimento.
-- **Voltar para fila** → Remove da responsabilidade e retorna à fila.
-- Ícones adicionais de interação (ex: histórico, busca).
+- **IA Pausada** → Indica que a IA está pausada nessa conversa. Clicar reativa a IA.
+- **IA Bloqueada** → Aparece em vermelho quando a IA foi bloqueada manualmente no painel lateral. Significa que a IA não vai responder nessa conversa até ser desbloqueada.
+- **Resolver** → Finaliza o atendimento e marca a conversa como encerrada.
+- **Voltar para fila** → Remove a conversa da responsabilidade do atendente e a retorna à fila geral.
+- **Trocar canal** → Permite transferir a conversa para um canal de comunicação diferente (ex: de WhatsApp para outro número ou canal configurado).
+- Ícones adicionais: histórico de interações e busca dentro da conversa.
 
 #### Campo de envio de mensagem
 
-Na parte inferior da conversa:
+Na parte inferior da conversa fica a barra de envio, com os seguintes recursos:
 
-- Campo de texto para digitar mensagens.
-- Suporte a envio via Enter.
-- Ícone de anexo (quando disponível).
-- Botão de gravação de áudio (se habilitado).
+- **Campo de texto** → Onde a mensagem é digitada. O envio acontece pressionando Enter.
+- **Emoji** → Abre o seletor de emojis para enriquecer a mensagem.
+- **Nota interna** → Envia uma mensagem que só os atendentes conseguem ver, sem o cliente receber.
+- **Anexo** → Permite enviar arquivos, imagens ou documentos.
+- **Melhorar com IA** → Sugere melhorias na mensagem digitada antes de enviar, com base no contexto da conversa.
+- **Gravação de áudio** → Grava e envia um áudio diretamente para o cliente.
 
-Permite comunicação direta com o cliente em tempo real.
+#### Eventos especiais no chat
+
+Durante uma conversa, alguns eventos do sistema aparecem no meio das mensagens:
+
+- **"Conversa devolvida para fila"** → Indica que o atendimento foi retornado à fila, seja pelo atendente ou automaticamente.
+- **"AGENDAMENTO ENVIADO"** → Aparece como um badge em mensagens que continham um agendamento, indicando que ele foi enviado com sucesso.
+
+Mensagens enviadas automaticamente pela IA aparecem com um ícone de robô ao lado, facilitando identificar o que foi respondido pelo atendente e o que foi respondido pelo assistente.
 
 ### Painel Lateral
 
@@ -87,9 +100,10 @@ Exibe informações estratégicas do contato durante o atendimento.
 
 Botões rápidos:
 
-- Perfil → Abre o perfil completo do contato.
-- Notas → Visualiza ou adiciona observações.
-- Em breve → Funcionalidades adicionais futuras.
+- **Perfil** → Abre o perfil completo do contato.
+- **Notas** → Visualiza ou adiciona observações internas sobre o cliente.
+- **Desbloquear IA** → Reativa a inteligência artificial na conversa, caso ela esteja bloqueada.
+- **Bloquear contato** → Impede que o contato envie novas mensagens para a plataforma.
 
 #### Tags
 
@@ -112,31 +126,34 @@ Se o contato ainda não tiver negociação ativa, será exibida a opção:
 
 #### Insights da IA
 
-Área dedicada à análise automática da conversa.
+Área dedicada à análise automática da conversa, gerada pela inteligência artificial da plataforma.
 
-Pode exibir:
+Exibe as seguintes informações:
 
-- Sentimento
-- Urgência
-- Intenção
-- Engajamento
+- **Sentimento** → Como o cliente está se sentindo na conversa (ex: Neutro, Positivo, Negativo) com um percentual de confiança.
+- **Urgência** → Nível de urgência percebido pela IA (ex: Baixa, Média, Alta).
+- **Intenção** → O que a IA identificou como objetivo do cliente na conversa (ex: "Cliente iniciando contato sem demanda clara").
+- **Engajamento** → Grau de envolvimento do cliente na conversa (ex: Baixo, Médio, Alto).
+- **Tags sugeridas** → A IA sugere tags relevantes com base no conteúdo da conversa, que podem ser aplicadas ao contato com um clique.
+- **Última análise** → Data e quantidade de vezes que a IA analisou essa conversa.
 
-Quando disponível, permite clicar em:
+Quando disponível, o botão **Analisar conversa** força uma nova análise da IA sobre o histórico atual.
 
-**Analisar conversa**
-
-Esses dados auxiliam na priorização e abordagem estratégica.
+Esses dados ajudam o atendente a entender o contexto rapidamente e priorizar o atendimento de forma estratégica.
 
 #### Atividade Recente
 
-Exibe ações recentes relacionadas ao contato, como:
+Exibe um histórico rápido das ações mais recentes relacionadas ao contato, como:
 
-- Nota adicionada
-- Mudança de etapa
-- Transferência de atendimento
-- Encerramento
+- **Mensagem enviada** → O atendente ou a IA enviou uma mensagem para o cliente.
+- **Mensagem recebida** → O cliente enviou uma mensagem.
+- **IA respondeu automaticamente** → A IA respondeu ao cliente sem intervenção humana.
+- **Nota adicionada** → Um atendente registrou uma observação interna.
+- **Mudança de etapa** → O contato avançou ou retrocedeu em um funil de vendas.
+- **Transferência de atendimento** → A conversa foi transferida para outro atendente ou equipe.
+- **Encerramento** → A conversa foi finalizada.
 
-Serve como histórico rápido de contexto.
+Serve como histórico rápido de contexto para o atendente entender o que já aconteceu antes de interagir.
 
 ## Fluxo de Atendimento
 

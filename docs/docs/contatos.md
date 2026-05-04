@@ -44,15 +44,18 @@ No topo do perfil do contato são exibidas:
 
 - Nome
 - Status (Ativo / Inativo)
-- Empresa associada
-- Lead Score
-- Etiqueta (caso tenha uma)
+- Badge **"IA bloqueada"** — exibida quando a IA está desativada para aquele contato
+- Subtítulo com informações adicionais do contato
 
 Ações disponíveis:
 
-- Mensagem → Inicia conversa com o contato
-- Editar → Permite editar informações do contato
-- Excluir → Remove o contato do sistema
+- **Mensagem** → Inicia conversa com o contato
+- **Desbloquear IA** → Reativa a IA para o contato quando ela estiver bloqueada
+- **Editar** → Permite editar informações do contato
+- **Tags** → Gerencia as tags vinculadas ao contato
+- **Excluir** → Remove o contato do sistema
+- **Ícone de telefone** → Acesso rápido para ligar ao contato
+- **Ícone de e-mail** → Acesso rápido para enviar e-mail ao contato
 
 ## Aba Informações
 
@@ -62,7 +65,7 @@ Seções disponíveis:
 
 ### Etiquetas
 
-Permite visualizar e adicionar tags ao contato.
+Permite visualizar e adicionar etiquetas ao contato. O botão **"Gerenciar catálogo"** abre a lista completa de etiquetas disponíveis. Use o botão **"+ Etiqueta"** para adicionar uma nova ao contato.
 
 ### Dados de Contato
 
@@ -70,13 +73,27 @@ Campos padrão:
 
 - Nome
 - Telefone
-- Email
+- Instagram @
+- E-mail
+- CPF/CNPJ
 - Empresa
 - Cargo
 - Cidade
-- Origem (ex: WhatsApp)
 
-Esses dados podem ser editados pelo botão "Editar" no topo.
+Esses dados podem ser editados pelo botão **"Editar"** no topo.
+
+### Listas em que este contato está
+
+Exibe quais listas inteligentes incluem este contato. Caso ele ainda não faça parte de nenhuma lista, aparecerá:
+
+"Este contato ainda não entrou em nenhuma lista inteligente."
+
+### Origem do contato
+
+Mostra de onde veio o contato — canal de entrada, vínculo com anúncios e histórico de atribuição. É dividida em duas partes:
+
+- **Origem Principal** — o canal pelo qual o contato chegou pela primeira vez (ex: WhatsApp, Instagram). Se ainda não houver origem registrada, exibirá: "Sem origem atribuída até o momento."
+- **Histórico de Origens** — lista todas as atribuições históricas do contato. Se não houver registros, exibirá: "Nenhuma atribuição histórica registrada."
 
 ### Campos personalizados
 
@@ -90,27 +107,23 @@ Caso nenhum campo esteja configurado, aparecerá:
 
 Informações estratégicas do contato:
 
-- Responsável
-- Etapa do funil
-- Data de criação
-- Lead Score
-
-O Lead Score indica o nível de qualificação do contato.
+- **Responsável** — atendente ou equipe responsável pelo contato
+- **Etapa do funil** — fase atual do contato no processo de vendas
+- **Criado em** — data de cadastro do contato
+- **Lead Score** — pontuação de qualificação do contato de 0 a 100, representada por uma barra colorida. Quanto maior a pontuação, mais qualificado é o lead.
 
 ## Aba Negociações
 
 ![Aba Negociações do contato](contatos/image.png)
 
-Exibe negociações vinculadas ao contato.
-
-Se o contato ainda não estiver em um funil, aparecerá:
+Exibe todas as negociações vinculadas ao contato. Caso o contato ainda não esteja em nenhum funil, aparecerá:
 
 "Este contato ainda não está em um funil."
 
 Ações disponíveis:
 
-- Criar negociação
-- Ver funis
+- **Criar negociação** → Abre o modal para criar uma nova oportunidade comercial
+- **Ver funis** → Navega para o módulo de Funis
 
 ### Criar Nova Negociação
 
@@ -118,7 +131,7 @@ Ações disponíveis:
 
 A funcionalidade Nova Negociação permite criar uma oportunidade comercial vinculada ao contato.
 
-Essa ação pode ser feita pela aba "Negociações" dentro do perfil do contato.
+Essa ação pode ser feita pelo botão **"Criar negociação"** na aba Negociações ou pelo botão de mesmo nome exibido na mensagem de estado vazio.
 
 Quando criar uma negociação?
 
@@ -133,7 +146,7 @@ Crie uma negociação quando:
 
 Ao clicar em Criar negociação, será exibido um modal com os seguintes campos:
 
-Título da negociação
+**Título da negociação**
 
 Define o nome da oportunidade.
 
@@ -141,14 +154,11 @@ Exemplo:
 - Proposta Plano Premium
 - Projeto Consultoria 2026
 
-Recomendação:
-Use títulos padronizados para facilitar relatórios.
+Recomendação: use títulos padronizados para facilitar relatórios.
 
-### Participantes (opcional)
+**Participantes (opcional)**
 
 Permite adicionar outras pessoas à negociação.
-
-Funcionalidades:
 
 - Buscar participantes existentes
 - Adicionar novos participantes
@@ -156,7 +166,7 @@ Funcionalidades:
 
 O contato atual será exibido como Principal.
 
-### Etapa
+**Etapa**
 
 Define em qual etapa do funil a negociação será iniciada.
 
@@ -168,39 +178,17 @@ Exemplo:
 
 A etapa selecionada determinará onde a negociação aparecerá no funil.
 
-### Valor
+**Valor**
 
-Campo para registrar o valor estimado da negociação.
+Campo para registrar o valor estimado da negociação. Pode ser usado para previsão de receita, relatórios de pipeline e controle financeiro.
 
-Exemplo:
-12000
+**Data prevista**
 
-Pode ser usado para:
-
-- Previsão de receita
-- Relatórios de pipeline
-- Controle financeiro
-
-### Data prevista
-
-Define a data estimada de fechamento da negociação.
-
-Formato:
-dd/mm/aaaa
-
-Utilizada para:
-
-- Previsões comerciais
-- Gestão de metas
-- Acompanhamento de prazo
+Define a data estimada de fechamento da negociação (formato dd/mm/aaaa). Utilizada para previsões comerciais e gestão de metas.
 
 ### Finalizando
 
-Após preencher os campos:
-
-Clique em Criar negociação.
-
-A negociação será:
+Após preencher os campos, clique em **Criar negociação**. A negociação será:
 
 - Vinculada ao contato
 - Inserida na etapa escolhida do funil
@@ -219,46 +207,66 @@ A negociação será:
 
 ![Aba Atividade do contato](contatos/image-1.png)
 
-Exibe o histórico completo de interações e alterações relacionadas ao contato.
+Exibe o **Histórico de Atividades** completo do contato, com todos os eventos registrados em ordem cronológica. O total de eventos é exibido ao lado do título.
+
+Ações disponíveis no topo:
+
+- **Histórico WhatsApp** → Exibe todas as mensagens trocadas com o contato via WhatsApp
+- **Upload de áudio** → Permite anexar um arquivo de áudio ao histórico do contato
 
 Exemplos de eventos registrados:
 
-- Conversa atribuída
-- Conversa liberada
-- Conversa encerrada
+- Contato criado
+- Conversa iniciada
+- Conversa atribuída (para qual atendente e por quem)
+- Conversa devolvida para fila
+- Responsável transferido
+- Nota adicionada
 - Tag adicionada
-- Transferências entre atendentes
 - Mudanças de status
 
-Também é possível visualizar:
+Cada evento exibe a data em que ocorreu e, quando aplicável, quem realizou a ação.
 
-- Histórico da conversa (todas as mensagens trocadas)
+## Aba Site
+
+A aba Site exibe o rastreamento de atividade web do contato — páginas visitadas, cliques e interações registradas no seu site quando há integração configurada.
+
+Caso nenhuma atividade tenha sido registrada, aparecerá:
+
+"Nenhuma atividade web vinculada a este contato."
+
+:::info
+Para que dados apareçam nessa aba, é necessário ter o script de rastreamento do FalaMais instalado no seu site.
+:::
 
 ## Aba Notas
 
 ![Aba Notas do contato](contatos/image-2.png)
 
-Permite adicionar observações internas sobre o contato.
+Permite adicionar observações internas sobre o contato. O número total de notas é exibido ao lado do título da aba.
 
 Características:
 
-- Notas são visíveis apenas internamente.
+- Notas são visíveis apenas internamente pela equipe.
 - Não são enviadas ao cliente.
-- Podem ser usadas para contexto, lembretes ou estratégia.
+- Cada nota exibe o autor e a data de criação.
+- Podem ser usadas para contexto, lembretes ou estratégia comercial.
 
 Para adicionar:
 
-1. Digite a nota no campo disponível.
-2. Clique em Salvar.
+1. Digite a nota no campo "Adicionar uma nota...".
+2. Clique em **Salvar**.
+
+A nota ficará registrada abaixo do campo, com o nome do autor e a data.
 
 ## Painel Lateral (Resumo)
 
-À direita da tela são exibidos dados resumidos:
+À direita da tela são exibidos dados resumidos do contato:
 
-Resumo:
-- Total em Deals
-- Deals Ativos
-- Notas
+**Resumo:**
+- Total em Deals — valor total acumulado nas negociações
+- Deals Ativos — quantidade de negociações em andamento
+- Notas — número de notas registradas
 
-Última Atividade:
-- Última atualização registrada no contato
+**Última Atividade:**
+- Data e descrição da última interação registrada no contato
