@@ -69,7 +69,7 @@ Campos exibidos:
 Para gerar nova chave:
 Clique em Gerar Nova Chave.
 
-:::warning Atenção:
+:::warning[Atenção:]
 Guarde a chave com segurança.
 Não compartilhe publicamente.
 :::

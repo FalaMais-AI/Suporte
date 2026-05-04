@@ -55,7 +55,7 @@ No canto superior direito da tela é possível selecionar o **período** de **an
 
 Todas as métricas do Dashboard são **recalculadas** automaticamente conforme o período selecionado.
 
-:::warning Importante
+:::warning[Importante]
 Os **indicadores** exibem a variação em relação ao período anterior equivalente.
 
 **Exemplo**: ao selecionar 7D, o sistema compara com os 7 dias anteriores.

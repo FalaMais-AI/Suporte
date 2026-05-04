@@ -80,7 +80,7 @@ Após selecionar as duas opções, clique em Confirmar Mesclagem.
 - Nenhum contato é perdido.
 - As automações vinculadas à tag de destino continuam funcionando normalmente.
 
-:::warning Atenção
+:::warning[Atenção]
 - A ação não pode ser desfeita.
 - Verifique se automações, funis ou fluxos utilizam a tag que será excluída.
 - Certifique-se de que a tag de destino está corretamente nomeada antes de confirmar.

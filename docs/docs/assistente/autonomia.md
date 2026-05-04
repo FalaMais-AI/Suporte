@@ -103,7 +103,7 @@ Como funciona:
 
 Isso garante que a IA aja de acordo com o perfil de cada equipe — sem conversas rotativas ou ações fora do contexto certo.
 
-:::tip Exemplo
+:::tip[Exemplo]
 O time comercial pode ter autonomia para criar negociações, enquanto o time de suporte não tem essa permissão.
 :::
 
@@ -111,7 +111,7 @@ O time comercial pode ter autonomia para criar negociações, enquanto o time de
 
 A seção **Copiloto Interno** controla como a IA lida com agendamentos automáticos.
 
-:::warning Importante
+:::warning[Importante]
 Não altera a autonomia do WhatsApp.
 Afeta apenas comportamento interno relacionado a agenda.
 :::
@@ -187,7 +187,7 @@ Essa análise mostra:
 
 Útil para identificar lacunas entre o que está configurado e o que o prompt realmente instrui a IA a fazer.
 
-:::tip Dica
+:::tip[Dica]
 Sempre salve o prompt antes de verificar a análise de cobertura, pois ela é gerada com base na versão mais recente.
 :::
 

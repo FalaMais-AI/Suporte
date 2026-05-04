@@ -76,7 +76,7 @@ Exemplo:
 
 America/Sao_Paulo
 
-:::warning Atenção:
+:::warning[Atenção:]
 
 Se o fuso horário estiver incorreto, os horários exibidos no sistema podem ficar inconsistentes.
 :::

@@ -195,12 +195,13 @@ Após preencher os campos, clique em **Criar negociação**. A negociação ser�
 - Exibida na aba Negociações do contato
 - Contabilizada nos relatórios
 
-:::tip Observações
+:::tip[Observações]
 
 - Caso o contato não esteja associado a um funil, a negociação será criada no funil ativo padrão.
 - O valor pode ser alterado posteriormente.
 - A etapa pode ser movida manualmente dentro do funil.
 - A exclusão da negociação deve ser feita pelo módulo de Funis.
+
 :::
 
 ## Aba Atividade

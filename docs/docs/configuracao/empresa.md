@@ -26,7 +26,7 @@ Limpar funil de contatos sem negociação
 
 Essa ação remove contatos que estejam vinculados a etapas sem movimentação ativa.
 
-:::warning ATENÇÃO
+:::warning[ATENÇÃO]
 Essa ação pode impactar relatórios e métricas do funil. Utilize com cautela.
 :::
 

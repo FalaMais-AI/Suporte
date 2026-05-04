@@ -29,7 +29,7 @@ Cada entrada mostra:
 | **Erro** | A ação foi tentada mas falhou. O motivo aparece em destaque na entrada |
 | **Bloqueio** | A ação foi impedida por uma restrição de autonomia, permissão ou política do sistema |
 
-:::tip Exemplo de erro
+:::tip[Exemplo de erro]
 `open_deal_exists` — a IA tentou criar uma nova negociação, mas já existe uma aberta para aquele contato. A ação foi bloqueada automaticamente para evitar duplicatas.
 :::
 
