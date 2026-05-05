@@ -51,7 +51,7 @@ Exemplos de etapas comuns:
 
 ## Criando um Novo Funil
 
-Clique em **Novo Funil**.
+Clique em **Novo Funil** no menu superior.
 
 ###  Nome do Funil
 Exemplo:
@@ -83,6 +83,27 @@ Exemplo:
 - Marketing
 
 Isso permite que cada área da empresa tenha seu próprio pipeline.
+
+## Criando uma Nova Etapa
+
+No funil, clique em **Adicionar Etapa** (disponível ao final das colunas existentes).
+
+### Campos disponíveis
+
+- **Nome** → Nome da etapa (ex: Qualificado, Proposta Enviada)
+- **Descrição (opcional)** → Explique o critério de entrada nesta etapa (ex: Budget e decisor confirmados)
+- **Cor** → Cor visual da etapa no Kanban
+
+### Etapa ganha / Etapa perdida
+
+Dois toggles permitem definir se esta etapa representa um desfecho:
+
+- **Etapa ganha** → Negociações nesta etapa contam como ganhas nas métricas
+- **Etapa perdida** → Negociações nesta etapa contam como perdidas nas métricas
+
+Clique em **Criar etapa**.
+
+---
 
 ## Criando uma Nova Negociação
 
@@ -131,22 +152,64 @@ Você pode:
 
 ## Detalhes da Negociação
 
-Ao abrir uma negociação você pode editar:
+Ao clicar em um card, abre a tela completa da negociação. Ela é dividida em seções:
 
-- Status (Aberto, Ganho, Perdido)
-- Título
-- Valor
-- Data prevista
-- Prioridade
-- Responsável
-- Etapa
+### Informações principais
 
-Também é possível:
+- **Status** → Aberto, Ganho ou Perdido (use os botões **Ganhar** / **Perder** no topo)
+- **Título**
+- **Valor**
+- **Data prevista**
+- **Prioridade** → Sem prioridade, Baixa, Média, Alta
+- **Responsável**
+- **Etapa** → Pode ser alterada diretamente aqui
 
-- Vincular ou trocar contato
-- Adicionar participantes
-- Salvar alterações
-- Excluir negociação
+### Campos personalizados
+
+Seção separada que exibe campos adicionais configurados pela equipe.  
+Clique em **Configurar** para criar ou editar os campos disponíveis.
+
+### Contato e Participantes
+
+- **Ver contato** → Abre o perfil do contato vinculado
+- **Criar contato** → Cria um novo contato direto da negociação
+- **Trocar contato** → Substitui o contato vinculado
+- **Participantes** → Adiciona outras pessoas envolvidas na negociação
+
+### Tags do contato
+
+Exibe as tags associadas ao contato vinculado. Útil para identificar rapidamente o perfil do lead.
+
+### Produtos e serviços
+
+Permite vincular produtos ou serviços à negociação.
+
+- Clique em **Adicionar** para incluir itens
+- O sistema calcula automaticamente **Subtotal** e **Total**
+- É possível aplicar **desconto ou imposto** clicando em "Editar desconto / imposto"
+
+### Propostas e contratos
+
+- **Gerar documento** → Cria um documento formal (proposta ou contrato) a partir da negociação
+- **Oferta FalaMais** → Modelo de oferta comercial padrão; clique em **Criar oferta** para gerar uma nova oferta vinculada a esta negociação
+
+### Notas e Resumo
+
+- **Adicionar nota** → Registra observações livres sobre a negociação
+- **Resumo** → Exibe um histórico resumido com datas das interações
+
+### Logs e atividade
+
+Seção expansível que registra todas as ações realizadas na negociação (alterações de etapa, edições, etc.).
+
+### Anexos
+
+Permite adicionar arquivos à negociação (contratos, propostas, planilhas).  
+Clique em **Adicionar** para fazer upload.
+
+### Excluir negociação
+
+Na seção **Ações da negociação**, o botão **Excluir negociação** remove permanentemente o registro do funil. Use apenas quando a negociação não deve mais aparecer em nenhum funil.
 
 ## Filtros do Funil
 
@@ -167,21 +230,35 @@ Clique em **Analytics** para abrir as métricas detalhadas.
 
 ![Tela de Analytics do Funil](funil/analitcs.png)
 
+A tela de Analytics possui 4 abas: **Visão Geral**, **Etapas**, **Desempenho** e **Negociações**.
+
 ### Indicadores Principais
 
-- **Pipeline Total**
-- **Taxa de Conversão**
-- **Ciclo Médio**
-- **Em Risco**
+Exibidos no topo da aba Visão Geral:
+
+- **Pipeline Total** → Soma de todas as negociações ativas
+- **Taxa de Conversão** → Percentual de negociações ganhas
+- **Ciclo Médio** → Tempo médio (em dias) até o fechamento
+- **Velocidade** → Valor médio gerado por dia (R$/dia)
+- **Em Risco** → Valor de negociações com prazo vencido ou estagnadas
 
 ### Conversão por Etapa
 
-Mostra:
+Gráfico de barras mostrando a quantidade de negociações em cada etapa, acompanhado da tabela com:
 
+- Nome da etapa
+- Percentual de conversão
 - Quantidade de negociações
-- Percentual de conversão por estágio
 
 Ajuda a identificar gargalos no processo.
+
+### Distribuição por Status
+
+Gráfico de pizza exibindo a proporção entre:
+
+- **Abertos** → Negociações ainda em andamento
+- **Ganhos** → Negociações finalizadas com sucesso
+- **Perdidos** → Negociações encerradas sem conversão
 
 ### Ticket Médio
 
@@ -217,7 +294,7 @@ Exibe as negociações com maior destaque (geralmente por valor ou impacto).
 
 Permite visualizar rapidamente oportunidades estratégicas.
 
-## Status da Negociação
+### Status da Negociação
 
 As negociações podem ser marcadas como:
 
