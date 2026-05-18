@@ -1,5 +1,6 @@
 ---
-sidebar_position: 6
+sidebar_position: 1
+slug: /funil
 title: "Funil"
 description: "O **Funil de Oportunidades** é a área responsável por gerenciar negociações em formato visual (Kanban), organizadas por etapas do processo comercial."
 ---
@@ -16,7 +17,7 @@ Ele permite:
 - Criar e gerenciar múltiplos funis
 - Analisar performance através de analytics
 
-![Tela do Funil de Oportunidades (Kanban)](funil/funil.jpeg)
+![Tela do Funil de Oportunidades (Kanban)](funil.jpeg)
 
 ---
 
@@ -228,7 +229,7 @@ Também é possível limpar todos os filtros.
 
 Clique em **Analytics** para abrir as métricas detalhadas.
 
-![Tela de Analytics do Funil](funil/analitcs.png)
+![Tela de Analytics do Funil](analitcs.png)
 
 A tela de Analytics possui 4 abas: **Visão Geral**, **Etapas**, **Desempenho** e **Negociações**.
 
