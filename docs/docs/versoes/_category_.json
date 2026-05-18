@@ -1,0 +1,10 @@
+{
+  "label": "Versões",
+  "position": 99,
+  "link": {
+    "type": "generated-index",
+    "slug": "/versoes",
+    "title": "Versões",
+    "description": "Histórico de versões do FalaMais.AI. Acompanhe aqui tudo o que foi adicionado, melhorado ou corrigido a cada atualização da plataforma."
+  }
+}

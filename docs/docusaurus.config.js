@@ -107,6 +107,11 @@ const config = {
           position: 'left',
           label: 'Início',
         },
+        {
+          to: '/versoes',
+          label: 'Versões',
+          position: 'left',
+        },
       ],
     },
     footer: {
