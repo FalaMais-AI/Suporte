@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7.2
+sidebar_position: 6
 title: "Hub de Conversão"
 description: "Acompanhe a origem dos leads, formulários, atividade no site e conversões de anúncios."
 ---
@@ -35,5 +35,5 @@ sincronizá-las com a Meta, conectando o investimento em mídia ao resultado
 real dentro do CRM.
 
 :::tip
-Para acompanhar essas oportunidades no funil, veja a página de [Funil](./funil.md).
+Para acompanhar essas oportunidades no funil, veja a página de [Funil](../funil/funil.md).
 :::

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7.4
+sidebar_position: 7.2
 title: "Programa de Indicações"
 description: "Indique o FalaMais.AI, acompanhe suas indicações e ganhe créditos."
 ---
