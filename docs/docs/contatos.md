@@ -13,6 +13,8 @@ O módulo Contatos centraliza todas as informações relacionadas aos leads e cl
 Aqui é possível:
 
 - Criar novos contatos
+- Cadastrar empresas atendidas
+- Vincular contatos a empresas
 - Visualizar e buscar contatos
 - Editar informações
 - Gerenciar tags
@@ -20,6 +22,19 @@ Aqui é possível:
 - Registrar atividades
 - Adicionar notas internas
 - Iniciar conversas
+
+## Pessoas e Empresas
+
+O módulo Contatos é dividido em duas visões:
+
+- **Pessoas** — lista os contatos individuais, como leads, clientes e
+  participantes de negociações.
+- **Empresas** — lista as empresas atendidas, com seus dados comerciais,
+  contatos vinculados e negócios relacionados.
+
+Use **Pessoas** quando quiser acompanhar o histórico e os dados de uma pessoa
+específica. Use **Empresas** quando quiser entender o relacionamento com uma
+organização, ver quem está vinculado a ela e acompanhar oportunidades abertas.
 
 ## Lista de Contatos
 
@@ -76,11 +91,97 @@ Campos padrão:
 - Instagram @
 - E-mail
 - CPF/CNPJ
-- Empresa
+- Empresa principal
 - Cargo
 - Cidade
 
 Esses dados podem ser editados pelo botão **"Editar"** no topo.
+
+### Empresa principal e empresas associadas
+
+O campo **Empresa principal** permite buscar uma empresa já cadastrada ou criar
+uma nova pelo próprio cadastro do contato. Se o contato não tiver empresa, o
+campo pode ficar em branco.
+
+Quando um contato está ligado a mais de uma empresa, uma delas deve ser marcada
+como principal. A empresa principal é usada como referência em negociações,
+relatórios, importações, exportações e automações.
+
+Na seção **Empresas associadas**, você pode:
+
+- Ver a empresa principal e empresas secundárias.
+- Registrar cargo, departamento e observações da relação.
+- Definir outra empresa como principal.
+- Remover o vínculo entre contato e empresa sem excluir o contato.
+
+:::tip[Quando usar empresas secundárias]
+
+Use empresas secundárias quando uma pessoa participa de mais de uma organização,
+como consultores, parceiros, compradores regionais ou contatos que mudaram de
+empresa mas ainda mantêm histórico relevante.
+
+:::
+
+## Aba Empresas
+
+A visão **Empresas** mostra uma lista de empresas à esquerda e o painel de
+detalhes da empresa selecionada à direita.
+
+Em cada empresa é possível acompanhar:
+
+- Nome, nome legal, CNPJ/CPF, site, domínio, telefone e e-mail.
+- Cidade, estado, país, segmento e porte.
+- Observações internas.
+- Quantidade de contatos vinculados.
+- Negócios relacionados e valores em aberto.
+- Última atividade conhecida a partir dos contatos vinculados.
+
+### Criar ou editar uma empresa
+
+Clique em **Nova empresa** para cadastrar uma empresa. Depois de criada, use
+**Editar** no painel da empresa para atualizar os dados.
+
+Campos úteis:
+
+- **Nome** — nome usado no dia a dia.
+- **Nome legal** — razão social ou nome completo formal.
+- **CPF/CNPJ** — documento da empresa ou pessoa jurídica atendida.
+- **Site/Domínio** — usado para identificação e busca.
+- **Segmento** — área de atuação da empresa.
+- **Porte** — tamanho ou faixa da empresa.
+
+### Vincular contatos a uma empresa
+
+No painel da empresa, use a área de contatos vinculados para buscar uma pessoa e
+adicioná-la à empresa.
+
+Ao vincular, você pode informar:
+
+- Cargo ou papel da pessoa na empresa.
+- Departamento.
+- Tipo de relação.
+- Observações internas.
+- Se aquela será a empresa principal do contato.
+
+### Arquivar, desarquivar e excluir
+
+Arquivar uma empresa remove ela da rotina principal sem apagar contatos ou
+negócios vinculados. Empresas arquivadas podem ser exibidas pelos filtros e
+desarquivadas quando necessário.
+
+A exclusão definitiva só deve ser usada quando não houver vínculos importantes.
+Se a empresa tiver contatos ou negócios associados, prefira arquivar.
+
+### Filtros de empresas
+
+Na visão Empresas, use os filtros para encontrar organizações por:
+
+- Nome, documento, domínio ou site.
+- Segmento.
+- Cidade e estado.
+- Quantidade mínima de contatos.
+- Quantidade mínima de negócios abertos.
+- Empresas ativas ou arquivadas.
 
 ### Listas em que este contato está
 
