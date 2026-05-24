@@ -48,6 +48,29 @@ Exemplo:
 ### Mensagem
 Texto que será enviado ao cliente.
 
+Além de texto simples, uma mensagem rápida pode ter itens avançados, como mídia e botões para WhatsApp via UAZAPI.
+
+## Botões em mensagens rápidas
+
+Use botões quando a resposta precisa conduzir o cliente para uma escolha simples, um link, um código copiável ou uma ligação.
+
+Cada item de botões permite:
+
+- Escrever a mensagem principal.
+- Adicionar um rodapé opcional.
+- Configurar até três botões.
+
+Tipos de botão disponíveis:
+
+- **Resposta** → envia a opção escolhida de volta para a conversa.
+- **Link** → abre uma página externa.
+- **Copiar** → facilita copiar um código, cupom ou identificador.
+- **Ligar** → inicia uma chamada telefônica.
+
+:::info[Compatibilidade]
+Botões em mensagens rápidas são enviados apenas quando a conversa usa uma conexão WhatsApp via UAZAPI. Para outros canais, mantenha uma versão em texto da mensagem rápida.
+:::
+
 Após preencher, clique em:
 
 **Salvar**
