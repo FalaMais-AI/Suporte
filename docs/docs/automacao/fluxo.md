@@ -144,6 +144,23 @@ Os nós de ação **executam algo** para o contato ou na plataforma. São os nó
 | **Criar Negociação** | Abre uma nova negociação para o contato, com funil e etapa definidos |
 | **Pausar Bot** | Pausa o bot para o contato por um tempo determinado |
 
+#### Enviar mensagem com botões UAZAPI
+
+No nó **Enviar Mensagem**, contas que usam conexão WhatsApp via UAZAPI podem escolher o tipo **Botões UAZAPI**.
+
+Esse formato envia uma mensagem com até três botões. Ele é indicado para opções curtas, como confirmar interesse, abrir um link, copiar um código ou ligar para a equipe.
+
+Tipos de botão disponíveis:
+
+- **Resposta** → o clique do cliente volta como resposta na conversa.
+- **Link** → direciona o cliente para uma página externa.
+- **Copiar** → facilita copiar um código ou texto curto.
+- **Ligar** → abre a chamada telefônica no aparelho do cliente.
+
+:::info[Quando usar]
+Use botões para decisões simples. Para fluxos com muitas opções ou regras complexas, divida a jornada em mensagens menores e condições no próprio fluxo.
+:::
+
 ---
 
 ### Controle

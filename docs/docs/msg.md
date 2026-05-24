@@ -83,6 +83,19 @@ Na parte inferior da conversa fica a barra de envio, com os seguintes recursos:
 - **Melhorar com IA** → Sugere melhorias na mensagem digitada antes de enviar, com base no contexto da conversa.
 - **Gravação de áudio** → Grava e envia um áudio diretamente para o cliente.
 
+Quando a conversa usa uma conexão WhatsApp via **UAZAPI**, também é possível enviar uma mensagem com até três botões de ação. Esses botões aparecem junto da mensagem no histórico do chat e no WhatsApp do cliente. Links enviados em mensagens de texto aparecem clicáveis no histórico da conversa.
+
+Tipos de botão disponíveis:
+
+- **Resposta** → o cliente toca no botão e a resposta volta para a conversa.
+- **Link** → abre uma página externa.
+- **Copiar** → mostra ao cliente uma opção para copiar um código ou texto curto.
+- **Ligar** → abre a chamada telefônica no aparelho do cliente.
+
+:::info[Disponibilidade]
+Botões manuais ficam disponíveis apenas em conversas enviadas por conexões UAZAPI. Em outros canais, use mensagens de texto, mídia, templates oficiais ou respostas rápidas compatíveis com o canal.
+:::
+
 #### Eventos especiais no chat
 
 Durante uma conversa, alguns eventos do sistema aparecem no meio das mensagens:
