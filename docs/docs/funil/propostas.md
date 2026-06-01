@@ -22,6 +22,12 @@ Cada proposta gera um **link público** que pode ser enviado ao cliente. Por
 esse link o cliente visualiza a proposta e pode **assiná-la** digitalmente,
 sem precisar de conta na plataforma.
 
+:::warning
+Se a proposta ainda estiver em **rascunho**, o link público deve ser tratado
+como prévia. Nesse estado, o cliente consegue visualizar o documento, mas o
+aceite e a assinatura só ficam disponíveis depois que a proposta for enviada.
+:::
+
 ## Histórico e acompanhamento
 
 O histórico interno registra cada etapa da proposta e os metadados de entrega,
