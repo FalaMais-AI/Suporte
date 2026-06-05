@@ -9,9 +9,8 @@ description: "Entenda como comparar os planos Essencial, Growth e Scale da FalaM
 A página de **Planos** ajuda você a comparar com clareza o que muda entre os
 níveis **Essencial**, **Growth** e **Scale**.
 
-Ela foi organizada para facilitar a decisão sem exigir cálculo manual: você vê
-o valor de cada plano, os limites principais e quais recursos entram conforme a
-operação cresce.
+Ela foi organizada para facilitar a decisão: você vê o valor de cada plano, os
+limites principais e quais recursos entram conforme a operação cresce.
 
 Localização:
 **Site institucional → Planos**
