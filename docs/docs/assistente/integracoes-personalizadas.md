@@ -30,7 +30,7 @@ Exemplos:
 4. Preencha nome, instrução de uso, método HTTP e endpoint.
 5. Escolha a autenticação, se necessária.
 6. Configure os campos do JSON que a IA poderá preencher.
-7. Mantenha a confirmação na conversa ativada, salvo quando o fluxo já estiver validado.
+7. Responda se a integração precisa de confirmação antes de executar.
 8. Salve e teste a integração antes de usar em produção.
 
 ## Campos do JSON
@@ -63,7 +63,17 @@ Ao salvar, o prompt guarda uma referência segura para a integração. O endpoin
 
 ## Confirmação do cliente
 
-Por padrão, a IA precisa pedir confirmação antes de executar uma integração personalizada.
+A configuração **Precisa pedir confirmação antes de executar?** define se a IA deve confirmar com o cliente antes de chamar a integração.
+
+Escolha **Não, executar direto** quando a integração apenas consulta informações e não altera nada fora do FalaMais.AI.
+
+Exemplos:
+
+- Consultar resultado de jogos.
+- Verificar status de pedido.
+- Buscar disponibilidade, cotação ou saldo informativo.
+
+Escolha **Sim, pedir confirmação** quando a integração pode criar, alterar, enviar, cobrar, cancelar ou registrar uma ação em outro sistema.
 
 Respostas como:
 
@@ -75,6 +85,10 @@ Respostas como:
 são tratadas como confirmação positiva quando respondem diretamente à pergunta feita pela IA.
 
 Respostas negativas ou ambíguas bloqueiam a execução e a IA deve pedir esclarecimento.
+
+:::tip[Dica]
+Para integrações de consulta recorrente, como acompanhar resultados da Copa, use **Não, executar direto** para evitar confirmações repetidas.
+:::
 
 ## Segurança
 
@@ -109,4 +123,3 @@ Se o teste falhar, revise:
 - Descreva exatamente quando a IA deve usar a integração.
 - Evite enviar dados desnecessários no payload.
 - Monitore as decisões da IA e os resultados das execuções nos primeiros dias.
-
