@@ -20,7 +20,7 @@ Localização:
 
 Ao entrar na aba, o sistema exibe um painel explicando o fluxo de criação em três etapas:
 
-1. **Escolha o caminho** — Comece por um objetivo, use um template atualizado ou descreva o caso com suas palavras.
+1. **Escolha o caminho** — Use um template atualizado ou comece do zero.
 2. **Veja os avisos antes de ativar** — O wizard mostra conflitos, uso de template oficial e escopo amplo demais antes de salvar.
 3. **Regra simples ou fluxo** — Se a cadência tiver muitas etapas, o sistema sugere transformar em fluxo visual.
 
@@ -59,11 +59,10 @@ Se a regra for nova ou tiver poucos disparos, o painel exibe a mensagem: *"Ainda
 
 ## Criando uma nova regra
 
-Clique no botão **+ Nova regra** no canto superior direito. O menu oferece três formas de começar:
+Clique no botão **+ Nova regra** no canto superior direito. O menu oferece duas formas de começar:
 
-- **Começar por objetivo** — você descreve o que quer alcançar e o sistema monta a regra
 - **Usar um template** — escolhe um modelo pronto e ajusta o que precisar
-- **Descrever com IA** — escreve com suas palavras e a IA configura automaticamente
+- **Começar do zero** — abre o criador de regras sem um modelo pré-preenchido
 
 Independente da forma escolhida, o criador de regras segue 5 etapas.
 
@@ -75,18 +74,21 @@ Ao escolher **Usar um template**, o sistema abre a **Biblioteca de templates de 
 
 Você pode filtrar os modelos de duas formas:
 
-**Por objetivo principal:**
+**Por tipo de gatilho:**
 - Todos
-- Reengajar sem resposta
-- Cobrar retorno de proposta
-- Confirmar interesse após atendimento
-- Lembrar compromisso ou agendamento
-- Retomar lead parado no pipeline
+- Sem resposta
+- Lista
+- Etapa
+- Etiqueta
+- Lembrete
+- Janela oficial
 
 **Por segmento:**
 - Todos, Geral, Saúde, Jurídico, Imobiliário, Educação, Serviços, Varejo
 
-Cada template exibe uma prévia com o texto da mensagem e informações como tipo de gatilho, segmento e se é uma regra simples ou fluxo. Templates marcados como **Revisar template oficial** indicam um modelo mantido pela plataforma — esses são atualizados com boas práticas.
+Cada template exibe uma prévia com o texto da mensagem e informações como tipo de gatilho, segmento e se é uma regra simples ou fluxo. A biblioteca inclui modelos curtos de reengajamento, proposta, cadências de 90, 120 e 365 dias, múltiplos passos, uso de mensagem rápida e exemplos com template oficial quando a janela do WhatsApp Oficial exige esse cuidado.
+
+Templates que usam **Mensagem rápida** deixam apenas o tipo pré-configurado. Você escolhe a mensagem rápida real da sua empresa antes de salvar a regra.
 
 Ao selecionar um template, o painel lateral direito exibe:
 
@@ -95,37 +97,6 @@ Ao selecionar um template, o painel lateral direito exibe:
 - **Cenários onde costuma funcionar bem** — exemplos de uso recomendados (ex: Atendimento inicial, Lead morno, Primeiro contato comercial)
 
 Clique em **Usar este template** para abrir o wizard com todas as configurações já preenchidas. Você pode revisar e ajustar qualquer campo antes de salvar.
-
----
-
-### Descrever com IA
-
-Ao escolher **Descrever com IA**, o sistema abre o modo **"Descreva seu follow-up e gere um rascunho"**.
-
-:::info[Atenção]
-Este modo **não ativa nada sozinho**. Ele transforma o que você descrever em uma regra editável, com resumo e cadência sugerida. Você revisa tudo no wizard antes de salvar.
-:::
-
-O formulário pede as seguintes informações:
-
-| Campo | O que preencher |
-|---|---|
-| **Qual situação deve disparar esse follow-up?** | Descreva o contexto em linguagem natural. Ex: *"quando eu mandar um orçamento e a pessoa não responder em dois dias, quero duas tentativas com tom consultivo e parar se ela responder"* |
-| **Qual objetivo parece mais próximo?** | Selecione entre: Reengajar sem resposta, Cobrar retorno de proposta, Confirmar interesse após atendimento, Lembrar compromisso ou agendamento, Retomar lead parado no pipeline |
-| **Para quem isso vale?** | Descreva o público. Ex: *leads com proposta aberta* |
-| **Depois de quanto tempo?** | Informe o intervalo. Ex: *4 horas, 24h, 2 dias* |
-| **Quantas tentativas?** | Escolha entre 1, 2 ou 3 |
-| **Qual tom você quer?** | Consultivo e objetivo, Leve e cordial, Mais direto, Acolhedor |
-| **Quando a regra deve parar?** | Descreva a condição de parada. Ex: *parar se o cliente responder ou se a cadência terminar* |
-| **Contexto adicional (opcional)** | Informações extras que a IA deve considerar. Ex: *só em horário comercial, com foco em reagendamento* |
-
-Enquanto você preenche, o painel lateral direito atualiza em tempo real um **Rascunho sugerido** com:
-
-- O nome e tipo de gatilho identificado
-- A cadência inicial com os passos e intervalos
-- **Sugestões antes de aplicar** — recomendações automáticas como revisar o nome da regra, confirmar a conexão de envio correta, ou usar template aprovado se a cadência rodar depois de 24h no WhatsApp Oficial
-
-Quando estiver satisfeito com o rascunho, clique em **Aplicar rascunho** para abrir o wizard com tudo preenchido e fazer os ajustes finais.
 
 ---
 
@@ -171,7 +142,7 @@ Escolha o evento que vai iniciar o follow-up:
 
 **Atraso do gatilho**
 
-Define quanto tempo após o evento a regra espera antes de disparar o primeiro envio. Exemplo: 24 horas após ficar sem resposta.
+Define quanto tempo após o evento a regra espera antes de disparar o primeiro envio. Você pode usar minutos, horas ou dias, com limite de 365 dias. Exemplo: 24 horas após ficar sem resposta, 90 dias após entrar em uma lista ou 1 ano como 365 dias.
 
 **Listas inteligentes**
 
@@ -194,10 +165,15 @@ Cada regra pode ter um ou mais passos. O primeiro passo usa o tempo do gatilho; 
 | Campo | Descrição |
 |---|---|
 | **Nome do passo** | Identificação interna do passo |
-| **Atraso extra (opcional)** | Tempo adicional de espera antes deste passo específico |
-| **Tipo de resposta** | **IA gera a mensagem** (a IA escreve com base no contexto) ou **Mensagem fixa** (texto definido por você) |
+| **Atraso extra (opcional)** | Tempo adicional de espera antes deste passo específico, em minutos, horas ou dias |
+| **Tipo de resposta** | **IA gera a mensagem**, **Template oficial** ou **Mensagem rápida** |
 | **Mini-prompt (opcional)** | Instrução específica para a IA usar neste passo. Se não escolher, usa o comportamento padrão |
+| **Mensagem rápida** | Escolha uma mensagem rápida ativa quando o passo usar esse tipo de resposta |
 | **Instrução complementar da etapa** | Contexto extra para a IA, como tom desejado e objetivo do passo |
+
+:::info[WhatsApp Oficial]
+O sistema não troca automaticamente uma mensagem livre por template oficial fora da janela de 24h. Quando a regra precisa enviar após essa janela, configure explicitamente um template oficial aprovado.
+:::
 
 **Validação por IA**
 
