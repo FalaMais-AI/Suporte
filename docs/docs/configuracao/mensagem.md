@@ -50,6 +50,12 @@ Texto que será enviado ao cliente.
 
 Além de texto simples, uma mensagem rápida pode ter itens avançados, como mídia e botões para WhatsApp via UAZAPI.
 
+Mensagens rápidas também podem ser usadas em cadências de regras de follow-up. Nesse caso, a regra reaproveita a mensagem cadastrada, incluindo texto, mídia, botões e atrasos internos configurados.
+
+:::tip[Áudio como nota de voz]
+Áudios anexados em mensagens rápidas saem como nota de voz por padrão quando usados no WhatsApp, inclusive em cadências de follow-up.
+:::
+
 ## Botões em mensagens rápidas
 
 Use botões quando a resposta precisa conduzir o cliente para uma escolha simples, um link, um código copiável ou uma ligação.
