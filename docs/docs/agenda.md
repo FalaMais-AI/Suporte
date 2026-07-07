@@ -75,7 +75,13 @@ Eventos são compromissos criados manualmente pela equipe.
 | Início (data e hora) | Sim |
 | Fim (data e hora) | Sim |
 | Visibilidade | Não (padrão: Privado) |
+| Profissional | Não (padrão: quem cria) |
 | Descrição | Não |
+
+O campo **Profissional** aparece para quem tem permissão de atribuir itens a
+outros usuários: o evento entra na agenda do profissional escolhido e o
+**conflito de horário é verificado na agenda dele** (respeitando a
+configuração de encaixe/overbooking da empresa).
 
 :::tip[Observação]
 Eventos criados manualmente entram como **confirmados por padrão**.
@@ -122,6 +128,10 @@ Os filtros controlam o que é exibido na visualização da agenda.
 
 - **Somente meus itens** — exibe apenas os itens do usuário logado
 - **Incluir itens em rascunho** — exibe também itens ainda não confirmados
+- **Profissionais** — selecione um ou mais profissionais para ver as agendas
+  lado a lado; cada um ganha uma **cor fixa** nos eventos, com legenda na
+  visualização semanal. Sem seleção, a agenda mostra tudo o que o seu perfil
+  permite ver.
 
 **Tipos de itens que podem ser exibidos:**
 
