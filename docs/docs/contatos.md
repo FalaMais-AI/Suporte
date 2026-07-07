@@ -326,6 +326,8 @@ Exemplos de eventos registrados:
 - Nota adicionada
 - Tag adicionada
 - Mudanças de status
+- Proposta ou contrato enviado, visualizado, assinado ou recusado (com atalho
+  para abrir a negociação de origem)
 
 Cada evento exibe a data em que ocorreu e, quando aplicável, quem realizou a ação.
 
@@ -353,6 +355,21 @@ Características:
 - Não são enviadas ao cliente.
 - Cada nota exibe o autor e a data de criação.
 - Podem ser usadas para contexto, lembretes ou estratégia comercial.
+
+### Templates de nota
+
+Se a empresa tiver modelos cadastrados (em **Configurações → Empresa →
+Templates de nota**), o botão **Usar template** aparece ao criar a nota e
+preenche o texto com o modelo escolhido — útil para padronizar anamneses,
+resumos de reunião ou qualquer anotação recorrente. O texto pode ser editado
+antes de salvar.
+
+### Anexos na nota
+
+Cada nota aceita até **10 arquivos** (20 MB cada) — por exemplo, resultados de
+exame ou comprovantes. Use o botão **Anexar** na nota; os arquivos podem ser
+baixados por quem tem acesso ao contato e são removidos junto com a nota. O
+mesmo recurso está disponível nas notas das negociações do funil.
 
 Para adicionar:
 
