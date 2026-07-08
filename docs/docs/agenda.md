@@ -55,7 +55,7 @@ Na visualização Semana, você pode:
 - **Clicar e arrastar** para criar um evento com duração personalizada
 - **Arrastar um item** para movê-lo para outro horário
 - **Arrastar a borda inferior** de um evento para ajustar sua duração
-- **Arrastar uma tarefa da faixa "Sem hora"** para um horário da grade para
+- **Arrastar uma tarefa da faixa "Sem horário"** para um horário da grade para
   agendá-la
 
 A Semana abre no **horário comercial**. Se houver compromissos fora dessa
@@ -126,7 +126,7 @@ painel de Tarefas.
 | Descrição | Não |
 
 Tarefas **com horário** aparecem na grade da Semana; tarefas **sem horário**
-ficam na faixa "Sem hora", no topo da grade, no dia correspondente.
+ficam na faixa "Sem horário", no topo da grade, no dia correspondente.
 
 ---
 
