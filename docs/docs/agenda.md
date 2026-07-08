@@ -10,7 +10,7 @@ Ela permite:
 
 - Visualizar compromissos
 - Criar eventos internos
-- Criar tarefas
+- Criar e acompanhar tarefas
 - Programar mensagens no WhatsApp
 - Gerar links públicos de agendamento
 - Configurar disponibilidade
@@ -28,17 +28,24 @@ Tarefas ficam **apenas na agenda interna** e não são sincronizadas com o Googl
 
 A Agenda pode ser visualizada em três formatos:
 
-- **Agenda** — lista dos compromissos do dia
+- **Agenda** — lista dos compromissos por dia
 - **Semana** — visão semanal em grade de horários
-- **Mês** — visão mensal resumida
+- **Mês** — calendário mensal compacto, com o mês inteiro em uma tela
 
-No topo também é possível:
+Tudo fica em uma única barra no topo:
 
-- Aplicar **filtros** para controlar o que aparece
-- Gerenciar **tipos de evento** (links públicos de agendamento)
-- Ajustar a **disponibilidade** de horários
-- **Atualizar** a visualização
-- Criar um **novo evento** rapidamente
+- **Navegação de período** — use as setas ou clique na data para abrir um
+  mini-calendário e pular direto para qualquer dia
+- **Botão + Criar** — cria evento, tarefa ou mensagem programada
+- **Menu ⋯** — tipos de evento, disponibilidade, atualizar e a opção de
+  incluir itens em rascunho
+- **Ícone ℹ️** — avisos sobre a agenda (como a regra de sincronização com o
+  Google Agenda e a política de encaixes da empresa)
+
+Logo abaixo ficam os **filtros coloridos**: cada tipo de item (evento,
+tarefa, follow-up e mensagem programada) tem a sua cor — a mesma usada nos
+itens do calendário. Clique em um filtro para mostrar ou esconder aquele
+tipo; a cor do botão também funciona como legenda.
 
 ### Dicas de interação
 
@@ -48,18 +55,33 @@ Na visualização Semana, você pode:
 - **Clicar e arrastar** para criar um evento com duração personalizada
 - **Arrastar um item** para movê-lo para outro horário
 - **Arrastar a borda inferior** de um evento para ajustar sua duração
+- **Arrastar uma tarefa da faixa "Sem hora"** para um horário da grade para
+  agendá-la
+
+A Semana abre no **horário comercial**. Se houver compromissos fora dessa
+faixa, o botão **Ver 24h** indica quantos são e expande a grade para o dia
+inteiro.
 
 ---
 
-## Ações Rápidas
+## Painel de Tarefas
 
-No menu lateral da Agenda você pode criar itens sem sair da tela:
+As tarefas pendentes ficam em um **painel próprio ao lado do calendário**
+(em telas menores, no botão **Tarefas** do topo). Elas aparecem organizadas
+em quatro grupos:
 
-- **Criar evento** — compromisso com data, hora e visibilidade
-- **Criar tarefa** — item de acompanhamento interno
-- **Programar mensagem** — envio automático via WhatsApp
-- **Tipos de evento** — gerenciar links públicos de agendamento
-- **Disponibilidade** — configurar horários disponíveis
+- **Atrasadas** — passaram do prazo (destacadas em vermelho)
+- **Hoje** — vencem no dia
+- **Próximas** — têm prazo nos próximos dias
+- **Sem data** — ainda sem prazo definido
+
+No painel você pode:
+
+- **Concluir uma tarefa com um clique**, direto na caixa de seleção
+- Alternar entre **Minhas** (só as suas) e **Todas** (o que seu perfil
+  permite ver)
+- Criar uma nova tarefa pelo botão **+ Nova**
+- Clicar em uma tarefa para abrir os detalhes
 
 ---
 
@@ -91,7 +113,8 @@ Eventos criados manualmente entram como **confirmados por padrão**.
 
 ## Criar Tarefa
 
-Tarefas ajudam a manter a equipe organizada e aparecem na agenda interna.
+Tarefas ajudam a manter a equipe organizada e aparecem na agenda interna e no
+painel de Tarefas.
 
 ### Campos disponíveis
 
@@ -101,6 +124,9 @@ Tarefas ajudam a manter a equipe organizada e aparecem na agenda interna.
 | Prazo | Não |
 | Prioridade (Baixa, Média, Alta) | Não |
 | Descrição | Não |
+
+Tarefas **com horário** aparecem na grade da Semana; tarefas **sem horário**
+ficam na faixa "Sem hora", no topo da grade, no dia correspondente.
 
 ---
 
@@ -122,25 +148,20 @@ Após confirmar, a mensagem será enviada automaticamente no horário definido.
 
 ## Filtros da Agenda
 
-Os filtros controlam o que é exibido na visualização da agenda.
+Os filtros ficam sempre visíveis, logo abaixo da barra do topo:
 
-### Opções disponíveis
-
-- **Somente meus itens** — exibe apenas os itens do usuário logado
-- **Incluir itens em rascunho** — exibe também itens ainda não confirmados
+- **Eventos, Tarefas, Follow-ups e Mensagens** — botões coloridos que
+  mostram ou escondem cada tipo de item; a cor de cada botão é a mesma do
+  item no calendário
+- **Somente meus** — exibe apenas os itens do usuário logado
 - **Profissionais** — selecione um ou mais profissionais para ver as agendas
-  lado a lado; cada um ganha uma **cor fixa** nos eventos, com legenda na
-  visualização semanal. Sem seleção, a agenda mostra tudo o que o seu perfil
-  permite ver.
+  lado a lado; cada um ganha uma **cor fixa** nos eventos, com legenda ao
+  lado dos filtros. Sem seleção, a agenda mostra tudo o que o seu perfil
+  permite ver
+- **Incluir itens em rascunho** — no menu **⋯**, exibe também itens ainda
+  não confirmados
 
-**Tipos de itens que podem ser exibidos:**
-
-- Eventos
-- Tarefas
-- Follow-ups
-- Mensagens programadas
-
-Clique em **Aplicar** para atualizar a visualização com os filtros selecionados.
+As mudanças de filtro são aplicadas na hora, sem precisar confirmar.
 
 ---
 
