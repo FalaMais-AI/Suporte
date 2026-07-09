@@ -13,6 +13,21 @@ Essas configurações são individuais por usuário e impactam sua experiência 
 
 ![alt text](img/image-13.png)
 
+## Inbox do sininho
+
+O sino no topo da plataforma abre uma inbox compacta sem tirar você da tela atual.
+Use as categorias para reduzir o ruído e encontrar rapidamente o que precisa de
+ação:
+
+- **Todas** — reúne as notificações mais recentes.
+- **Tarefas & Agenda** — prazos, tarefas concluídas e eventos.
+- **Alertas** — solicitações de atendimento humano e negociações em risco.
+- **Avisos** — aniversários, atualizações e demais comunicados.
+
+Notificações de aniversário exibem a ação **Revisar mensagem sugerida**. Ela abre
+a conversa com uma saudação pronta no campo de texto, mas o envio sempre depende
+da sua revisão e confirmação.
+
 ## Preferências de Notificação
 
 Permite ativar ou desativar diferentes tipos de alertas.

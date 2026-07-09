@@ -83,6 +83,13 @@ Na parte inferior da conversa fica a barra de envio, com os seguintes recursos:
 - **Melhorar com IA** → Sugere melhorias na mensagem digitada antes de enviar, com base no contexto da conversa.
 - **Gravação de áudio** → Grava e envia um áudio diretamente para o cliente.
 
+#### Mensagem sugerida de aniversário
+
+Quando você abre uma notificação de aniversário pelo botão **Revisar mensagem
+sugerida**, o FalaMais.AI localiza a conversa do contato e preenche o campo de
+texto com a saudação sugerida. A mensagem não é enviada automaticamente: revise,
+personalize se necessário e confirme o envio normalmente.
+
 Quando a conversa usa uma conexão WhatsApp via **UAZAPI**, também é possível enviar uma mensagem com até três botões de ação. Esses botões aparecem junto da mensagem no histórico do chat e no WhatsApp do cliente. Links enviados em mensagens de texto aparecem clicáveis no histórico da conversa.
 
 Tipos de botão disponíveis:
