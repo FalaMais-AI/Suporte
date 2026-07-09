@@ -83,6 +83,10 @@ No painel você pode:
 - Criar uma nova tarefa pelo botão **+ Nova**
 - Clicar em uma tarefa para abrir os detalhes
 
+Em celulares e tablets, o painel abre como uma gaveta pelo botão
+**Tarefas**. Ao criar uma nova tarefa ou abrir os detalhes de uma tarefa, a
+gaveta fecha automaticamente para deixar o formulário ou os detalhes em foco.
+
 ---
 
 ## Criar Evento
@@ -127,6 +131,19 @@ painel de Tarefas.
 
 Tarefas **com horário** aparecem na grade da Semana; tarefas **sem horário**
 ficam na faixa "Sem horário", no topo da grade, no dia correspondente.
+
+### Estados da tarefa
+
+Uma tarefa pode estar em três estados:
+
+| Estado | Quando usar |
+|---|---|
+| Pendente | Ainda precisa ser feita |
+| Concluída | Já foi finalizada pela equipe |
+| Cancelada | Não será mais executada |
+
+O painel de Tarefas prioriza as tarefas pendentes. Filtros e listas internas
+da Agenda usam apenas esses estados para evitar resultados inconsistentes.
 
 ---
 
