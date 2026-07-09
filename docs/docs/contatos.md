@@ -53,6 +53,19 @@ Funcionalidades disponíveis:
 
 Ao clicar em um contato, o painel completo é exibido.
 
+### Possíveis contatos duplicados
+
+Ao salvar um novo contato, o FalaMais.AI compara nome e e-mail com os cadastros
+existentes. Quando encontra uma possível duplicidade, você pode:
+
+- **Abrir existente** para conferir o cadastro encontrado.
+- **Criar e mesclar** para preservar o contato existente e unificar nele os
+  novos dados, tags, campos personalizados e históricos relacionados.
+- **Criar mesmo assim** quando as pessoas realmente forem diferentes.
+
+A mesclagem mantém um único cadastro e evita que conversas, negociações e notas
+fiquem espalhadas entre dois contatos.
+
 ### Cabeçalho do Contato
 
 No topo do perfil do contato são exibidas:
@@ -60,6 +73,8 @@ No topo do perfil do contato são exibidas:
 - Nome
 - Status (Ativo / Inativo)
 - Badge **"IA bloqueada"** — exibida quando a IA está desativada para aquele contato
+- Badge **"Score"** — mostra a nota atual do lead; clique para ver os pontos
+  conquistados e os próximos fatores que podem aumentar a qualificação
 - Subtítulo com informações adicionais do contato
 
 Ações disponíveis:
@@ -213,6 +228,9 @@ Informações estratégicas do contato:
 - **Criado em** — data de cadastro do contato
 - **Lead Score** — pontuação de qualificação do contato de 0 a 100, representada por uma barra colorida. Quanto maior a pontuação, mais qualificado é o lead.
 
+O mesmo score aparece no cabeçalho para consulta rápida. O detalhamento completo
+continua disponível nesta seção.
+
 ## Aba Negociações
 
 ![Aba Negociações do contato](contatos/image.png)
@@ -225,6 +243,13 @@ Ações disponíveis:
 
 - **Criar negociação** → Abre o modal para criar uma nova oportunidade comercial
 - **Ver funis** → Navega para o módulo de Funis
+- **Resumo** → Mostra título, etapa, valor, status e as atividades mais recentes
+  sem sair do contato. Use **Ver no funil** quando precisar abrir a negociação
+  completa.
+
+Os status aparecem com cores consistentes: ganho em verde, perdido em vermelho e
+aberto em tom neutro. Na visão **Empresas**, os negócios relacionados oferecem o
+mesmo resumo rápido e abrem o funil em uma nova guia.
 
 ### Criar Nova Negociação
 
