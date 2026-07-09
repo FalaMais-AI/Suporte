@@ -225,6 +225,66 @@ Você pode filtrar por:
 
 Também é possível limpar todos os filtros.
 
+### Filtros e ordenação de cada etapa
+
+Além do filtro geral, cada coluna do Kanban possui controles próprios no
+cabeçalho:
+
+- **Filtrar** → mostra somente negociações de uma prioridade ou faixa de
+  temperatura naquela etapa
+- **Ordenar** → permite usar a ordem manual, prioridade alta primeiro,
+  negociações mais recentes primeiro ou mais antigas primeiro
+
+Quando um filtro da etapa está ativo, ele aparece em um chip visível no
+cabeçalho, como **Alta** ou **Quentes (4-5)**. Clique no **X** do chip para
+remover apenas aquele filtro.
+
+Essas escolhas ficam salvas no navegador para cada funil e etapa. Assim, ao
+voltar para a página, você continua com a mesma organização. A contagem e o
+valor do cabeçalho mostram o que está visível e indicam quando existe um
+total maior por trás do filtro.
+
+## Kanban e visão Funil
+
+Use o seletor **Kanban / Funil** para alternar entre:
+
+- **Kanban** → colunas completas para trabalhar e mover negociações
+- **Funil** → visão resumida do volume e da conversão entre as etapas
+
+O sistema lembra a última visão escolhida. Na visão Funil, etapas sem
+negociações aparecem esmaecidas e identificadas com **0 negociações**. Clique
+em qualquer faixa para voltar ao Kanban já posicionado na coluna escolhida.
+
+## Temperatura da negociação
+
+O indicador de temperatura ajuda a priorizar as oportunidades abertas. Passe
+o cursor sobre o indicador para ver os motivos considerados.
+
+Além da atividade recente e da previsão de fechamento, a temperatura considera
+as tarefas vinculadas à negociação:
+
+- uma tarefa futura dentro do prazo ajuda a aquecer a oportunidade
+- uma tarefa atrasada reduz a temperatura e sinaliza a pendência
+- não ter tarefa aberta ou próximo passo com prazo também reduz a temperatura
+
+Use esse indicador como apoio para organizar o trabalho; ele não altera o
+status da negociação automaticamente.
+
+## Meta mensal e celebração de venda
+
+Quando a empresa configura metas de vendas, o Funil mostra o progresso pessoal
+e da equipe. No celular, a mesma informação aparece em formato compacto acima
+do quadro.
+
+Se ainda não houver uma meta, administradores veem o atalho **Definir metas**.
+Ele abre diretamente **Ajustes → Dados da empresa → Metas de vendas**. O
+lembrete pode ser dispensado durante o mês atual.
+
+Ao marcar uma negociação como **Ganha**, o vendedor responsável recebe a
+celebração imediatamente. O efeito respeita a configuração de redução de
+movimento do dispositivo e não se repete quando a atualização em tempo real
+chega depois.
+
 ## Analytics do Funil
 
 Clique em **Analytics** para abrir as métricas detalhadas.
