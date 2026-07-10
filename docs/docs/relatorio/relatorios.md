@@ -44,6 +44,22 @@ Mostra o volume de conversas distribuídas por atendente.
 ### Mensagens por status
 Distribui mensagens por status (ativa, pausada, encerrada etc.).
 
+### Produtividade de tarefas
+Mostra tarefas criadas e concluídas por responsável, percentual concluído no
+prazo e tempo médio até a conclusão.
+
+### Ligações por vendedor
+Compara quantidade, resultado, tempo total e médio de conversa e o tempo de
+ligação acumulado antes das conversões.
+
+### Negociações vencidas
+Lista negociações ainda abertas cuja data prevista de fechamento já passou.
+Esse modelo também pode ser incluído nos e-mails agendados do gestor.
+
+### Desconto médio por vendedor
+Compara o desconto aplicado nos itens da negociação com a referência definida
+no catálogo de produtos.
+
 Você pode clicar em **Usar template** e depois personalizar filtros e visualização.
 
 ## Criando um Novo Relatório
@@ -81,6 +97,10 @@ Selecione a origem das informações:
 - Conversas
 - Mensagens
 - Deals (Negociações)
+- Negociações vencidas
+- Tarefas
+- Ligações
+- Descontos por item
 - Contatos
 - Funis
 - Usuários
@@ -155,6 +175,10 @@ Você pode selecionar:
 
 Se a fonte não possuir campos numéricos, a soma não estará disponível.
 
+Algumas fontes também oferecem **média**, **mínimo** e **máximo**. Nas novas
+fontes comerciais, isso permite medir tempo até conclusão, duração das
+ligações, dias de atraso e diferença entre desconto aplicado e referência.
+
 #### Tipo de Gráfico
 
 Escolha como os dados serão exibidos:
@@ -220,3 +244,23 @@ Na listagem principal você pode:
 Cada relatório exibe:
 - Fonte de dados
 - Data da última atualização
+
+## Envio agendado e teste de e-mail
+
+Em **Relatórios → Explorar**, abra a área de entregas e crie um agendamento
+diário, semanal ou mensal. Selecione o relatório ou dashboard, formato e
+destinatários.
+
+O horário usa o **fuso da empresa**, exibido logo abaixo do campo. Antes de
+salvar, clique em **Enviar teste agora**. O sistema gera o relatório com a
+configuração atual e envia para os destinatários informados, sem criar o
+agendamento e sem alterar a data do último envio.
+
+![Configuração de uma entrega com fuso da empresa e envio de teste](assets/delivery-test-v1-31.png)
+
+Use o teste para conferir:
+
+- recebimento no endereço correto;
+- assunto e período do resumo;
+- abertura do arquivo anexo;
+- filtros e colunas do relatório.
