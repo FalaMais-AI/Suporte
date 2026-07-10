@@ -28,6 +28,20 @@ Notificações de aniversário exibem a ação **Revisar mensagem sugerida**. El
 a conversa com uma saudação pronta no campo de texto, mas o envio sempre depende
 da sua revisão e confirmação.
 
+## Cópia dos alertas de negociação em risco
+
+Quem administra a empresa pode abrir **Configurações → Empresa → Alertas
+gerenciais** e ativar **Copiar alertas de negociação em risco**.
+
+Selecione as pessoas que devem acompanhar esses alertas além do responsável pela
+negociação. Para proteger a visibilidade comercial, a lista aceita apenas
+usuários ativos com permissão para ver todas as negociações da equipe. Se a
+negociação não tiver responsável, o alerta continua sendo publicado para a
+empresa.
+
+O mesmo alerta não é repetido para a mesma pessoa no mesmo dia. Se o envio para
+um destinatário falhar, o sistema pode tentar novamente sem duplicar os demais.
+
 ## Preferências de Notificação
 
 Permite ativar ou desativar diferentes tipos de alertas.

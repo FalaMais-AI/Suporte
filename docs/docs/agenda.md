@@ -87,6 +87,21 @@ Em celulares e tablets, o painel abre como uma gaveta pelo botão
 **Tarefas**. Ao criar uma nova tarefa ou abrir os detalhes de uma tarefa, a
 gaveta fecha automaticamente para deixar o formulário ou os detalhes em foco.
 
+## Resumo do dia
+
+No primeiro acesso do dia, o FalaMais.AI reúne em uma única janela os itens que
+pedem atenção imediata:
+
+- tarefas atrasadas ou pendentes
+- negociações quentes, com temperatura 4 ou 5
+- negociações com previsão de fechamento vencida
+- negociações que vencem nos próximos três dias
+
+Cada negociação mostra o funil, a etapa e a previsão de fechamento. Clique no
+item para abrir diretamente a negociação no funil. O resumo aparece uma vez por
+dia; a Agenda e o Funil continuam disponíveis normalmente depois que você o
+fecha.
+
 ---
 
 ## Criar Evento

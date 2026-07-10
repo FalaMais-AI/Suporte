@@ -9,7 +9,7 @@ description: "Defina metas mensais por vendedor e para a equipe, acompanhe o ran
 Com as **metas de vendas**, cada vendedor e a equipe inteira sabem exatamente
 onde estão no mês — e cada venda fechada vira um momento de comemoração.
 
-{/* TODO: adicionar captura de tela do card "Metas de vendas" em Configurações → Empresa */}
+![Ranking de vendas com o indicador de venda do dia sobre o avatar](ranking-venda-dia.png)
 
 ## Definindo as metas
 
@@ -43,7 +43,10 @@ O ranking destaca automaticamente:
 - 🥇 **Top vendedor** — maior valor vendido no mês.
 - 🔥 **Mais negociações** — quem fechou mais vendas.
 - ⚡ **Fechamento mais rápido** — menor tempo médio entre criar e ganhar.
-- ✅ **Vendeu hoje** — quem já fechou negócio no dia.
+- 🔥 **Vendeu hoje** — um fogo aparece sobre o avatar de quem já fechou negócio
+  no dia. O mesmo indicador acompanha a pessoa nas escolhas de responsável de
+  conversas e negociações. A animação é reduzida automaticamente quando o
+  dispositivo está configurado para reduzir movimento.
 
 ## Celebração de venda fechada
 
