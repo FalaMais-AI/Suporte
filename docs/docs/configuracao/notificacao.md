@@ -42,6 +42,20 @@ empresa.
 O mesmo alerta não é repetido para a mesma pessoa no mesmo dia. Se o envio para
 um destinatário falhar, o sistema pode tentar novamente sem duplicar os demais.
 
+## Alerta de volume de negociações
+
+Em **Configurações → Empresa → Alertas gerenciais**, ative **Pico ou queda de
+negociações criadas** para acompanhar mudanças relevantes na entrada
+comercial. Uma vez por dia, o sistema compara o volume de ontem com a média dos
+sete dias anteriores.
+
+O aviso é enviado apenas quando a diferença é significativa e há volume
+suficiente para evitar ruído. Ele usa os mesmos destinatários de e-mail e a
+mesma opção de central de notificações configurados para os demais alertas
+gerenciais.
+
+![Alerta gerencial de pico ou queda de negociações criadas](img/manager-deal-volume-v1-31.png)
+
 ## Preferências de Notificação
 
 Permite ativar ou desativar diferentes tipos de alertas.

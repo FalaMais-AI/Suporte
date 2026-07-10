@@ -9,9 +9,8 @@ description: "Um **Dashboard** é um painel visual composto por relatórios adic
 
 Um **Dashboard** é um painel visual composto por relatórios adicionados como widgets.
 
-:::warning Importante
-Você precisa criar relatórios antes de utilizá-los em dashboards.
-:::
+Você pode montar um dashboard a partir dos seus próprios relatórios ou usar um
+modelo pronto da biblioteca.
 
 ![Tela de dashboards de relatório](assets/image-2.png)
 
@@ -37,6 +36,22 @@ Uma breve descrição do que o relatório informa.
 - Cargos específicos
 
 Clique em **Salvar dashboard**.
+
+## Modelo de produtividade comercial
+
+Na **Biblioteca**, escolha **Produtividade comercial** para criar uma visão
+pronta com quatro widgets:
+
+- tarefas por vendedor;
+- negociações ganhas;
+- tempo em ligações;
+- desconto praticado em comparação com a referência do catálogo.
+
+![Dashboard de produtividade comercial com tarefas, vendas, ligações e descontos](assets/productivity-dashboard-v1-31.png)
+
+Os relatórios usados pelos widgets são criados junto com o dashboard e podem
+ser abertos e personalizados depois. O filtro global de datas mantém toda a
+comparação no mesmo período.
 
 ## Filtro Global de Datas
 

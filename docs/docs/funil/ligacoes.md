@@ -10,7 +10,7 @@ Com o **registro de ligações**, sua equipe documenta cada contato por telefone
 direto na negociação — quanto tempo durou, qual foi o resultado e até o áudio
 da conversa.
 
-{/* TODO: adicionar captura de tela da seção "Ligações" no painel da negociação */}
+![Resumo das ligações com quantidade e tempo total na negociação](call-total-v1-31.png)
 
 ## Registrando uma ligação
 
@@ -39,6 +39,11 @@ negociação pode ouvir sem baixar o arquivo.
 No topo da seção, a negociação mostra o **total de ligações** e o **tempo
 somado** de conversa — uma visão rápida do esforço de contato com aquele
 cliente.
+
+Em **Relatórios → Biblioteca**, o modelo **Ligações por vendedor** amplia essa
+leitura para toda a equipe. Ele mostra quantidade e resultado das ligações,
+tempo total e médio de conversa e o tempo de ligação acumulado antes das
+conversões. O relatório também pode virar um widget de dashboard.
 
 ---
 

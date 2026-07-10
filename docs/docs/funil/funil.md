@@ -188,6 +188,12 @@ Permite vincular produtos ou serviços à negociação.
 - Clique em **Adicionar** para incluir itens
 - O sistema calcula automaticamente **Subtotal** e **Total**
 - É possível aplicar **desconto ou imposto** clicando em "Editar desconto / imposto"
+- Quando o produto possui um desconto de referência no catálogo, o vendedor
+  vê essa sugestão ao incluir o item. O valor aplicado continua editável.
+
+Gestores podem abrir **Relatórios → Biblioteca → Desconto médio por vendedor**
+para comparar o percentual concedido com a referência de cada produto. Uma
+diferença positiva indica desconto acima do padrão cadastrado.
 
 ### Propostas e contratos
 
