@@ -247,9 +247,8 @@ Cada relatório exibe:
 
 ## Envio agendado e teste de e-mail
 
-Em **Relatórios → Explorar**, abra a área de entregas e crie um agendamento
-diário, semanal ou mensal. Selecione o relatório ou dashboard, formato e
-destinatários.
+Em **Relatórios → Dashboards → Agendamentos**, crie um agendamento diário,
+semanal ou mensal. Selecione o relatório ou dashboard, formato e destinatários.
 
 O horário usa o **fuso da empresa**, exibido logo abaixo do campo. Antes de
 salvar, clique em **Enviar teste agora**. O sistema gera o relatório com a
