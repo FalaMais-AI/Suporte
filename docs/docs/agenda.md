@@ -176,6 +176,8 @@ marcado separadamente, e o progresso permanece salvo nos detalhes da tarefa.
 
 ### Abrir, editar e concluir
 
+![Detalhes de uma tarefa vinculada à negociação](agenda-tarefa.png)
+
 Clique em uma tarefa para abrir **Detalhes da tarefa**. É possível alterar
 todos os campos e usar **Concluir tarefa** sem sair da janela.
 

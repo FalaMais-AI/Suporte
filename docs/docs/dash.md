@@ -79,6 +79,10 @@ O painel de prioridades reúne atalhos para:
 - **Conversas em andamento** — abre Mensagens
 - **Negociações abertas** — abre o Funil
 
+Cada atalho aparece somente quando seu perfil e o plano da empresa permitem
+abrir a área correspondente. Assim, o Dashboard não oferece uma ação que
+terminaria em outra tela por falta de acesso.
+
 Quando existe uma tarefa atrasada, o primeiro título aparece como contexto.
 Falhas nesse bloco não interrompem os demais indicadores e podem ser tentadas
 novamente.
@@ -136,6 +140,10 @@ período.
 O resumo destaca padrões e pontos de atenção encontrados nos dados atuais. Ele
 é um apoio à leitura; use os indicadores e listas detalhadas para confirmar a
 situação operacional.
+
+Quando Automações está disponível para o perfil, **Ver automações** abre
+diretamente os resultados. Durante a verificação de acesso, o bloco mantém seu
+espaço reservado para evitar mudanças bruscas no layout.
 
 ## Funil comercial
 

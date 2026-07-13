@@ -14,6 +14,8 @@ Localização:
 
 **Automações → Criar → Fluxos**
 
+![Flow Studio visual](fluxo.png)
+
 ---
 
 ## Lista de fluxos
@@ -23,7 +25,7 @@ A biblioteca mostra os fluxos da empresa com:
 - nome e descrição
 - gatilhos configurados
 - quantidade de componentes
-- status ativo ou inativo
+- status de rascunho, ativo ou inativo
 - indicação de alterações ainda não publicadas
 - data da última atualização
 
@@ -38,7 +40,13 @@ componentes que formam a jornada.
 
 :::info[Rascunho e produção]
 O editor salva um rascunho. A automação em produção só muda quando você publica
-uma nova versão.
+uma nova versão. Um fluxo que nunca foi publicado não pode aparecer como ativo;
+publique a primeira versão antes de usar o controle de ativação.
+
+Criar ou editar um fluxo pelo Copiloto segue o mesmo processo. A automação não
+é ativada automaticamente: primeiro o rascunho é salvo, depois publicado e, por
+fim, ativado. Ao publicar novamente um fluxo existente, a escolha atual de
+mantê-lo ativo ou pausado é preservada.
 :::
 
 ## Área de trabalho
@@ -173,6 +181,10 @@ Em **Execuções**, selecione um teste ou execução para ver:
 
 Se a IA pulou uma ação, o motivo disponível aparece na linha do tempo. Uma
 etapa desativada é identificada separadamente.
+
+O resultado de uma espera por resposta aparece somente quando esse componente
+fez parte do caminho executado. Outros fluxos não recebem um aviso de tempo
+esgotado sem terem aguardado uma resposta.
 
 ## Desativar uma etapa sem excluir
 

@@ -14,6 +14,8 @@ Localização:
 
 **Automações → Criar → Regras**
 
+![Biblioteca de regras e templates](regras.png)
+
 ## Lista de regras
 
 A página mostra:

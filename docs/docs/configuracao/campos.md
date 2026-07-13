@@ -56,6 +56,8 @@ Você pode:
 O tipo **Moeda (R$)** é indicado para orçamento, receita estimada, custo ou
 qualquer outro valor financeiro.
 
+![Campo de negociação com máscara em reais](img/moeda-negociacao.png)
+
 Durante a edição, o campo aplica a máscara brasileira. Por exemplo, `3500`
 aparece como **R$ 3.500,00**. O valor continua numérico, permitindo:
 
