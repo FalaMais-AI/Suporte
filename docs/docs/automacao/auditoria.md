@@ -1,50 +1,48 @@
 ---
 sidebar_position: 5
-title: "Auditoria"
-description: "Visibilidade sobre as regras internas do sistema com filtros operacionais"
+title: "Saúde da automação"
+description: "Identifique automações internas que precisam de atenção"
 ---
 
-# Auditoria Interna
+# Saúde da automação
 
-A aba **Auditoria** exibe as **regras internas do sistema** com filtros operacionais, permitindo inspecionar como as automações estão configuradas e identificar possíveis anomalias.
+A área **Saúde** acompanha os envios automáticos do sistema e coloca primeiro
+os itens que precisam de atenção.
 
-Localização no sistema:
+Localização:
 
-**Automações → Auditoria**
+**Automações → Ajustes → Saúde**
 
-![Visão geral da Auditoria Interna](auditoria.png)
+![Saúde das automações](auditoria.png)
 
----
+## Resumo operacional
 
-## Filtros disponíveis
+No topo, a página separa:
 
-A página oferece três formas de filtrar as regras exibidas:
+- itens que precisam de atenção
+- itens funcionando dentro do padrão esperado
 
-### Busca por regra/chave
+Quando não há problemas detectados, o resumo deixa esse estado explícito.
 
-Campo de texto livre para localizar uma regra específica pelo nome ou pela chave interna.
+## Filtros
 
-### Tipo de regra
+- **Buscar automação** — encontra um item pelo nome ou descrição
+- **Status** — ativas e inativas, somente ativas ou somente inativas
+- **Funcionamento** — todas as situações, precisa de atenção ou funcionando
+  normalmente
 
-Dropdown que filtra as regras por categoria. O valor padrão é **Todas**.
+Use **Limpar filtros** para restaurar a visão completa.
 
-### Anomalias
+## Leitura dos itens
 
-Dropdown que permite filtrar entre:
+Cada item mostra nome, descrição, estado ativo/inativo, última atividade e o
+diagnóstico conhecido. Automações com anomalia recebem destaque visual e ficam
+antes das saudáveis.
 
-- **Com e sem anomalia** — exibe todas as regras (padrão)
-- **Com anomalia** — exibe apenas regras com problemas detectados
-- **Sem anomalia** — exibe apenas regras que funcionam normalmente
+## Estados vazios e erro
 
----
-
-## Estado sem resultados
-
-Quando nenhuma regra interna corresponde aos filtros aplicados, o sistema exibe:
-
-```
-Nenhuma regra interna encontrada
-Não há itens para os filtros atuais.
-```
-
-Nesse caso, ajuste os filtros ou verifique se há regras internas configuradas na conta.
+- **Tudo funcionando normalmente** aparece quando o filtro de atenção não
+  encontra problemas.
+- **Nenhum item encontrado** indica que os filtros atuais não retornaram dados.
+- Se a verificação falhar, a página mostra **Tentar novamente** em vez de
+  apresentar um resultado vazio.

@@ -1,111 +1,84 @@
 ---
 sidebar_position: 4
-title: "Pipeline"
-description: ""
+title: "Em andamento"
+description: "Acompanhe contatos, próximas ações e resultados de regras e fluxos em execução"
 ---
 
-A aba **Pipeline** dentro do módulo **Automações** mostra todos os leads que possuem follow-ups automáticos programados pelas regras do sistema.
+# Em andamento
 
-É aqui que você acompanha quais contatos estão aguardando o envio de mensagens automáticas.
+A área **Em andamento** reúne os contatos que estão passando por uma regra de
+follow-up ou por um fluxo visual. Ela mostra o que já aconteceu, qual é a
+próxima ação e quais itens precisam de atenção.
 
-**Automações → Pipeline**
+Localização:
 
-![Pipeline de Automação](img.png)
+**Automações → Em andamento → Em andamento**
 
----
-
-## Visão Geral
-
-Ao entrar na aba, é exibido o título **Pipeline de Automação** com um resumo logo abaixo:
-
-```
-0 leads com follow-ups agendados
-```
-
-Quando não há nenhum lead com automações ativas, a tela exibe:
-
-> **Nenhum lead em automação**  
-> Quando suas regras de follow-up agendarem mensagens para leads, eles aparecerão aqui.
+![Contatos em automações](img.png)
 
 ---
 
-## Filtros Ativos
+## O que aparece na lista
 
-Acima da lista, são exibidas etiquetas com os filtros que estão aplicados no momento. Exemplo:
+Cada contato mostra:
 
-- `Status Pendente`
-- `Regras Todas`
-- `Data Todas`
+- nome e telefone
+- nome da automação
+- origem **Regra** ou **Fluxo**
+- status atual
+- próxima ação e horário previsto
+- quantidade de mensagens já enviadas, quando for uma regra
+- motivo operacional quando uma ação falha, é cancelada ou é pulada
 
-Essas etiquetas mudam conforme os filtros selecionados nos menus à direita.
+Os contatos são agrupados por prioridade e horário. Itens com falha, atraso ou
+alguma ação necessária aparecem antes dos que estão apenas aguardando.
 
----
+## Status disponíveis
 
-## Filtros Disponíveis
+O filtro de status permite consultar:
 
-No canto superior direito existem três menus de filtro:
+- **Pendentes** — aguardam o próximo disparo
+- **Em execução** — a automação está processando uma ação
+- **Aguardando** — depende de prazo, resposta ou outra condição
+- **Concluídos** — finalizaram o caminho previsto
+- **Enviados** — tiveram mensagem enviada
+- **Respondidos** — receberam resposta do contato
+- **Com falha** — não conseguiram concluir a ação
+- **Não enviados ou cancelados** — foram interrompidos antes do envio
 
-### Todas as regras
+:::info[Decisões da IA]
+Quando a IA decide não enviar ou reagendar uma ação, o card mostra a
+justificativa registrada e o próximo passo disponível. Se a automação antiga
+não tiver uma justificativa detalhada, a tela informa isso sem inventar um
+motivo.
+:::
 
-Filtra os leads por uma regra específica de automação.
+## Filtros
 
-Opções disponíveis:
-- Todas as regras
-- Cada regra criada aparece listada individualmente (ex: Reengajamento - Cliente (30min), Boas-vindas - comprador/fornecedor, etc.)
+Você pode combinar três filtros:
 
----
+- **Automação** — todas ou uma regra específica
+- **Período** — todas as datas, hoje, últimos 7 dias, últimos 30 dias ou período
+  personalizado
+- **Status** — um dos estados listados acima
 
-### Todas as datas
+Use **Limpar filtros** para voltar rapidamente às automações pendentes.
 
-Filtra os leads pelo período dos follow-ups agendados.
+## Ações por contato
 
-Opções disponíveis:
-- Todas as datas
-- Hoje
-- Últimos 7 dias
-- Últimos 30 dias
-- Período personalizado
+- **Abrir conversa** — leva diretamente à conversa do contato
+- **Histórico** — expande os eventos recentes daquela automação
+- **Cancelar próximo envio** — disponível para regras ainda aguardando envio
+- **Remover da automação** — interrompe os próximos passos da regra
 
----
+Fluxos visuais aparecem para acompanhamento, mas as ações que alteram a
+execução ficam no próprio editor do fluxo.
 
-### Status
+## Estado vazio e falhas de carregamento
 
-Filtra os leads pelo estado atual da automação.
+Quando não há resultados, a mensagem considera o filtro atual. Assim é
+possível diferenciar uma operação sem contatos em andamento de uma busca sem
+correspondência.
 
-Opções disponíveis:
-- Todos
-- **Pendentes** → follow-up ainda será enviado
-- **Enviados** → mensagem já foi disparada
-- **Respondidos** → cliente respondeu após o envio
-- **Falharam** → houve erro no envio
-- **Cancelados** → automação foi interrompida
-
----
-
-## Estrutura de Cada Item
-
-Quando há leads no pipeline, cada linha exibe:
-
-- **Nome do contato** — nome do lead que está na automação
-- **Telefone** — número vinculado à conversa
-- **Status** — situação atual da automação (ex: Pendente)
-- **Regra associada** — qual regra está sendo aplicada ao lead
-- **Quantidade enviada** — quantos follow-ups já foram disparados
-- **Próxima execução** — quando ocorrerá o próximo envio automático (ex: Hoje, 10:20)
-
----
-
-## Ações por Lead
-
-Cada item do pipeline pode ter ações disponíveis:
-
-### Histórico
-Visualiza os eventos da automação para aquele contato, incluindo mensagens enviadas, respostas recebidas e etapas concluídas.
-
-### Remover do Pipeline
-Cancela a automação para aquele lead. Após a remoção, os follow-ups futuros deixam de ser enviados e a regra para de acompanhar o contato.
-
-Útil quando:
-- O lead já foi atendido manualmente
-- O cliente pediu para parar os contatos
-- A automação não faz mais sentido para aquele caso
+Se a consulta falhar, a lista não é apresentada como vazia: a tela informa o
+erro e oferece **Tentar novamente**.

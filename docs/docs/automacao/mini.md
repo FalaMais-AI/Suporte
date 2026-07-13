@@ -1,182 +1,63 @@
 ---
 sidebar_position: 6
-title: "Mini-Prompts"
-description: ""
+title: "Instruções da IA"
+description: "Crie orientações reutilizáveis para ações geradas pela IA"
 ---
 
-# Mini-Prompts de IA
+# Instruções da IA
 
-A aba **Mini-Prompts** dentro do módulo **Automações** permite criar **prompts reutilizáveis para a IA**, que podem ser utilizados nas regras automáticas do sistema.
+As **Instruções da IA** definem como a IA deve agir em cenários específicos.
+Uma mesma instrução pode ser reutilizada em várias regras de automação.
 
-Esses prompts funcionam como **instruções especializadas**, permitindo orientar a IA sobre **como gerar ou adaptar mensagens automaticamente** em diferentes situações.
+Localização:
 
-Localização no sistema:
+**Automações → Ajustes → Instruções da IA**
 
-**Automações → Mini-Prompts**
+![Lista de instruções da IA](mini-lista.png)
 
-![alt text](image-3.png)
+## Visão geral
 
----
+O cabeçalho mostra:
 
-## O que são Mini-Prompts
+- quantidade de instruções ativas
+- quantidade de instruções em uso
+- botão **Nova instrução**
 
-Mini-prompts são **instruções configuráveis para a IA**, criadas para orientar a geração de mensagens automáticas dentro das regras de automação.
+Cada item apresenta nome, descrição, uma prévia do texto, estado e as
+automações que usam aquela instrução.
 
-Eles servem para:
+## Criar uma instrução
 
-- Definir **tom de comunicação**
-- Ajustar **tipo de abordagem**
-- Criar **mensagens inteligentes e contextualizadas**
-- Padronizar respostas automáticas
-- Facilitar reutilização em várias regras
+Clique em **Nova instrução** e preencha:
 
-Em vez de escrever instruções em cada regra, você cria **mini-prompts reutilizáveis**.
+- **Nome** — identificação curta para a equipe
+- **Descrição** — quando ou por que a orientação deve ser usada
+- **Instrução** — orientação que a IA deve seguir
 
----
+Depois de salvar, selecione a instrução nas ações geradas por IA dentro do
+editor de regras.
 
-## Visão Geral da Página
+![Formulário de criação de instrução](mini-criar.png)
 
-Na tela principal são exibidos:
+## Ativar, editar e excluir
 
-- Indicadores **Ativos** e **Total** de prompts cadastrados
-- Lista de mini-prompts com nome, descrição e toggle de ativação
-- Botões **Editar** e **Excluir** para cada prompt
+- Use o seletor **Ativa/Inativa** para controlar a disponibilidade sem excluir
+  o conteúdo.
+- Clique em **Editar** para alterar nome, descrição ou instrução.
+- A exclusão exige confirmação e não pode ser desfeita.
 
-![Visão geral dos Mini-Prompts](mini-lista.png)
+Antes de excluir, confira a indicação **Usada em X automações**. Ela mostra as
+regras que ainda dependem daquela orientação.
 
-Quando não existem prompts criados, o sistema exibe a mensagem:
+![Formulário de edição de instrução](mini-editar.png)
 
-```
-Nenhum mini-prompt criado
-Crie prompts especializados para diferentes situações
-```
+## Estado vazio e falhas
 
-![Estado vazio da página](image-3.png)
+Quando ainda não existe nenhuma instrução, a página explica o uso e oferece
+**Criar primeira instrução**. Se a consulta falhar, a tela informa o problema
+e permite tentar novamente.
 
----
-
-## Ativar e Desativar Mini-Prompts
-
-Cada mini-prompt possui um **toggle** para ativá-lo ou desativá-lo individualmente, sem precisar excluí-lo.
-
-- Toggle **ligado** → prompt disponível para uso nas regras
-- Toggle **desligado** → prompt ignorado pelas automações
-
----
-
-## Criar um Mini-Prompt
-
-Para criar um novo mini-prompt, clique em **+ Novo Prompt** (no topo direito) ou em **+ Criar Prompt** (quando a lista está vazia).
-
-Isso abrirá o formulário de criação.
-
-![Formulário de criação de mini-prompt](mini-criar.png)
-
----
-
-## Estrutura de um Mini-Prompt
-
-Ao criar um mini-prompt, você deverá preencher os seguintes campos:
-
----
-
-### Nome
-
-Define o **nome identificador do mini-prompt**.
-
-Esse nome será utilizado para selecionar o prompt dentro das regras de automação.
-
-Exemplo:
-
-```
-Follow-up interessado
-```
-
-Boas práticas:
-
-- Use nomes claros
-- Indique o objetivo do prompt
-- Facilite a identificação dentro das regras
-
----
-
-### Descrição (opcional)
-
-Campo opcional usado para explicar **quando o prompt deve ser utilizado**.
-
-Exemplo:
-
-```
-Usar quando o lead demonstrou interesse mas não respondeu após 24h.
-```
-
-Esse campo ajuda equipes a entenderem **o contexto do prompt**.
-
----
-
-### Prompt
-
-Este é o **campo principal**, onde você escreve a instrução que a IA deve seguir.
-
-Aqui você define **como a IA deve gerar ou adaptar a mensagem**.
-
-Exemplo de prompt:
-
-```
-Escreva uma mensagem de follow-up amigável perguntando se o cliente ainda tem interesse na proposta enviada. 
-Use tom profissional, curto e direto.
-```
-
-Outro exemplo:
-
-```
-Envie uma mensagem educada lembrando o cliente sobre o orçamento enviado anteriormente e perguntando se ele gostaria de tirar dúvidas.
-```
-
-:::info
-O cenário interno será preenchido automaticamente com o nome escolhido para o mini-prompt.
+:::tip[Boa prática]
+Escreva uma orientação objetiva, com contexto e resultado esperado. Evite
+misturar vários cenários diferentes na mesma instrução.
 :::
-
----
-
-## Editar um Mini-Prompt
-
-Clique em **Editar** no cartão do prompt para abrir o formulário de edição com os mesmos campos da criação.
-
-![Formulário de edição de mini-prompt](mini-editar.png)
-
-Após ajustar, clique em **Salvar**.
-
----
-
-## Como os Mini-Prompts Funcionam
-
-Quando uma **regra de automação utiliza IA**, ela pode chamar um mini-prompt configurado.
-
-O fluxo funciona assim:
-
-1️⃣ A regra é executada  
-2️⃣ O mini-prompt é aplicado  
-3️⃣ A IA gera a mensagem baseada nas instruções  
-4️⃣ A mensagem é enviada ao cliente  
-
-Isso permite mensagens:
-
-- mais naturais
-- mais personalizadas
-- menos robóticas
-
----
-
-# Reutilização de Prompts
-
-Uma grande vantagem dos mini-prompts é a **reutilização**.
-
-Um mesmo prompt pode ser usado em várias regras, por exemplo:
-
-- Follow-up após orçamento
-- Reativação de cliente
-- Lembrete de reunião
-- Acompanhamento de proposta
-
-Isso mantém **padronização de comunicação**.

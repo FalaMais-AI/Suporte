@@ -2,7 +2,7 @@
 sidebar_position: 1
 slug: /funil
 title: "Funil"
-description: "O **Funil de Oportunidades** é a área responsável por gerenciar negociações em formato visual (Kanban), organizadas por etapas do processo comercial."
+description: "Gerencie negociações, próximas ações e conversão em Kanban ou visão afunilada"
 ---
 
 # Funil 
@@ -23,7 +23,8 @@ Ele permite:
 
 ## Visão Geral da Interface
 
-Na parte superior do funil são exibidos indicadores estratégicos:
+Na parte superior, o cabeçalho concentra a troca de funil, busca, filtros,
+visualização e ações. Logo abaixo ficam os indicadores estratégicos:
 
 - **Valor Total** → Soma das negociações ativas no funil
 - **Pipeline** → Quantidade total de negociações
@@ -32,6 +33,10 @@ Na parte superior do funil são exibidos indicadores estratégicos:
 
 Esses indicadores ajudam a acompanhar a saúde do processo comercial.
 
+Em desktop, a faixa de métricas pode ser recolhida. O resumo compacto mantém os
+valores principais visíveis e libera mais espaço para o quadro. A preferência
+fica salva para os próximos acessos.
+
 ## Estrutura do Funil
 
 O funil funciona como um **quadro Kanban**, onde:
@@ -39,6 +44,18 @@ O funil funciona como um **quadro Kanban**, onde:
 - Cada coluna representa uma **etapa**
 - Cada card representa uma **negociação**
 - Negociações podem ser movidas por **arrastar e soltar**
+
+Cada card prioriza:
+
+- título da negociação
+- contato ou empresa
+- valor e responsável
+- próxima tarefa ou ação prevista
+- prazo vencido ou outro sinal que exige atenção
+- tags essenciais
+
+Títulos longos são cortados sem aumentar a altura do card. Assim, as colunas
+permanecem alinhadas e mais fáceis de comparar.
 
 Exemplos de etapas comuns:
 
@@ -138,11 +155,12 @@ Clique em **Criar negociação**.
 
 Cada card contém:
 
-- Nome da empresa ou contato
+- Título da negociação e contato ou empresa
 - Responsável
 - Valor
-- Tempo na etapa
-- Tags (se houver)
+- Próxima ação
+- Prazo ou risco operacional
+- Tags principais (se houver)
 
 Você pode:
 
@@ -169,6 +187,26 @@ Ao clicar em um card, abre a tela completa da negociação. Ela é dividida em s
 
 Seção separada que exibe campos adicionais configurados pela equipe.  
 Clique em **Configurar** para criar ou editar os campos disponíveis.
+
+Campos do tipo **Moeda** usam máscara em reais durante a edição e mantêm o
+valor numérico para filtros e importações.
+
+### Tarefas
+
+A seção **Tarefas** mostra as atividades ligadas à negociação. Clique em uma
+tarefa para abrir os detalhes completos ou use **Nova tarefa**.
+
+O editor permite alterar:
+
+- título e descrição
+- prioridade e responsável
+- prazo e horário
+- checklist
+- negociação vinculada
+
+Uma tarefa pode ser concluída diretamente pela janela. Se houver edições ainda
+não salvas, o sistema salva primeiro e conclui depois. Também é possível
+remover o vínculo com a negociação antes de salvar.
 
 ### Contato e Participantes
 
@@ -228,6 +266,13 @@ Você pode filtrar por:
 - Responsável
 - Atividade
 - Tags
+- Data de criação
+- Data prevista de fechamento
+- Campos personalizados
+
+Filtros de campos personalizados respeitam o tipo configurado. Texto, número,
+moeda, data e seleção oferecem operadores adequados, e regras avançadas podem
+ser combinadas com **E** ou **OU**.
 
 Também é possível limpar todos os filtros.
 
@@ -250,16 +295,42 @@ voltar para a página, você continua com a mesma organização. A contagem e o
 valor do cabeçalho mostram o que está visível e indicam quando existe um
 total maior por trás do filtro.
 
+Quando configurados, o cabeçalho da etapa também mostra descrição, participação
+no estoque e limite de trabalho em andamento. Esses elementos não reservam
+espaço quando estão vazios.
+
+## Densidade e modo de foco
+
+Na visão Kanban, escolha entre:
+
+- **Confortável** — mais contexto dentro do card
+- **Compacta** — mais negociações visíveis ao mesmo tempo
+
+O **Modo de foco** remove métricas e elementos secundários para dedicar a área
+principal ao quadro. Densidade, modo de foco e estado das métricas ficam salvos
+por empresa e funil.
+
 ## Kanban e visão Funil
 
 Use o seletor **Kanban / Funil** para alternar entre:
 
 - **Kanban** → colunas completas para trabalhar e mover negociações
-- **Funil** → visão resumida do volume e da conversão entre as etapas
+- **Funil** → visão afunilada para comparar estoque ou conversão
 
 O sistema lembra a última visão escolhida. Na visão Funil, etapas sem
 negociações aparecem esmaecidas e identificadas com **0 negociações**. Clique
 em qualquer faixa para voltar ao Kanban já posicionado na coluna escolhida.
+
+Dentro da visão afunilada, escolha:
+
+- **Estoque atual** — compara as negociações que estão em cada etapa agora
+- **Conversão no período** — acompanha uma coorte de negociações criadas nos
+  últimos 30, 90 ou 180 dias e mostra quantas alcançaram cada etapa
+
+Quando há filtros ativos, **Estoque atual** informa quantas negociações estão
+visíveis em relação ao total. A conversão usa sua própria coorte para não
+apresentar percentuais artificiais quando uma etapa tem mais negociações do que
+a anterior.
 
 ## Temperatura da negociação
 

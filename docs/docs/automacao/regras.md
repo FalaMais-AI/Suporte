@@ -1,254 +1,161 @@
 ---
 sidebar_position: 1
 title: "Regras"
-description: "Como criar e configurar regras de follow-up automático"
+description: "Crie e gerencie follow-ups automáticos"
 ---
 
 # Regras
 
-A aba **Regras** dentro do módulo **Automações** é onde você cria e gerencia os follow-ups automáticos da sua operação.
-
-Uma regra define **quando** enviar uma mensagem, **para quem** ela vai, **o que** será enviado e **quando parar** — tudo de forma automática, sem precisar agir manualmente em cada conversa.
+As **Regras** automatizam follow-ups com uma cadência definida. Elas controlam
+quando agir, quem pode receber, qual mensagem usar e quando interromper os
+próximos envios.
 
 Localização:
 
-**Automações → Regras**
+**Automações → Criar → Regras**
 
----
+![Biblioteca de regras e templates](regras.png)
 
-## Como funciona o criador de follow-up
+## Lista de regras
 
-Ao entrar na aba, o sistema exibe um painel explicando o fluxo de criação em três etapas:
+A página mostra:
 
-1. **Escolha o caminho** — Use um template atualizado ou comece do zero.
-2. **Veja os avisos antes de ativar** — O wizard mostra conflitos, uso de template oficial e escopo amplo demais antes de salvar.
-3. **Regra simples ou fluxo** — Se a cadência tiver muitas etapas, o sistema sugere transformar em fluxo visual.
+- quantidade total e ativa
+- busca por nome ou descrição
+- ordenação por prioridade, nome, gatilho ou status
+- resumo em linguagem humana de cada regra
+- estado ativo/inativo
+- atalhos para editar e consultar resultados
 
----
+Quando existem regras, há um único botão **Nova regra**. Se a consulta falhar,
+a tela informa o erro e oferece **Tentar novamente** em vez de mostrar uma
+lista vazia.
 
-## Regras configuradas
+## Criar uma regra
 
-Abaixo do painel de instruções, ficam todas as regras já criadas.
+Clique em **Nova regra** e escolha:
 
-- **Ativas** — mostra apenas as regras que estão em funcionamento
-- **Total** — mostra todas as regras, ativas e inativas
+- **Usar um template** — começa com uma estrutura pronta
+- **Começar do zero** — configura todos os passos manualmente
 
-Para ordenar a lista, use o menu **Prioridade atual**, que oferece as opções:
+Quando ainda não há nenhuma regra, essas duas opções aparecem na orientação
+inicial da página.
 
-- Prioridade atual
-- Nome A-Z
-- Tipo de gatilho
-- Status
+## Biblioteca de templates
 
-Cada regra exibe:
+A biblioteca organiza os modelos em uma lista e uma prévia detalhada. É
+possível buscar e filtrar por:
 
-- **Nome** e **status** (Ativa / Inativa)
-- **Resumo** com o tipo de gatilho, origem da mensagem, horário e limite de envios
-- **Descrição** do objetivo da regra
-- Botões **Editar** e **Estatísticas**
+- **Objetivo** — por exemplo, reengajar, lembrar, qualificar ou acompanhar
+- **Segmento** — geral, saúde, jurídico, imobiliário, educação, serviços ou
+  varejo
+- **Recurso** — IA, mensagem rápida, template oficial, mídia e pós-ações
 
----
+A prévia informa:
 
-## Estatísticas da regra
+- gatilho e canal compatíveis
+- quantidade e sequência dos passos
+- o que já vem configurado
+- o que ainda precisa ser escolhido na sua empresa
+- mensagem de exemplo e cenário recomendado
 
-Ao clicar em **Estatísticas** em qualquer regra, o sistema abre um painel com os dados de desempenho dos últimos 30 dias, como quantidade de envios, respostas geradas, entre outros.
+Clique em **Usar este template** para abrir o editor. Nada é ativado sem sua
+revisão.
 
-Se a regra for nova ou tiver poucos disparos, o painel exibe a mensagem: *"Ainda não há dados suficientes para esta regra."*
+## Etapas do editor
 
----
+O criador segue cinco etapas.
 
-## Criando uma nova regra
+### 1. Contexto
 
-Clique no botão **+ Nova regra** no canto superior direito. O menu oferece duas formas de começar:
+Defina nome, resumo, conexões permitidas, conexão de envio e fallback. O resumo
+do editor acompanha as escolhas e mostra o alcance da regra.
 
-- **Usar um template** — escolhe um modelo pronto e ajusta o que precisar
-- **Começar do zero** — abre o criador de regras sem um modelo pré-preenchido
+### 2. Disparo
 
-Independente da forma escolhida, o criador de regras segue 5 etapas.
+Escolha o evento que inicia a regra:
 
----
+- sem resposta
+- tag adicionada
+- etapa alterada
+- sentimento detectado
+- janela oficial de 24 horas
+- entrada ou saída de lista
 
-### Usar um template
+Também é possível restringir por lista, tag, etapa, funil, automação ou regra
+anterior.
 
-Ao escolher **Usar um template**, o sistema abre a **Biblioteca de templates de follow-up**.
+O atraso aceita minutos, horas ou dias, com limite de **365 dias**.
 
-Você pode filtrar os modelos de duas formas:
+### 3. Cadência
 
-**Por tipo de gatilho:**
-- Todos
-- Sem resposta
-- Lista
-- Etapa
-- Etiqueta
-- Lembrete
-- Janela oficial
+Cada passo contém:
 
-**Por segmento:**
-- Todos, Geral, Saúde, Jurídico, Imobiliário, Educação, Serviços, Varejo
+- nome interno
+- intervalo até o envio
+- tipo de resposta
+- instrução complementar
+- instrução reutilizável da IA, quando aplicável
 
-Cada template exibe uma prévia com o texto da mensagem e informações como tipo de gatilho, segmento e se é uma regra simples ou fluxo. A biblioteca inclui modelos curtos de reengajamento, proposta, cadências de 90, 120 e 365 dias, múltiplos passos, uso de mensagem rápida e exemplos com template oficial quando a janela do WhatsApp Oficial exige esse cuidado.
+Tipos de resposta disponíveis:
 
-Templates que usam **Mensagem rápida** deixam apenas o tipo pré-configurado. Você escolhe a mensagem rápida real da sua empresa antes de salvar a regra.
+- IA gera a mensagem
+- template oficial
+- mensagem rápida
 
-Ao selecionar um template, o painel lateral direito exibe:
-
-- **Cadência sugerida** — os passos da sequência de envio com os intervalos (ex: Disparo em 24h, Nova tentativa em +24h)
-- **Mensagem de exemplo** — o texto que seria enviado ao contato
-- **Cenários onde costuma funcionar bem** — exemplos de uso recomendados (ex: Atendimento inicial, Lead morno, Primeiro contato comercial)
-
-Clique em **Usar este template** para abrir o wizard com todas as configurações já preenchidas. Você pode revisar e ajustar qualquer campo antes de salvar.
-
----
-
-## Etapas do criador de regras
-
-### Etapa 1 — Contexto
-
-Define a identidade da regra e onde ela pode atuar.
-
-**Identidade e alcance**
-
-| Campo | O que preencher |
-|---|---|
-| **Nome interno da regra** | Um nome claro para identificar a regra na lista |
-| **Resumo para sua equipe** | Descrição curta explicando o objetivo da regra |
-| **Onde essa regra pode disparar** | Selecione em quais instâncias/conexões ela deve funcionar |
-| **Como a mensagem deve sair** | Define por qual conexão a mensagem será enviada. A opção padrão é *Seguir conexão de origem do lead* |
-| **Conexão de fallback** | Conexão alternativa caso a principal não esteja disponível |
-
-:::tip[Dica]
-O painel de resumo no topo desta etapa mostra em tempo real o impacto da regra: quando dispara, para quem, o que envia e quando para. Use-o para revisar antes de avançar.
-:::
-
----
-
-### Etapa 2 — Disparo
-
-Define **o que aciona** a regra.
-
-**Tipo de gatilho**
-
-Escolha o evento que vai iniciar o follow-up:
-
-| Gatilho | Quando dispara |
-|---|---|
-| **Sem Resposta** | Quando o contato para de responder por um tempo definido |
-| **Tag Adicionada** | Quando uma tag específica é adicionada ao contato |
-| **Etapa Alterada** | Quando o contato muda de etapa no funil |
-| **Sentimento Detectado** | Quando a IA identifica um sentimento específico na conversa |
-| **Janela Oficial 24h** | Quando a janela de mensagens do WhatsApp Business está próxima de fechar |
-| **Entrou na Lista** | Quando o contato entra em uma lista inteligente |
-| **Saiu da Lista** | Quando o contato sai de uma lista inteligente |
-
-**Atraso do gatilho**
-
-Define quanto tempo após o evento a regra espera antes de disparar o primeiro envio. Você pode usar minutos, horas ou dias, com limite de 365 dias. Exemplo: 24 horas após ficar sem resposta, 90 dias após entrar em uma lista ou 1 ano como 365 dias.
-
-**Listas inteligentes**
-
-Você pode restringir a regra para disparar apenas para contatos que estejam em uma lista específica, mantendo o gatilho configurado.
-
-**Ajustes avançados de entrada**
-
-Expanda essa seção para filtrar por lista, tag, etapa, funil, automação ou regra anterior — útil para reduzir o escopo e evitar envios desnecessários.
-
----
-
-### Etapa 3 — Cadência
-
-Define **o que será enviado** em cada disparo.
-
-Cada regra pode ter um ou mais passos. O primeiro passo usa o tempo do gatilho; os demais definem o espaçamento da cadência.
-
-**Configurações de cada passo:**
-
-| Campo | Descrição |
-|---|---|
-| **Nome do passo** | Identificação interna do passo |
-| **Atraso extra (opcional)** | Tempo adicional de espera antes deste passo específico, em minutos, horas ou dias |
-| **Tipo de resposta** | **IA gera a mensagem**, **Template oficial** ou **Mensagem rápida** |
-| **Mini-prompt (opcional)** | Instrução específica para a IA usar neste passo. Se não escolher, usa o comportamento padrão |
-| **Mensagem rápida** | Escolha uma mensagem rápida ativa quando o passo usar esse tipo de resposta |
-| **Instrução complementar da etapa** | Contexto extra para a IA, como tom desejado e objetivo do passo |
+Uma regra pode ter até **12 passos**. Ao trocar a unidade de minutos, horas ou
+dias, o editor preserva a duração configurada.
 
 :::info[WhatsApp Oficial]
-O sistema não troca automaticamente uma mensagem livre por template oficial fora da janela de 24h. Quando a regra precisa enviar após essa janela, configure explicitamente um template oficial aprovado.
+Fora da janela de 24 horas, selecione explicitamente um template oficial
+aprovado. O sistema não converte uma mensagem livre automaticamente.
 :::
 
-**Validação por IA**
+### 4. Regras
 
-Quando ativada, a IA analisa se o contato ainda faz sentido receber aquele follow-up antes de enviar. Se não fizer sentido, o envio é bloqueado (isso aparece no histórico como *ai_validation_rejected*).
+Configure:
 
-Para adicionar mais passos à cadência, clique em **+ Adicionar passo**.
+- máximo de envios por contato
+- intervalo mínimo entre disparos
+- pausa depois de uma resposta
+- horário e dias permitidos
+- política de reentrada
+- condições de saída
+- envio durante atendimento humano, quando esse comportamento for desejado
 
----
+Se o horário estiver habilitado, o início precisa ser anterior ao fim. Quando a
+restrição de horário está desligada, os dias ocultos não bloqueiam o envio.
 
-### Etapa 4 — Regras
+### 5. Pós
 
-Define os **limites, horário e critérios de parada**.
+Adicione ações executadas depois do follow-up, como aplicar tags, mover etapa,
+pausar a IA ou notificar a equipe.
 
-**Limites e controle de envio**
+## Validação por IA
 
-| Campo | Descrição |
-|---|---|
-| **Máx. por contato** | Quantidade máxima de vezes que a regra pode disparar para o mesmo contato |
-| **Intervalo mínimo (h)** | Tempo mínimo entre um disparo e outro para o mesmo contato |
-| **Pausa ativa** | Bloqueia o envio se o cliente respondeu recentemente. Defina o tempo de pausa |
+Quando ativada, a IA reavalia o contexto imediatamente antes do envio. Se o
+follow-up não fizer mais sentido, ele não é enviado e o motivo disponível
+aparece em **Em andamento** e no **Histórico**.
 
-**Horário de envio**
+## Avisos antes de salvar
 
-Ative **Respeitar horário definido** para que as mensagens saiam apenas dentro de uma janela de horário. Configure:
+O editor impede salvar quando encontra, entre outros casos:
 
-- **Início e Fim** — ex: 08:00 às 18:00
-- **Dias permitidos** — selecione os dias da semana em que a regra pode disparar
+- mensagem rápida sem uma seleção real
+- atraso maior que 365 dias
+- mais de 12 passos
+- janela de horário invertida
+- campo obrigatório ausente
+- combinação incompatível com a conexão escolhida
 
-**Ajustes avançados**
+Avisos de alcance amplo ou compatibilidade aparecem antes da ativação para que
+a equipe possa revisar a configuração.
 
-- **Política de reentrada** — Define o que acontece se o contato voltar a se qualificar para a regra. A opção padrão é *Reiniciar após nova resposta*.
-- **Condições de saída** — Adicione condições específicas que fazem a regra parar de ser aplicada a um contato.
+## Editar, ativar e desativar
 
----
+Clique em **Editar** para abrir a mesma sequência de cinco etapas. O seletor da
+lista ativa ou desativa a regra sem apagar sua configuração.
 
-### Etapa 5 — Pós
-
-Define **ações automáticas** executadas após o follow-up ser enviado (opcional).
-
-Você pode combinar as seguintes ações:
-
-| Ação | O que faz |
-|---|---|
-| **Adicionar Tag** | Aplica uma tag ao contato após o envio |
-| **Mover Etapa** | Move o contato para uma etapa específica de um funil |
-| **Agendar Próximo** | Agenda o próximo contato após um intervalo de horas |
-
-Após configurar as pós-ações, clique em **Criar Regra** para salvar.
-
----
-
-## Avisos e recomendações
-
-Durante a criação, o sistema exibe alertas automáticos para ajudar a evitar erros comuns:
-
-:::warning[Risco principal]
-Aparece quando há um problema crítico na configuração, como o intervalo mínimo sendo maior que a própria cadência planejada, ou a regra com escopo muito amplo podendo disparar para contatos demais.
-:::
-
-:::info[Recomendação]
-Aparece quando a configuração está funcional, mas pode ser melhorada. Por exemplo, sugerir filtrar por etapa, tag ou funil para reduzir ruído operacional, ou transformar a regra em um fluxo visual quando ela está ficando muito sofisticada.
-:::
-
----
-
-## Editando uma regra existente
-
-Clique em **Editar** no cartão da regra. O sistema abre o mesmo wizard de 5 etapas com as configurações atuais preenchidas.
-
-Revise as configurações e os impactos antes de salvar. O painel de resumo no topo mostra os efeitos da regra em tempo real enquanto você edita.
-
----
-
-## Ativando e desativando regras
-
-Cada regra tem um **toggle** (botão liga/desliga) no canto direito do cartão. Use-o para ativar ou pausar a regra sem precisar excluí-la.
-
-As regras pausadas permanecem na lista com o status **Inativa** e não disparam nenhuma mensagem enquanto estiverem desligadas.
+As alterações entram em vigor depois de salvar. Consulte **Resultados** para
+acompanhar métricas e histórico, ou **Em andamento** para ver os contatos e
+próximas ações.

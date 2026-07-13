@@ -1,142 +1,82 @@
 ---
 sidebar_position: 8
 title: "Histórico"
+description: "Consulte eventos e resultados de regras e fluxos"
 ---
 
 # Histórico
 
-A aba **Histórico** dentro do módulo **Automações** registra todos os follow-ups executados pelas regras automáticas do sistema.
+O **Histórico** registra o que aconteceu nas regras de follow-up e nos fluxos
+visuais. Ele mostra o resultado, a origem, o contato e o motivo disponível para
+cada evento.
 
-Aqui você consegue ver o que foi enviado, quando foi enviado, qual foi o resultado e por qual motivo.
+Localização:
 
-**Automações → Histórico**
+**Automações → Resultados → Histórico**
 
-![Histórico de Follow-ups](image.png)
+![Histórico das automações](image.png)
 
----
+## Busca e filtros
 
-## Visão Geral
+O campo de busca encontra registros por:
 
-O título da página é **Histórico de Follow-ups**, com a descrição:
+- nome ou telefone do contato
+- nome da regra ou do fluxo
+- mensagem ou resumo do resultado
+- identificador da conversa
 
-> Histórico operacional com filtro por conversa, status, origem e motivo
+Também é possível filtrar por grupo de status:
 
-O total de registros encontrados é exibido logo abaixo (ex: `1 itens`).
+- **Em andamento**
+- **Enviado**
+- **Respondido**
+- **Não enviado**
+- **Cancelado**
+- **Concluído**
 
----
+E por origem:
 
-## Filtros Disponíveis
+- **Regra**
+- **Fluxo**
+- **Agendamento manual**
+- **Criado pela IA**
 
-A página possui quatro formas de filtrar os registros:
+Quando o Histórico é aberto a partir de uma conversa, o filtro daquela
+conversa aparece aplicado e pode ser removido sem perder os outros filtros.
 
-### Filtrar por conversationId
+## Organização por data
 
-Campo de texto para buscar registros de uma conversa específica usando o ID da conversa.
+Os registros são agrupados em **Hoje**, **Ontem** ou pela data completa. Dentro
+de cada dia, a ordem dos eventos é preservada para facilitar a leitura da
+sequência real.
 
----
+## Informações de cada registro
 
-### Todos status
+Cada item pode apresentar:
 
-Filtra os registros pelo resultado do follow-up.
+- horário e tempo relativo
+- contato e telefone
+- automação e tipo de origem
+- status em linguagem operacional
+- mensagem enviada, quando houver
+- resumo do resultado
+- motivo da falha, cancelamento ou decisão da IA
+- sentimento identificado, quando disponível
+- atalho para abrir a conversa
 
-Opções disponíveis:
-- Todos status
-- **Enviado** → mensagem foi entregue com sucesso
-- **Respondido** → cliente respondeu após o envio
-- **Não enviado** → houve falha no envio
-- **Não enviado (skipped)** → envio foi pulado por alguma condição da regra
-- **Não enviado (IA)** → a IA decidiu não enviar a mensagem
-- **Cancelado** → automação foi cancelada antes do envio
-- **Pendente** → ainda aguardando o momento do envio
+## Ações puladas pela IA
 
----
+Uma ação **Não enviada pela IA** significa que o sistema reavaliou o contexto
+antes do disparo e evitou um envio que deixou de ser adequado. O motivo
+registrado aparece junto ao resultado.
 
-### Todas origens
+:::info[Histórico antigo]
+Alguns eventos antigos podem não ter uma justificativa detalhada. Nesses casos,
+a tela informa que o motivo não foi registrado, sem assumir uma causa.
+:::
 
-Filtra os registros pela origem do follow-up.
+## Sem resultados e falhas
 
-Opções disponíveis:
-- Todas origens
-- **Regra** → disparado automaticamente por uma regra
-- **Manual** → enviado manualmente por um usuário
-- **IA** → originado por uma ação da inteligência artificial
-
----
-
-### Buscar motivo
-
-Campo de texto para buscar registros por um motivo específico (ex: motivo de cancelamento ou de não envio).
-
----
-
-## Estrutura de Cada Registro
-
-Cada item do histórico exibe:
-
-### Nome da Regra
-Qual regra de automação foi responsável pelo disparo.
-
-Exemplo:
-```
-Reengajamento - Cliente (30min)
-```
-
----
-
-### Status do Follow-up
-
-Aparece como uma etiqueta ao lado do nome da regra.
-
----
-
-### Conteúdo da Mensagem
-
-O texto que foi enviado automaticamente ao cliente.
-
-Exemplo:
-```
-Oi! Você ainda está disponível para conversar?
-```
-
----
-
-### Descrição do Resultado
-
-Uma linha explicando o que aconteceu após o envio.
-
-Exemplos:
-```
-Cliente respondeu após o envio
-```
-
----
-
-### Data do Evento
-
-Quando o follow-up foi executado.
-
-Exemplos:
-```
-há 3 meses
-há 1 dia
-há cerca de 23 horas
-```
-
----
-
-## Sobre o Status "Não enviado (IA)"
-
-Quando a IA decide bloquear o envio, **não é um erro** — é uma decisão intencional do sistema.
-
-Isso acontece quando a automação está configurada para usar validação por IA antes do disparo, e a IA entende que o envio não é adequado naquele momento (ex: o cliente já havia respondido, a conversa já estava encerrada, etc.).
-
----
-
-## Como Utilizar o Histórico
-
-Use o histórico para:
-
-- Confirmar se uma automação foi executada
-- Ver o que foi enviado para um cliente específico
-- Investigar por que um follow-up não foi enviado
-- Auditar as interações automáticas por regra ou período
+Se nenhum item corresponder aos filtros, use **Limpar filtros** para voltar ao
+histórico completo. Se a API falhar, a página exibe o erro e permite tentar
+novamente; uma falha nunca é apresentada como histórico vazio.
