@@ -1,256 +1,194 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 title: "Dashboard"
-description: "A **DashBoard** é a sua tela inicial, o primeiro espaço que você vê ao fazer *login*."
+description: "Acompanhe atendimento, vendas e prioridades em uma visão operacional"
 ---
 
 # Dashboard
 
-{/* <div class="video-responsive">
-  <iframe
-    src="https://www.youtube.com/embed/Bedlh7HeViE?si=8rIkWE30TbAtajnL"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen
-    loading="lazy"
-  ></iframe>
-</div> */}
+O **Dashboard** reúne indicadores de atendimento e vendas para responder três
+perguntas rapidamente:
 
---- 
+- o que precisa de atenção agora
+- como o período atual se compara ao anterior
+- onde estão os principais volumes e oportunidades
 
-A **DashBoard** é a sua tela inicial, o primeiro espaço que você vê ao fazer *login*. 
+![Dashboard operacional](./dash/image.png)
 
-O Dashboard é a **central** de **monitoramento** da operação de atendimento.
+## Cabeçalho e atualização
 
-Nesta tela é possível acompanhar, em tempo real, o **volume** de conversas, **tempos** de resposta, **desempenho** da equipe e **indicadores** estratégicos.
+No topo ficam:
 
-Ele foi projetado para **responder** rapidamente às **seguintes** **perguntas**:
+- total de conversas ativas
+- horário da última atualização
+- botão **Atualizar**
+- botão **Personalizar**
 
-- Quantas conversas recebemos?
-- Estamos respondendo com agilidade?
-- Por que os atendimentos estão sendo encerrados?
-- Quantos novos contatos chegaram?
-- Quais os horários de maior demanda?
-- Como está a performance da equipe?
+O botão Atualizar recarrega os indicadores sem mudar o período ou o funil
+selecionado.
 
-![Tela do Dashboard com indicadores principais](./dash/image.png)
+## Funil exibido
 
-### Conversas Ativas
+Use **Funil exibido** para escolher qual pipeline comercial alimenta as
+métricas de vendas e o bloco de distribuição por etapa.
 
-No canto superior direito da tela, ao lado dos filtros de período, existe um indicador em tempo real que mostra quantas conversas estão acontecendo neste momento na plataforma. Esse número é atualizado automaticamente, sem precisar recarregar a página.
+A escolha fica salva por empresa e também aparece no endereço da página. Ao
+trocar o funil, você permanece no Dashboard.
 
-### Filtro de Período
+## Período
 
-![Filtro de período do Dashboard](./dash/image3.png)
-
-No canto superior direito da tela é possível selecionar o **período** de **análise**:
+Períodos rápidos:
 
 - Hoje
-- 7D
-- 14D
-- 30D
-- Personalizado
+- 7 dias
+- 14 dias
+- 30 dias
 
-Todas as métricas do Dashboard são **recalculadas** automaticamente conforme o período selecionado.
+Em **Personalizado**, selecione uma data inicial e uma final. O calendário pode
+ser navegado por mês sem voltar sozinho à data anterior. Use **Voltar para 7D**
+para retornar ao período padrão.
 
-:::warning[Importante]
-Os **indicadores** exibem a variação em relação ao período anterior equivalente.
+![Seletor de período do Dashboard](./dash/image3.png)
 
-**Exemplo**: ao selecionar 7D, o sistema compara com os 7 dias anteriores.
+O período considera o fuso horário da empresa e permanece salvo para os
+próximos acessos.
 
-Indicadores em **verde** representam **melhoria**.
-Indicadores em **vermelho** representam **queda** de **desempenho**.
+## Personalizar blocos
+
+Clique em **Personalizar** para mostrar ou ocultar:
+
+- Prioridades e pendências
+- Resumo da IA
+- Campanhas
+- Funil, metas e ranking
+- Conversas da semana
+- Equipe no período
+- Instâncias de atendimento
+- Horários de pico
+- Atividade recente
+
+A preferência fica salva no perfil. Se todos os blocos forem ocultados, o
+Dashboard mostra como reativá-los.
+
+## Precisa da sua atenção
+
+O painel de prioridades reúne atalhos para:
+
+- **Tarefas atrasadas** — abre a Agenda
+- **Follow-ups pendentes** — abre Automações em andamento
+- **Conversas em andamento** — abre Mensagens
+- **Negociações abertas** — abre o Funil
+
+Quando existe uma tarefa atrasada, o primeiro título aparece como contexto.
+Falhas nesse bloco não interrompem os demais indicadores e podem ser tentadas
+novamente.
+
+## Desempenho no período
+
+Os seis indicadores comparam o período escolhido com o período anterior de
+mesma duração:
+
+### Novas conversas
+
+Total de conversas iniciadas no período.
+
+### 1ª resposta
+
+Tempo mediano até a primeira resposta da equipe.
+
+### Tempo de resolução
+
+Tempo mediano necessário para encerrar uma conversa.
+
+### Atendimentos por demanda
+
+Conversas encerradas e distribuição dos motivos de encerramento.
+
+### Novos contatos
+
+Pessoas que entraram em contato pela primeira vez no período.
+
+### CSAT
+
+Índice de satisfação calculado a partir das avaliações recebidas.
+
+Cada indicador mostra separadamente:
+
+- **direção** — o número subiu, caiu ou ficou estável
+- **impacto** — a mudança é positiva, negativa ou neutra para aquela métrica
+
+Por exemplo, uma queda no tempo de primeira resposta é uma variação para baixo,
+mas representa um resultado positivo.
+
+![Indicadores de desempenho](./dash/image1.png)
+
+## Evolução das conversas
+
+O gráfico combina volume diário e tempo de primeira resposta. O total no canto
+considera todo o período selecionado.
+
+Em períodos maiores, os rótulos do eixo são distribuídos para preservar a
+leitura. Se não houver dados, o bloco informa que não existe atividade naquele
+período.
+
+## Resumo da IA
+
+O resumo destaca padrões e pontos de atenção encontrados nos dados atuais. Ele
+é um apoio à leitura; use os indicadores e listas detalhadas para confirmar a
+situação operacional.
+
+## Funil comercial
+
+O bloco mostra o funil selecionado, o total de negociações e a distribuição por
+etapa. Cada linha informa quantidade e participação no estoque atual.
+
+Use **Abrir funil** para trabalhar nas negociações.
+
+## Metas e ranking
+
+Apresenta o progresso comercial e o ranking de vendas dentro do período e das
+permissões do usuário.
+
+## Equipe no período
+
+Mostra o desempenho dos atendentes, incluindo volume, tempo e satisfação quando
+esses dados estiverem disponíveis.
+
+## Por instância
+
+Apresenta a distribuição das conversas entre as instâncias de atendimento. Cada
+linha mostra volume, percentual e tempo médio de resposta.
+
+## Horários de pico
+
+Exibe a intensidade do atendimento por faixa horária. As barras têm descrição
+acessível e ajudam a planejar a cobertura da equipe.
+
+## Atividade recente
+
+Lista os eventos mais recentes, com tipo, horário e contexto disponível.
+
+## Campanhas
+
+Resume a atividade de campanhas quando esse módulo está habilitado e tem dados
+no período.
+
+![Gráficos e blocos operacionais](./dash/image2.png)
+
+## Comportamento em telas menores
+
+Em desktop, os blocos relacionados aparecem lado a lado. Em notebook estreito,
+tablet ou celular, grupos como **Funil / Metas e ranking** e
+**Equipe / Instâncias / Picos / Atividade** viram abas. Isso preserva o espaço
+de leitura sem comprimir os gráficos.
+
+## Falhas e atualização parcial
+
+Cada bloco tem carregamento e recuperação próprios. Se apenas uma consulta
+falhar, os demais dados continuam disponíveis e o bloco afetado mostra
+**Tentar novamente**.
+
+:::tip[Rotina recomendada]
+Comece pelo painel **Precisa da sua atenção**, revise a tendência das métricas e
+depois use o funil, os horários de pico e a equipe para decidir as ações do dia.
 :::
-
-## Métricas Principais
-
-Os **cards** **superiores** apresentam os indicadores estratégicos da operação.
-
-![Cards de métricas principais do Dashboard](./dash/image1.png)
-
-### Novas Conversas
-
-Exibe o total de **conversas** iniciadas no período **selecionado**.
-
-O que indica:
-- **Volume** de demanda recebida
-- **Crescimento** ou redução no fluxo de atendimento
-
-Como usar esse dado:
-- **Planejar** **dimensionamento** da equipe
-- **Identificar** **crescimento** de leads
-- **Monitorar** campanhas ativas
-
-### 1ª Resposta
-
-Mostra o **tempo** **mediano** da **primeira** **resposta** enviada ao cliente.
-
-Por que é importante?
-Quanto menor o tempo de primeira resposta:
-- Maior a **percepção** de agilidade
-- Maior a **chance** de conversão
-- Melhor a **experiência** do cliente
-
-Boa prática:
-Operações comerciais devem buscar manter a primeira resposta abaixo de 5 minutos.
-
-### Tempo de Resolução
-
-Exibe o **tempo** mediano necessário para **finalizar** uma **conversa**.
-
-O que avalia:
-- Eficiência operacional
-- Complexidade dos atendimentos
-- Capacidade da equipe em resolver demandas
-
-Atenção:
-Um tempo de resolução muito alto pode indicar:
-- Processos internos ineficientes
-- Necessidade de treinamento
-- Problemas de roteamento
-
-### Atendimentos por Demanda
-
-Mostra o total de **conversas encerradas** no período e detalha o motivo pelo qual cada uma foi finalizada.
-
-Abaixo do número total, o card exibe uma lista com a distribuição percentual dos motivos de encerramento. Exemplos de motivos que podem aparecer:
-
-- **Sem resposta** → O cliente não respondeu e a conversa foi encerrada automaticamente.
-- **Sem motivo informado** → A conversa foi encerrada sem que um motivo fosse registrado pelo atendente.
-- **Fora do horário** → O atendimento foi encerrado por conta do horário de funcionamento.
-
-Essa métrica ajuda a entender não apenas quantos atendimentos foram concluídos, mas também **por que** foram encerrados, revelando padrões que podem indicar pontos de melhoria na operação.
-
-### Novos Contatos
-
-Exibe o total de **contatos que enviaram a primeira mensagem** para a plataforma no período selecionado.
-
-Diferente de "Novas Conversas", que conta todas as conversas iniciadas, esta métrica foca especificamente em **pessoas que nunca haviam entrado em contato antes**, representando o crescimento real da base de clientes.
-
-Como usar esse dado:
-- Medir o alcance de campanhas de aquisição
-- Acompanhar o crescimento da base de contatos
-- Identificar períodos de maior entrada de novos clientes
-
-### CSAT (Customer Satisfaction)
-
-Mostra o índice de **satisfação** dos **clientes** com base nas avaliações recebidas após o atendimento.
-
-Para que serve?
-- **Medir** qualidade percebida
-- **Identificar** pontos de melhoria
-- **Avaliar** desempenho individual
-
-## Gráficos
-
-Os **gráficos** do Dashboard oferecem uma **visão visual** e **estratégica** da operação de atendimento.
-Eles permitem identificar **padrões**, **comportamentos** recorrentes e **oportunidades** de melhoria de forma rápida e intuitiva.
-
-Por meio dessas visualizações é **possível** analisar volume de conversas, desempenho da equipe, distribuição por canal e horários de maior demanda, facilitando a tomada de decisão baseada em dados.
-
-Cada **gráfico** foi projetado para **apoiar** tanto a **gestão** operacional diária quanto o **planejamento** estratégico da equipe.
-
-
-![Gráficos do Dashboard de atendimentos](./dash/image2.png)
-
-### Atendimentos da Semana / Atendimentos do Período
-
-Este gráfico muda de nome dependendo do período selecionado:
-
-- Quando o período é **14D, 30D ou Personalizado**, ele se chama **"Atendimentos do Período"** e exibe um gráfico de linha mostrando a evolução do volume de conversas ao longo das datas do intervalo selecionado.
-
-No canto superior direito do gráfico é exibido o total de conversas do período.
-
-Como interpretar:
-- Picos indicam dias de maior volume.
-- Quedas podem indicar menor demanda ou problemas de operação.
-- Ajuda a identificar padrões recorrentes ao longo do tempo.
-
-Aplicação prática:
-- Ajustar escala de atendentes
-- Antecipar dias de maior demanda
-- Planejar campanhas
-
-### Top Atendentes
-
-Exibe os **atendentes** com melhor **desempenho** no período selecionado, ordenados pelo índice de satisfação.
-
-No canto superior direito do card aparece o indicador **"X online"**, mostrando quantos atendentes estão conectados à plataforma naquele momento. O ponto colorido ao lado do nome de cada atendente também indica o status: verde para online e cinza para offline.
-
-Informações exibidas por atendente:
-- Nome do atendente
-- Número de conversas atendidas
-- Tempo mediano de atendimento
-- Índice de satisfação (%)
-
-Objetivo estratégico:
-- Reconhecer alto desempenho
-- Identificar padrões de excelência
-- Detectar oportunidades de melhoria
-
-### Por Canal
-
-Apresenta a **distribuição** das **conversas** conforme o canal de atendimento.
-
-Cada linha exibe:
-- **Nome do canal** (ex: Comercial - Novo)
-- **Tempo mediano de atendimento** naquele canal
-- **Volume total de conversas** no período
-
-Aplicações:
-- Entender de onde vem a maior demanda
-- Identificar gargalos por canal
-- Avaliar impacto de campanhas específicas em cada origem
-
-### Horários de Pico
-
-Mostra o **volume** de **atendimentos** **distribuído** por hora ao longo do dia, usando cores para facilitar a leitura:
-
-- **Cinza** → Volume baixo
-- **Verde** → Volume médio
-- **Laranja** → Volume alto (pico)
-
-No canto superior direito do card é destacado automaticamente o **horário de maior pico** do dia (ex: "Pico: 11h"), facilitando a identificação imediata do momento de maior demanda.
-
-Importância:
-- Ajustar escala de atendimento
-- Reduzir fila em horários críticos
-- Melhorar tempo de resposta
-
-## Atividade Recente
-
-Lista as **ações** recentes **realizadas** na **plataforma**, como:
-
-- Mudança de etapa no funil
-- Atualizações de status
-- Movimentações internas
-
-Cada item exibe a descrição da ação e há quanto tempo ela aconteceu (ex: 22 min, 1h).
-
-No canto superior direito do card existe o botão **"Ver tudo"**, que abre o histórico completo de atividades da operação, sem limitar aos itens exibidos no resumo.
-
-Finalidade:
-- Auditoria operacional
-- Acompanhamento de progresso
-- Controle de fluxo interno
-
-## Como Usar o Dashboard para Tomada de Decisão
-
-O Dashboard não é apenas **informativo** — é **estratégico**.
-
-Você pode **utilizá**-lo para:
-
-- Ajustar dimensionamento da equipe
-- Identificar gargalos operacionais
-- Melhorar SLA de resposta
-- Monitorar qualidade de atendimento
-- Avaliar impacto de campanhas
-
-## Boas Práticas
-
-- **Analise** o Dashboard diariamente
-- **Compare** períodos equivalentes
-- **Combine** dados de volume e qualidade
-- Use os gráficos para **planejamento** semanal

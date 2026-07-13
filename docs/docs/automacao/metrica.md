@@ -1,107 +1,61 @@
 ---
 sidebar_position: 3
 title: "Métricas"
-description: ""
+description: "Resultados de regras de follow-up e fluxos visuais"
 ---
 
-A aba **Métricas**, dentro do módulo **Automações**, mostra o desempenho das suas automações de forma visual e resumida.
+# Resultados das automações
 
-Os dados exibidos são referentes aos **últimos 30 dias**.
+A aba **Métricas** apresenta envios, respostas e execuções dos fluxos em uma
+visão consolidada.
 
-![Dashboard de Métricas](image-1.png)
+Localização:
 
----
+**Automações → Resultados → Métricas**
 
-## Dashboard de Métricas
+![Resultados das automações](image-1.png)
 
-No topo do dashboard existem quatro cards com os principais indicadores das automações.
+## Período
 
-### Follow-ups Enviados
+Escolha **7 dias**, **30 dias** ou **90 dias**. Todos os indicadores, gráficos
+e rankings da página usam o mesmo período selecionado.
 
-Total de mensagens automáticas enviadas no período.
+## Indicadores principais
 
-> Considera apenas envios efetivamente realizados.
+- **Envios realizados** — mensagens automáticas efetivamente enviadas
+- **Taxa de resposta** — percentual de follow-ups enviados que receberam
+  resposta
+- **Tempo médio de resposta** — tempo médio entre o envio e a resposta do
+  contato
 
----
+## Indicadores operacionais
 
-### Taxa de Resposta
+- **Falhas de envio** — mensagens que não puderam ser enviadas
+- **Envios evitados pela IA** — ações canceladas antes do disparo porque o
+  contato respondeu, atingiu um limite ou não passou pela validação
+- **Execuções de fluxos** — quantidade de execuções dos fluxos visuais
+- **Fluxos com falha** — execuções visuais que precisam de revisão
 
-Porcentagem de contatos que responderam após receber um follow-up.
+:::info[Regra e fluxo são diferentes]
+Taxa e tempo de resposta usam os follow-ups enviados por regras. Execuções de
+fluxos aparecem em indicadores próprios para não criar uma taxa de resposta
+sem base de envio equivalente.
+:::
 
-**Como é calculada:**
+## Envios e respostas
 
-```
-Contatos que responderam ÷ Total de follow-ups enviados
-```
+O gráfico mostra a evolução diária de mensagens enviadas e respondidas dentro
+do período escolhido. Ele ajuda a identificar dias de maior atividade e
+mudanças no engajamento.
 
-Quando nenhum contato respondeu, o valor exibido será `0%` com a legenda `0 respondidos`.
+## Desempenho por automação
 
----
+O ranking destaca as automações com maior atividade no período. Regras e
+fluxos aparecem com identificação própria para facilitar a comparação.
 
-### Tempo Médio de Resposta
+## Sem atividade ou erro
 
-Tempo médio que os contatos levaram para responder após receber o follow-up.
-
-A legenda exibida é: `Após receber follow-up`.
-
-> Se não houver respostas no período, o campo exibirá um traço (`-`).
-
----
-
-### Pulados pela IA
-
-Quantas mensagens **não foram enviadas** porque a IA entendeu que o envio não era necessário naquele momento.
-
-A legenda exibida é: `Evitou envios desnecessários`.
-
-Exemplos de situações em que isso acontece:
-- O cliente já havia respondido antes do disparo
-- A conversa já estava resolvida
-- A condição da regra deixou de ser válida
-
----
-
-## Envios vs Respostas (7 dias)
-
-Gráfico que compara, nos últimos 7 dias:
-
-- Mensagens enviadas
-- Mensagens respondidas
-
-Permite visualizar tendências de engajamento ao longo da semana.
-
-> Quando não há dados no período, é exibido: **Nenhum dado disponível no período**
-
----
-
-## Performance por Regra
-
-Mostra o desempenho individual de cada regra criada.
-
-Quando nenhuma regra tiver execuções no período, é exibido:
-
-> **Nenhuma regra com dados no período**
-
----
-
-## Resumo de Status
-
-Bloco com a consolidação geral dos resultados do período.
-
-### Enviados com Sucesso
-Mensagens que foram disparadas corretamente.
-
-### Respondidos
-Follow-ups que geraram uma resposta do cliente.
-
-### Falhas
-Mensagens que não puderam ser entregues.
-
-Possíveis causas:
-- Instância desconectada
-- Erro no canal
-- Número inválido
-- Bloqueio no WhatsApp
-
-### Pulados pela IA
-Mensagens canceladas preventivamente pelo sistema antes do envio.
+Quando ainda não existe atividade, a página orienta a revisar as automações
+ativas ou escolher um período maior. Se a consulta falhar, os dados não são
+substituídos por zeros: a tela informa o problema e oferece **Tentar
+novamente**.

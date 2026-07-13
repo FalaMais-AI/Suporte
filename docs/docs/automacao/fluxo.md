@@ -1,246 +1,218 @@
 ---
 sidebar_position: 2
-title: "Fluxo"
-description: "Como criar e configurar fluxos de automação visual"
+title: "Fluxos"
+description: "Crie, teste, publique e acompanhe automações visuais"
 ---
 
 # Fluxos
 
-A aba **Fluxos** dentro do módulo **Automações** é onde você monta automações complexas de forma visual, conectando blocos chamados **nós** em sequência.
-
-Diferente das Regras — que seguem uma cadência linear — um fluxo permite criar ramificações, condições, esperas e múltiplas ações encadeadas. É o recurso ideal para automações mais sofisticadas, como resgatar um lead parado, qualificar contatos automaticamente ou reagir a eventos do sistema de forma personalizada.
+Os **Fluxos** permitem montar jornadas visuais com gatilhos, condições, ações,
+esperas e integrações. Eles são indicados para automações com ramificações ou
+várias etapas encadeadas.
 
 Localização:
 
-**Automações → Fluxos**
+**Automações → Criar → Fluxos**
 
 ---
 
 ## Lista de fluxos
 
-A tela inicial da aba exibe todos os fluxos criados na conta, com um painel de contadores no topo:
+A biblioteca mostra os fluxos da empresa com:
 
-- **Ativos** — fluxos em execução no momento
-- **Total** — todos os fluxos, ativos e inativos
+- nome e descrição
+- gatilhos configurados
+- quantidade de componentes
+- status ativo ou inativo
+- indicação de alterações ainda não publicadas
+- data da última atualização
 
-Cada cartão de fluxo mostra:
+Use a busca para localizar um fluxo. Se o carregamento falhar, a página exibe
+o erro e oferece uma nova tentativa; uma falha nunca aparece como biblioteca
+vazia.
 
-- **Nome** e **descrição** (se preenchida)
-- **Gatilhos** configurados, como _Tag Adicionada_, _Webhook Recebido_, _Sem Resposta_
-- Status do rascunho — **Rascunho pendente** indica que há alterações não publicadas
-- **Número de nós** configurados no fluxo
-- Data da última atualização
-- **Toggle** para ativar ou desativar o fluxo sem excluí-lo
+## Criar um fluxo
 
-:::info[Rascunho pendente]
-Um fluxo com a etiqueta **Rascunho pendente** tem alterações salvas mas ainda não publicadas. O fluxo só começa a usar as novas configurações após a publicação.
+Clique em **Novo fluxo**. No editor, adicione primeiro o gatilho e depois os
+componentes que formam a jornada.
+
+:::info[Rascunho e produção]
+O editor salva um rascunho. A automação em produção só muda quando você publica
+uma nova versão.
 :::
 
----
+## Área de trabalho
 
-## Criando um novo fluxo
+O Studio é composto por:
 
-Clique no botão **+ Novo Fluxo** no canto superior direito. O editor visual abre em branco, pronto para você montar a automação do zero.
+- **barra superior** — nome, estado do salvamento, execuções, ativação,
+  versões e publicação
+- **canvas** — componentes e conexões do fluxo
+- **seletor de componentes** — aberto pelos botões de adição no canvas
+- **painel lateral** — configuração e resultado do componente selecionado
 
----
+No desktop, o seletor abre próximo ao ponto de inserção. Em celular, ele usa
+uma folha inferior com a mesma busca e as mesmas opções.
 
-## O editor de fluxos
+## Adicionar componentes
 
-O editor é uma área de trabalho onde você arrasta, posiciona e conecta os nós. A interface tem três partes principais:
+Clique no botão **+** depois de uma etapa ou em um ponto vazio do fluxo. O
+seletor organiza os componentes por categoria e permite buscar sem depender de
+acentos.
 
-**Barra superior**
-- Nome do fluxo (editável)
-- Botões **Salvar** e **Publicar**
-- Acesso a **Configurações**, **Tags** e **Sair**
+O Studio oferece somente opções compatíveis com aquele ponto:
 
-**Painel esquerdo — Biblioteca de Nós**
-- Lista todos os tipos de nós disponíveis, organizados por categoria
-- Campo de busca para encontrar um nó rapidamente
-- Arraste qualquer nó da biblioteca para a área de trabalho para adicioná-lo ao fluxo
+- gatilhos aparecem apenas no início
+- uma etapa seguinte não pode ser outro gatilho
+- condições e ramificações mostram suas saídas pelo nome
+- componentes inexistentes ou incompatíveis bloqueiam a publicação
 
-**Área de trabalho (canvas)**
-- Espaço visual onde os nós são posicionados e conectados
-- Cada nó tem pontos de conexão que você liga aos próximos nós
-- Clique em qualquer nó para abrir o painel **Inspector** no lado direito e configurá-lo
+O novo componente já é conectado ao caminho escolhido.
 
----
+## Configurar uma etapa
 
-## Como funcionam os nós
+Clique em um componente para abrir o painel lateral. Use:
 
-Cada nó representa uma etapa dentro do fluxo. Ao clicar em um nó, o painel **Inspector** abre à direita com três abas:
+- **Configurar** — campos executados pela etapa
+- **Resultado** — último resultado seguro ou resultado selecionado no histórico
 
-- **Config** — campos de configuração do nó
-- **Input** — dados de entrada que o nó recebe dos nós anteriores
-- **Output** — dados que o nó passa para os próximos nós
+As setas do cabeçalho percorrem os componentes anterior e seguinte sem fechar
+o painel.
 
-Todo nó exibe no canvas:
+### Usar dados das etapas anteriores
 
-| Campo | Descrição |
-|---|---|
-| **Categoria** | Tipo do nó (Gatilho, Condição, Ação, Controle) |
-| **Nome** | Identificação do nó no fluxo |
-| **Tipo** | Função específica do nó |
-| **Campos Configurados** | Quantidade de campos já preenchidos |
+Campos compatíveis abrem o seletor **Usar dados** ao receber foco ou pelo botão
+de inserção. Ele mostra:
 
-Os pontos de saída coloridos no rodapé de cada nó indicam os caminhos possíveis:
+- dados do gatilho
+- resultados das etapas anteriores que chegam ao componente atual
+- tipo e exemplo do valor
+- objetos e listas em uma árvore expansível
 
-- **Verde** — saída padrão ou resposta positiva (_Sim_)
-- **Vermelho** — condição negativa (_Não_)
-- **Laranja** — timeout ou tempo esgotado
+Use a busca ou navegue pela árvore. Ao escolher um campo, o valor é inserido no
+ponto atual do texto, o seletor fecha e o foco volta ao campo de destino.
 
----
+:::info[Somente dados disponíveis]
+Etapas futuras, ramos que não chegam ao componente e etapas desativadas não são
+oferecidos como fonte, pois não produzem um valor válido naquele ponto.
+:::
 
-## Tipos de nós
+### Campos em vez de código
+
+As configurações mais comuns usam controles visuais:
+
+- **Requisição HTTP** — URL, método, query, cabeçalhos, tipo de corpo, campos
+  mapeados, timeout e tentativas
+- **Integração** — conexão, operação e campos esperados pela integração
+- **Responder webhook** — status, cabeçalhos e corpo
+- **Template oficial** — parâmetros na ordem exigida pelo template
+- **Mapear/definir campos** — destino e valor em linhas editáveis
+
+Os dados técnicos completos continuam disponíveis de forma recolhida para
+diagnóstico, mas não são a forma principal de configurar a etapa.
+
+Linhas com chave repetida, valor inválido ou campo obrigatório ausente mostram
+o erro no próprio controle e bloqueiam o teste daquela etapa.
+
+## Tipos de componentes
 
 ### Gatilhos
 
-Os gatilhos são o ponto de partida de qualquer fluxo. Eles definem **qual evento inicia a automação**. Cada fluxo começa obrigatoriamente com um nó de gatilho.
-
-| Gatilho | Quando dispara |
-|---|---|
-| **Mensagem Recebida** | Quando o contato envia uma mensagem para a conta |
-| **Mensagem Enviada** | Quando a equipe envia uma mensagem para o contato |
-| **Tag Adicionada** | Quando uma tag específica é adicionada ao contato |
-| **Etapa Alterada** | Quando o contato muda de etapa em um funil |
-| **Sem Resposta** | Quando o contato fica sem responder por um tempo definido (em minutos) |
-| **Webhook Recebido** | Quando um sistema externo envia dados para a URL do fluxo via POST |
-| **Contato Criado** | Quando um novo contato é criado na plataforma |
-| **Negociação Criada** | Quando uma nova negociação é aberta |
-| **Negociação Atualizada** | Quando os dados de uma negociação são modificados |
-| **Entrada na Lista** | Quando o contato entra em uma lista específica |
-
----
+Iniciam a automação a partir de eventos como mensagem recebida, tag adicionada,
+mudança de etapa, contato ou negociação criada, entrada em lista ou webhook.
 
 ### Condições
 
-Os nós de condição criam **ramificações no fluxo**. Eles avaliam uma situação e direcionam o fluxo por caminhos diferentes conforme o resultado — geralmente **Sim** ou **Não**.
-
-| Condição | O que verifica |
-|---|---|
-| **De Conteúdo** | Se a mensagem recebida contém uma palavra ou padrão específico |
-| **Tem Tag?** | Se o contato possui uma tag selecionada |
-| **Em Etapa?** | Se o contato está em uma etapa específica de um funil |
-| **Decide IA** | A IA analisa o contexto e decide qual caminho seguir com base em um prompt configurado |
-| **Switch** | Avalia múltiplos casos com regras avançadas, direcionando para saídas diferentes por caso |
-| **Horário Comercial?** | Verifica se o momento atual está dentro do horário comercial configurado (ex: 08:00 às 18:00) |
-
-:::tip[Dica]
-O nó **Switch** é útil quando você precisa de mais de dois caminhos. Configure cada "caso" com sua regra, e o fluxo segue para o caminho correspondente ao primeiro caso verdadeiro — ou para o caminho _Default_ se nenhum caso for atendido.
-:::
-
----
+Avaliam conteúdo, tags, etapa, horário, decisão da IA ou vários casos por meio
+de **Switch**. Cada saída recebe um nome estável para que reordenar casos não
+troque o caminho existente.
 
 ### Ações
 
-Os nós de ação **executam algo** para o contato ou na plataforma. São os nós que enviam mensagens, aplicam tags, movem etapas e realizam outras operações práticas.
+Enviam mensagens, usam template oficial ou mensagem rápida, adicionam ou
+removem tags, notificam a equipe, movem uma negociação, criam uma negociação,
+pausam a IA, chamam integrações ou fazem requisições HTTP.
 
-| Ação | O que faz |
-|---|---|
-| **Enviar Mensagem** | Envia uma mensagem para o contato. Você pode usar um Template Bot (criado na plataforma) ou um Template Oficial (aprovado pelo WhatsApp) |
-| **Adicionar Tag** | Aplica uma ou mais tags ao contato |
-| **Remover Tag** | Remove uma tag específica do contato |
-| **Notificar Equipe** | Envia uma notificação interna para a equipe com uma mensagem configurável |
-| **Mover Etapa** | Move o contato para uma etapa específica de um funil |
-| **Criar Negociação** | Abre uma nova negociação para o contato, com funil e etapa definidos |
-| **Pausar Bot** | Pausa o bot para o contato por um tempo determinado |
+### Controle e dados
 
-#### Enviar mensagem com botões UAZAPI
+Incluem espera, espera por resposta, fim, merge, mapeamento de campos e resposta
+de webhook.
 
-No nó **Enviar Mensagem**, contas que usam conexão WhatsApp via UAZAPI podem escolher o tipo **Botões UAZAPI**.
+## Testar com segurança
 
-Esse formato envia uma mensagem com até três botões. Ele é indicado para opções curtas, como confirmar interesse, abrir um link, copiar um código ou ligar para a equipe.
+Antes de publicar, abra o teste do fluxo e escolha um cenário compatível com o
+gatilho. É possível informar uma mensagem, dados do contato ou montar o corpo
+de um webhook por campos, sem escrever JSON.
 
-Tipos de botão disponíveis:
+O teste é sempre seguro:
 
-- **Resposta** → o clique do cliente volta como resposta na conversa.
-- **Link** → direciona o cliente para uma página externa.
-- **Copiar** → facilita copiar um código ou texto curto.
-- **Ligar** → abre a chamada telefônica no aparelho do cliente.
+- mensagens não são enviadas a contatos reais
+- alterações de tags, campos e etapas são simuladas
+- negociações não são criadas
+- chamadas externas não são disparadas
+- decisões da IA recebem uma prévia determinística
 
-:::info[Quando usar]
-Use botões para decisões simples. Para fluxos com muitas opções ou regras complexas, divida a jornada em mensagens menores e condições no próprio fluxo.
+O resultado informa claramente quando algo foi **Simulado**, **Pulado**,
+**Desativado**, concluído ou falhou.
+
+Para testar um componente isolado, o rascunho precisa estar salvo e válido. Se
+houver pendências, use **Corrigir pendências** para ir ao campo bloqueador.
+
+## Resultado e histórico de execução
+
+A aba **Resultado** prioriza uma leitura humana, com campos de negócio e listas
+organizadas. Os dados completos ficam recolhidos por padrão.
+
+Em **Execuções**, selecione um teste ou execução para ver:
+
+- status e duração
+- linha de execução
+- entrada e saída de cada componente
+- motivo de falha ou de ação pulada
+- chamadas externas registradas
+
+Se a IA pulou uma ação, o motivo disponível aparece na linha do tempo. Uma
+etapa desativada é identificada separadamente.
+
+## Desativar uma etapa sem excluir
+
+Uma ação linear compatível pode ser desativada pelo menu do componente ou pelo
+painel lateral. A etapa permanece no desenho, mas a automação segue diretamente
+para sua única saída sem executar o efeito.
+
+Não podem ser desativados:
+
+- gatilhos
+- condições e Switch
+- espera por resposta
+- fim
+- etapas sem uma única saída segura
+
+Se outra etapa usa o resultado daquela ação, o Studio bloqueia a desativação e
+oferece **Revisar campo**. Para voltar a executar, use **Reativar etapa**.
+
+## Editar e desfazer
+
+O editor mantém histórico local de alterações. Use desfazer e refazer para
+recuperar configuração, conexões, posição, exclusão ou desativação. Uma nova
+edição depois de desfazer inicia uma nova sequência.
+
+Ao excluir uma ação intermediária simples, o Studio reconecta o caminho quando
+isso é seguro. O gatilho não pode ser excluído.
+
+## Publicar e ativar
+
+Clique em **Publicar** para abrir a revisão. A tela apresenta pendências e o
+estado de ativação que será aplicado.
+
+- **Publicar ativo** — a nova versão passa a receber eventos
+- **Publicar inativo** — salva a versão em produção sem iniciar novas execuções
+
+O histórico de versões permite consultar, restaurar ou publicar uma versão
+anterior. Execuções que já começaram continuam vinculadas à versão usada no
+início, mesmo que o rascunho ou a produção sejam alterados depois.
+
+:::warning[WhatsApp Oficial]
+Mensagens livres dependem da janela de 24 horas. Fora dela, configure
+explicitamente um template oficial aprovado; o fluxo não faz troca automática.
 :::
-
----
-
-### Controle
-
-Os nós de controle gerenciam o **ritmo e o encerramento** do fluxo.
-
-| Controle | O que faz |
-|---|---|
-| **Aguardar** | Pausa o fluxo por um tempo configurado antes de continuar para o próximo nó |
-| **Aguardar Resposta** | Pausa o fluxo esperando o contato responder. Se a resposta chegar, o fluxo segue pelo caminho _Respondeu_. Se o tempo limite (Timeout) for atingido sem resposta, segue pelo caminho _Timeout_ |
-| **Fim** | Encerra a execução do fluxo para aquele contato |
-
-:::info[Timeout no Aguardar Resposta]
-O campo **Timeout** define quantas horas o fluxo aguarda a resposta do contato. O valor padrão é **24 horas**. Após esse prazo sem resposta, o fluxo segue automaticamente pelo caminho de timeout.
-:::
-
----
-
-### Avançado
-
-Os nós avançados são usados em integrações técnicas e fluxos mais elaborados.
-
-| Nó | O que faz |
-|---|---|
-| **Webhook Response** | Envia uma resposta de volta para um sistema externo que acionou o fluxo via webhook. Configure o código de status HTTP da resposta |
-| **Merge** | Une dois ou mais caminhos do fluxo em um único ponto, permitindo que ramificações diferentes se encontrem antes de continuar |
-| **Set Fields** | Define ou atualiza campos do contato ou de uma negociação com valores fixos ou dinâmicos |
-| **Mapear Campos** | Mapeia dados recebidos (como de um webhook) para os campos do contato ou da negociação |
-| **Integration Call** | Executa uma chamada a uma integração configurada na plataforma, passando parâmetros e recebendo dados de retorno |
-| **HTTP Request** | Faz uma requisição HTTP para qualquer URL externa. Configure a URL, o método (ex: POST) e o corpo da requisição em formato JSON |
-
----
-
-## Conectando nós
-
-Para criar a sequência do fluxo:
-
-1. Arraste um nó da **Biblioteca de Nós** para a área de trabalho
-2. Passe o cursor sobre o ponto de saída (círculo colorido) de um nó
-3. Clique e arraste até o ponto de entrada do próximo nó
-4. A conexão é criada e o caminho fica visível na tela
-
-Repita o processo para cada etapa do fluxo, incluindo os diferentes caminhos de condições (_Sim_, _Não_, _Timeout_).
-
----
-
-## Exemplo de fluxo
-
-Um fluxo simples de verificação de tag funciona assim:
-
-```
-Mensagem Recebida
-       ↓
-   Tem Tag?
-  ↙        ↘
-Sim         Não
- ↓
-Enviar Mensagem
-       ↓
-      Fim
-```
-
-Neste exemplo:
-- O fluxo inicia quando o contato envia uma mensagem
-- A condição verifica se o contato já possui a tag configurada
-- Se tiver a tag, uma mensagem é enviada e o fluxo termina
-- Se não tiver, o caminho _Não_ pode ser conectado a outra ação ou deixado sem conexão para encerrar silenciosamente
-
----
-
-## Salvando e publicando
-
-- **Salvar** — Grava o estado atual do fluxo como rascunho sem aplicá-lo. O fluxo continua usando a versão publicada anterior (se houver).
-- **Publicar** — Aplica todas as alterações do rascunho e coloca o fluxo em produção. A partir deste momento, novos eventos que corresponderem ao gatilho passarão pelo fluxo atualizado.
-
----
-
-## Ativando e desativando fluxos
-
-Use o **toggle** no cartão do fluxo na lista para ligar ou desligar um fluxo sem excluí-lo.
-
-- **Ativo** — o fluxo está em execução e reage aos eventos configurados no gatilho
-- **Inativo** — o fluxo está pausado e não dispara para nenhum contato enquanto estiver desligado

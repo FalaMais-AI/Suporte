@@ -1,7 +1,7 @@
 ---
 sidebar_position: 7
 title: "Agenda"
-description: ""
+description: "Eventos, tarefas, follow-ups e mensagens programadas em um único lugar"
 ---
 
 A **Agenda** centraliza eventos, tarefas, follow-ups e mensagens programadas em um único lugar.
@@ -11,6 +11,7 @@ Ela permite:
 - Visualizar compromissos
 - Criar eventos internos
 - Criar e acompanhar tarefas
+- Vincular tarefas a negociações
 - Programar mensagens no WhatsApp
 - Gerar links públicos de agendamento
 - Configurar disponibilidade
@@ -31,6 +32,9 @@ A Agenda pode ser visualizada em três formatos:
 - **Agenda** — lista dos compromissos por dia
 - **Semana** — visão semanal em grade de horários
 - **Mês** — calendário mensal compacto, com o mês inteiro em uma tela
+
+O seletor mantém a mesma largura ao alternar entre as três visões. Isso evita
+que os controles do cabeçalho mudem de posição durante a navegação.
 
 Tudo fica em uma única barra no topo:
 
@@ -80,8 +84,13 @@ No painel você pode:
 - **Concluir uma tarefa com um clique**, direto na caixa de seleção
 - Alternar entre **Minhas** (só as suas) e **Todas** (o que seu perfil
   permite ver)
+- Buscar por título, contato, negociação, funil ou etapa
 - Criar uma nova tarefa pelo botão **+ Nova**
-- Clicar em uma tarefa para abrir os detalhes
+- Clicar em qualquer parte de uma tarefa para abrir os detalhes
+
+Quando a tarefa está vinculada, o painel também mostra a negociação e o
+contexto de funil. O vínculo não amplia as permissões: cada pessoa vê apenas as
+negociações às quais já tem acesso.
 
 Em celulares e tablets, o painel abre como uma gaveta pelo botão
 **Tarefas**. Ao criar uma nova tarefa ou abrir os detalhes de uma tarefa, a
@@ -140,12 +149,43 @@ painel de Tarefas.
 | Campo | Obrigatório |
 |---|---|
 | Título | Sim |
-| Prazo | Não |
-| Prioridade (Baixa, Média, Alta) | Não |
 | Descrição | Não |
+| Prioridade (Baixa, Média, Alta) | Não |
+| Responsável | Não |
+| Prazo | Não |
+| Horário | Não |
+| Negociação vinculada | Não |
+| Checklist | Não |
 
 Tarefas **com horário** aparecem na grade da Semana; tarefas **sem horário**
 ficam na faixa "Sem horário", no topo da grade, no dia correspondente.
+
+### Vincular a uma negociação
+
+Ao criar ou editar, use **Negociação** para buscar pelo título, contato ou
+empresa. A lista mostra funil, etapa e valor para ajudar a escolher o registro
+correto.
+
+O vínculo é opcional e pode ser removido antes de salvar. Depois de vincular, a
+tarefa aparece tanto na Agenda quanto nos detalhes da negociação.
+
+### Checklist
+
+Use o checklist para quebrar a tarefa em passos menores. Cada passo pode ser
+marcado separadamente, e o progresso permanece salvo nos detalhes da tarefa.
+
+### Abrir, editar e concluir
+
+Clique em uma tarefa para abrir **Detalhes da tarefa**. É possível alterar
+todos os campos e usar **Concluir tarefa** sem sair da janela.
+
+Se houver alterações ainda não salvas, a conclusão salva primeiro os novos
+dados e só então marca a tarefa como concluída. Se o salvamento falhar, a
+tarefa permanece pendente. Ao tentar fechar uma tarefa editada, a Agenda pede
+confirmação antes de descartar as mudanças.
+
+A abertura usa uma transição curta e discreta, com respeito à preferência de
+movimento reduzido do dispositivo.
 
 ### Estados da tarefa
 

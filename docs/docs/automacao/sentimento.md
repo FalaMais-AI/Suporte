@@ -1,135 +1,66 @@
 ---
 sidebar_position: 7
 title: "Sentimento"
-description: "Regras automáticas acionadas com base no sentimento detectado nas mensagens do cliente"
+description: "Transforme sinais da conversa em ações automáticas"
 ---
 
-# Regras de Sentimento
+# Condições por sentimento
 
-A aba **Sentimento** dentro do módulo **Automações** permite criar **regras automáticas baseadas no sentimento detectado** nas mensagens dos clientes.
+A aba **Sentimento** cria condições que reagem aos sinais identificados pela IA
+nas conversas.
 
-Quando a IA identifica um sentimento específico com determinado nível de confiança, as ações configuradas são executadas automaticamente — como pausar o bot ou notificar a equipe.
+Localização:
 
-Localização no sistema:
+**Automações → Ajustes → Sentimento**
 
-**Automações → Sentimento**
+![Condições por sentimento](sentimento-lista.png)
 
-![Visão geral da aba Sentimento](sentimento-lista.png)
+## Visão geral
 
----
+O cabeçalho mostra o total de condições e quantas estão ativas. Cada item resume
+o sinal observado, a confiança mínima e as ações executadas.
 
-## Visão Geral da Página
+## Criar uma condição
 
-Na tela principal são exibidos:
+Clique em **Nova condição** e configure:
 
-- Indicadores **Ativos** e **Total** de regras cadastradas
-- Lista de regras com nome, sentimento detectado, limiar de confiança e ações configuradas
-- Toggle para ativar ou desativar cada regra individualmente
-- Botões **Editar** e **Excluir** para cada regra
+- **Nome**
+- **Sinal detectado**
+- **Confiança mínima**
+- ações executadas quando o sinal for reconhecido
 
-Botão principal:
+![Nova condição por sentimento](sentimento-nova.png)
 
-```
-+ Nova Regra
-```
+## Sinais disponíveis
 
----
+- Positivo
+- Negativo
+- Neutro
+- Frustrado
+- Interessado
+- Misto
 
-## Criar uma Regra de Sentimento
+O controle **Confiança mínima** reduz ações baseadas em classificações pouco
+confiáveis. Quanto maior o percentual, mais forte precisa ser o sinal.
 
-Clique em **+ Nova Regra** para abrir o formulário de criação.
+## Ações
 
-![Formulário de nova regra de sentimento](sentimento-nova.png)
+É possível combinar:
 
----
+- **Pausar a IA e aguardar atendimento humano**
+- **Notificar equipe**
+- **Adicionar tags**
 
-## Estrutura de uma Regra
+Se nenhuma ação for selecionada, a detecção continua registrada para consulta.
 
-### Nome
+## Editar, ativar e excluir
 
-Identificador da regra, usado para reconhecê-la na lista.
+Clique em **Editar** para revisar a condição. O seletor **Ativa/Inativa** muda o
+estado sem excluir a configuração. A exclusão exige confirmação.
 
-Exemplo:
+![Edição de uma condição](sentimento-editar.png)
 
-```
-Alerta cliente frustrado
-```
+## Estado vazio e falhas
 
----
-
-### Sentimento
-
-Define qual sentimento detectado pela IA irá disparar a regra.
-
-Opções disponíveis no dropdown:
-
-- **Negativo**
-- **Frustrado**
-- (outros sentimentos conforme configuração da conta)
-
----
-
-### Confiança Mínima
-
-Define o **percentual mínimo de certeza** que a IA precisa ter para acionar a regra.
-
-O valor é ajustado por um slider e o padrão é **70%**.
-
-Exemplo:
-
-```
-Confiança mínima: 70%
-```
-
-Quanto maior o valor, mais precisa precisa ser a detecção antes de a regra ser ativada.
-
----
-
-### Ações
-
-Definem o que acontece quando a regra é acionada. As opções são:
-
-| Ação | Descrição |
-|------|-----------|
-| **Pausar bot (aguardar humano)** | O bot é pausado e a conversa aguarda atendimento humano |
-| **Notificar equipe** | A equipe recebe uma notificação sobre o sentimento detectado |
-
-Ambas as ações podem ser combinadas.
-
----
-
-### Adicionar Tags
-
-Permite aplicar **tags automaticamente** ao contato quando o sentimento for detectado.
-
-As tags disponíveis são as já cadastradas no sistema. Basta marcar as desejadas.
-
----
-
-## Editar uma Regra
-
-Clique em **Editar** no cartão da regra para abrir o formulário de edição com os mesmos campos da criação.
-
-![Formulário de edição de regra](sentimento-editar.png)
-
-Após ajustar, clique em **Salvar**.
-
----
-
-## Ativar e Desativar Regras
-
-Cada regra possui um **toggle** que permite ativá-la ou desativá-la sem precisar excluí-la.
-
-- Toggle **ligado** → regra ativa, acionada automaticamente quando o sentimento for detectado
-- Toggle **desligado** → regra pausada, sem efeito nas conversas
-
----
-
-## Exemplo de Regra
-
-| Campo | Valor |
-|-------|-------|
-| Nome | Cliente frustrado |
-| Sentimento | Frustrado |
-| Confiança mínima | 70% |
-| Ações | Pausar bot + Notificar equipe |
+Sem condições cadastradas, a página oferece **Criar primeira condição**. Se a
+consulta falhar, a tela mantém o erro visível e oferece nova tentativa.
