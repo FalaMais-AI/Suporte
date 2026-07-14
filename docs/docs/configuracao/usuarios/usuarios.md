@@ -20,18 +20,34 @@ No topo da página são exibidos:
 - **Usuários ativos**
 - **Administradores**
 
-### Convidar Usuário
+### Adicionar um usuário
 
-Clique em **Convidar Usuário**.
+Em **Configurações → Usuários e equipes → Usuários**, clique em **Convidar
+usuário**.
 
-Ao convidar um novo usuário, é possível definir:
+Preencha o nome, o email e a função da pessoa. Se necessário, selecione também
+a equipe. Depois, escolha como o primeiro acesso será liberado:
 
-- Nome
-- Email
-- Função (cargo/permissão)
-- Equipe
+- **Enviar convite:** a pessoa recebe um email com um link protegido para
+  confirmar o endereço e criar a própria senha. O link pode ser usado uma única
+  vez e fica disponível por até 72 horas.
+- **Definir senha agora:** você informa uma senha inicial e entrega os dados de
+  acesso diretamente à pessoa.
 
-O usuário receberá um convite para acessar a plataforma.
+Para a maioria dos casos, prefira **Enviar convite**. Assim, somente a pessoa
+que recebeu o email conhece a senha escolhida.
+
+### Acompanhar e reenviar convites
+
+Quem ainda não concluiu o primeiro acesso aparece com o status **Convite
+pendente**. Quando o prazo termina, o status muda para **Convite expirado**.
+
+Para enviar um novo link, abra o menu de ações da pessoa e selecione **Reenviar
+convite**. O link anterior deixa de funcionar assim que o novo convite é
+gerado.
+
+Depois que a pessoa aceita o convite, o email é confirmado, a conta é ativada
+e ela já pode entrar com a senha que escolheu.
 
 ### Informações exibidas na lista
 
