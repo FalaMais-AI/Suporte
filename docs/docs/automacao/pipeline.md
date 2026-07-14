@@ -16,6 +16,8 @@ Localização:
 
 ![Contatos em automações](img.png)
 
+![Tela de acompanhamento com filtros e estado vazio claros](em-andamento-claro.png)
+
 ---
 
 ## O que aparece na lista
@@ -52,6 +54,33 @@ justificativa registrada e o próximo passo disponível. Se a automação antiga
 não tiver uma justificativa detalhada, a tela informa isso sem inventar um
 motivo.
 :::
+
+## Motivos de bloqueio e falha
+
+A tela apresenta os motivos em português, sem exigir que a equipe interprete
+códigos técnicos. Os principais casos são:
+
+- **Bloqueado pela revisão da IA** — a revisão confirmou que a mensagem não
+  deveria ser enviada;
+- **Revisão da IA indisponível** — a verificação de segurança não pôde ser
+  concluída e o envio foi interrompido;
+- **Mensagem vazia ou inválida** — a geração não retornou uma mensagem pronta
+  para envio;
+- **Template incompatível** — o template não atende à conexão ou à janela de
+  envio escolhida;
+- **Variáveis não preenchidas** — um ou mais campos obrigatórios do template
+  ficaram sem valor.
+
+Quando uma mensagem parece repetir instruções internas, o histórico mostra:
+
+- **Bloqueado pela revisão da IA**
+- **A mensagem pareceu repetir instruções internas e foi bloqueada antes do
+  envio.**
+- **Revise o mini-prompt e o contexto da conversa antes de gerar um novo
+  teste.**
+
+A justificativa segura da revisão aparece como **Motivo**. Detalhes técnicos,
+prompts internos e o conteúdo suspeito não são exibidos.
 
 ## Filtros
 
