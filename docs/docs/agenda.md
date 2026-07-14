@@ -206,7 +206,14 @@ da Agenda usam apenas esses estados para evitar resultados inconsistentes.
 
 ## Programar Mensagem
 
-Permite agendar o envio automático de uma mensagem via WhatsApp em uma data e hora específicas.
+Permite agendar o envio automático de uma mensagem via WhatsApp em uma data e
+hora específicas. O agendamento pode ser criado pela **Agenda** ou pelo botão
+**Programar mensagem** no cabeçalho de uma conversa.
+
+Além de conversas individuais, grupos conectados por **UAZAPI** também podem
+receber mensagens programadas.
+
+![Agendamento de mensagem com mídia para um grupo](agendamento-grupo-midia.png)
 
 ### Campos disponíveis
 
@@ -214,9 +221,33 @@ Permite agendar o envio automático de uma mensagem via WhatsApp em uma data e h
 |---|---|
 | Conversa | Sim |
 | Data e hora de envio | Sim |
-| Mensagem | Sim |
+| Anexo | Não |
+| Mensagem ou anexo | Sim |
 
-Após confirmar, a mensagem será enviada automaticamente no horário definido.
+O anexo pode ser:
+
+- imagem
+- vídeo
+- áudio
+- documento ou outro arquivo compatível
+
+O limite por arquivo é **20 MB**. Ao anexar uma imagem, vídeo ou documento, o
+texto funciona como legenda. Para áudio, o texto é opcional. Também é possível
+programar apenas uma mensagem de texto.
+
+Antes de salvar, o FalaMais.AI confirma se a conversa e a conexão pertencem à
+empresa atual. O arquivo fica protegido até o horário do envio. Se o
+agendamento for cancelado, o arquivo reservado também é removido.
+
+:::info[WhatsApp Oficial]
+Fora da janela de 24 horas, o envio continua exigindo a escolha explícita de
+um template oficial aprovado. Não há conversão automática de texto ou mídia
+livre para template.
+:::
+
+Após confirmar, a mensagem aparece na Agenda e na conversa com o horário
+programado. É possível editar o texto ou a legenda e o horário antes do envio,
+ou cancelar o agendamento.
 
 ---
 

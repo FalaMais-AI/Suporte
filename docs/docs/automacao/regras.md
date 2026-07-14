@@ -123,6 +123,27 @@ Configure:
 - condições de saída
 - envio durante atendimento humano, quando esse comportamento for desejado
 
+![Regra com envio durante atendimento humano ativado](atendimento-humano.png)
+
+### Enviar durante atendimento humano
+
+Ative **Enviar durante atendimento humano** quando o follow-up deve continuar
+mesmo com um atendente atribuído à conversa ou com a IA de atendimento pausada.
+
+Com essa opção ativa:
+
+1. uma mensagem enviada pelo atendente reinicia o prazo da próxima tentativa;
+2. a conversa continua elegível enquanto estiver em atendimento humano;
+3. a IA prepara o follow-up considerando as mensagens recebidas como falas do
+   **Cliente** e todas as mensagens enviadas como falas do **Atendente**;
+4. uma resposta do cliente antes do horário cancela o envio pendente.
+
+O limite máximo de envios, o intervalo mínimo, os dias e os horários da regra
+continuam valendo normalmente.
+
+Quando a opção está desativada, a intervenção humana mantém o comportamento de
+interromper ou reagendar o follow-up de acordo com a configuração atual.
+
 Se o horário estiver habilitado, o início precisa ser anterior ao fim. Quando a
 restrição de horário está desligada, os dias ocultos não bloqueiam o envio.
 
@@ -136,6 +157,18 @@ pausar a IA ou notificar a equipe.
 Quando ativada, a IA reavalia o contexto imediatamente antes do envio. Se o
 follow-up não fizer mais sentido, ele não é enviado e o motivo disponível
 aparece em **Em andamento** e no **Histórico**.
+
+Mensagens geradas pela IA também passam por uma proteção contra repetição de
+instruções internas. Quando houver apenas uma suspeita, uma revisão semântica
+da IA pode:
+
+- aprovar a mensagem original;
+- reescrever a mensagem uma única vez e validá-la novamente;
+- bloquear o envio com uma justificativa segura.
+
+Se a revisão estiver indisponível ou a versão reescrita continuar insegura, a
+mensagem não é enviada. Os prompts internos e o conteúdo suspeito não são
+mostrados nem guardados no histórico.
 
 ## Avisos antes de salvar
 
