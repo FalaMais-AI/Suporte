@@ -16,6 +16,7 @@ Você pode:
 - Conectar via API oficial (Meta)
 - Atualizar status
 - Editar nome da instância
+- Ativar chamadas nas linhas compatíveis
 - Remover conexões
 - Monitorar limite de conexões
 
@@ -44,12 +45,12 @@ Para adicionar um novo canal:
 
 Você poderá escolher entre:
 
-- QR Code (WhatsApp Web)
+- UAZAPI (QR Code)
 - WhatsApp Meta API (API Oficial)
 
 # Métodos de Conexão
 
-### 1. QR Code (WhatsApp Web)
+### 1. UAZAPI (QR Code)
 
 Conexão rápida via espelhamento do WhatsApp Web.
 
@@ -101,6 +102,15 @@ Cada instância exibida na tela mostra:
 - Ações disponíveis
 
 ## Ações Disponíveis
+
+### Chamadas
+
+Em contas habilitadas, as linhas UAZAPI mostram a seção **Chamadas**. Use
+**Ativar** para informar o token Wavoip e obter o webhook ou **Configurar** para
+trocar credenciais, gerar outro webhook e desativar a telefonia da linha.
+
+O status **Pronta** aparece somente depois que o dispositivo confirma a conexão.
+Veja o passo a passo em [Chamadas pelo WhatsApp](../chamadas-whatsapp.md).
 
 ### Editar nome
 Permite alterar o nome exibido da instância.
