@@ -61,6 +61,7 @@ Define quais módulos o usuário pode acessar:
 - Configurações
 - IA
 - Canais
+- Chamadas
 - Fluxos
 
 ### Permissões de Chat
@@ -141,6 +142,17 @@ Permissões administrativas como:
 - Gerenciar WhatsApp
 - Gerenciar integrações
 - Gerenciar faturamento
+- Gerenciar chamadas
+
+### Permissões de Chamadas
+
+- Realizar chamadas
+- Atender chamadas
+- Ver chamadas próprias
+- Ver chamadas da equipe
+
+Veja como ativar uma linha e operar as ligações em
+[Chamadas pelo WhatsApp](../../chamadas-whatsapp.md).
 
 ### IA e Automação
 
