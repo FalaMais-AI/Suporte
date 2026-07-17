@@ -151,6 +151,9 @@ Em cada empresa é possível acompanhar:
 - Negócios relacionados e valores em aberto.
 - Última atividade conhecida a partir dos contatos vinculados.
 
+Clique em uma pessoa na lista de contatos vinculados para abrir diretamente o
+perfil correspondente, sem precisar repetir a busca na área de Contatos.
+
 ### Criar ou editar uma empresa
 
 Clique em **Nova empresa** para cadastrar uma empresa. Depois de criada, use

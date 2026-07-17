@@ -16,6 +16,17 @@ direto da plataforma, com um documento profissional e rastreável.
 - Acompanhar o **histórico interno** de cada proposta.
 - Visualizar os **eventos** da proposta (quando foi aberta, assinada, etc.).
 
+## Modelos e campos automáticos
+
+No editor de modelos, insira campos do contato, da empresa, da negociação e da
+proposta para preencher o documento automaticamente. A lista mostra todos os
+campos disponíveis para o contexto atual.
+
+Listas com marcadores, listas numeradas e citações criadas no editor são
+mantidas no documento gerado. Antes de enviar, use a prévia para conferir todas
+as páginas do PDF dentro do próprio sistema. Se necessário, **Abrir** e **Baixar**
+continuam disponíveis como alternativas.
+
 ## Link público
 
 Cada proposta gera um **link público** que pode ser enviado ao cliente. Por

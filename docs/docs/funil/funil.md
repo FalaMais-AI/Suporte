@@ -169,6 +169,9 @@ Você pode:
 - Editar informações
 - Excluir negociação
 
+Negociações em etapas ganhas ou perdidas continuam abrindo os detalhes ao
+clique, mas ficam protegidas contra arraste e mudança indevida de etapa.
+
 ## Detalhes da Negociação
 
 Ao clicar em um card, abre a tela completa da negociação. Ela é dividida em seções:
@@ -269,6 +272,10 @@ Você pode filtrar por:
 - Data de criação
 - Data prevista de fechamento
 - Campos personalizados
+
+Em **Data prevista de fechamento**, escolha **Sem data prevista** para localizar
+negociações que ainda não receberam uma previsão, ou **Com data prevista** para
+mostrar apenas as que já foram planejadas.
 
 Filtros de campos personalizados respeitam o tipo configurado. Texto, número,
 moeda, data e seleção oferecem operadores adequados, e regras avançadas podem
