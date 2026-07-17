@@ -181,6 +181,9 @@ marcado separadamente, e o progresso permanece salvo nos detalhes da tarefa.
 Clique em uma tarefa para abrir **Detalhes da tarefa**. É possível alterar
 todos os campos e usar **Concluir tarefa** sem sair da janela.
 
+Em telas menores, role o conteúdo dentro da própria janela para alcançar o
+checklist e as ações finais; o cabeçalho e os comandos permanecem acessíveis.
+
 Se houver alterações ainda não salvas, a conclusão salva primeiro os novos
 dados e só então marca a tarefa como concluída. Se o salvamento falhar, a
 tarefa permanece pendente. Ao tentar fechar uma tarefa editada, a Agenda pede

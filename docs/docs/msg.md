@@ -56,6 +56,10 @@ Ao clicar em **Pegar**, o atendimento passa a ser responsabilidade do atendente.
 
 Exibida no centro da tela quando uma conversa é selecionada.
 
+Ao iniciar uma conversa pela ação **Mensagem** dentro de uma negociação, a área
+de Mensagens abre em uma nova guia e já identifica o contato correto. Assim, a
+negociação permanece aberta na guia original para consulta.
+
 Informações exibidas:
 
 - Nome do contato

@@ -16,6 +16,8 @@ interagem com a sua empresa antes e durante o atendimento.
 - Organizar **listas de rastreamento** para segmentar contatos.
 - Registrar **conversões de anúncios** e integrá-las com a Meta.
 
+![Configuração das condições de conversão](./img/conversao-condicoes.png)
+
 ## Formulários
 
 Os formulários capturam novos leads e os trazem para dentro da plataforma já
@@ -33,6 +35,27 @@ deles — útil para segmentar campanhas e medir resultados.
 O Hub de Conversão registra conversões originadas de anúncios e pode
 sincronizá-las com a Meta, conectando o investimento em mídia ao resultado
 real dentro do CRM.
+
+### Condições avançadas
+
+Nas integrações da Meta e do Google Ads, use **Condições avançadas** para enviar
+uma conversão somente quando a negociação atender aos critérios comerciais.
+
+Dentro de cada grupo, as condições são combinadas com **E**: todas precisam ser
+verdadeiras. Use **Adicionar grupo OU** quando caminhos diferentes também devem
+registrar a conversão. Por exemplo:
+
+- está atualmente em **Proposta enviada** e tem a tag **Cliente premium**; ou
+- passou por **Demonstração** e está atualmente em **Fechado ganho**.
+
+Cada grupo pode considerar:
+
+- a etapa atual da negociação;
+- qualquer tag, todas as tags ou a ausência das tags selecionadas;
+- qualquer etapa ou todas as etapas pelas quais a negociação já passou.
+
+Uma regra sem grupos avançados continua funcionando apenas com os critérios
+básicos já configurados. É possível criar até dez grupos por regra.
 
 :::tip
 Para acompanhar essas oportunidades no funil, veja a página de [Funil](../funil/funil.md).

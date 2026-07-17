@@ -35,6 +35,19 @@ métricas de vendas e o bloco de distribuição por etapa.
 A escolha fica salva por empresa e também aparece no endereço da página. Ao
 trocar o funil, você permanece no Dashboard.
 
+Ative **Aplicar ao atendimento** para usar o funil escolhido também nos
+indicadores operacionais, como conversas, primeira resposta, resolução,
+distribuição por instância, horários de pico e atividade recente. Você ainda
+pode escolher uma etapa específica; sem etapa selecionada, o Dashboard considera
+todas as etapas daquele funil.
+
+Essa opção é útil para comparar o atendimento de uma operação, unidade ou linha
+comercial sem alterar o funil usado nos demais blocos. O período e o escopo
+selecionados permanecem no endereço da página e podem ser compartilhados com
+outro usuário que tenha acesso aos mesmos dados.
+
+![Atendimento filtrado por funil no Dashboard](./dash/atendimento-funil.png)
+
 ## Período
 
 Períodos rápidos:
