@@ -34,6 +34,17 @@ O parceiro deve tratar `PENDING`, `SUCCEEDED` e `FAILED` como estados distintos.
 Uma resposta `202` significa que o comando foi aceito, não que a alteração já
 foi aplicada.
 
+## Primeiro acesso administrativo local
+
+Depois de atualizar a instalação, execute novamente o instalador no servidor e
+escolha **Criar Super Admin**. Informe o nome, e-mail e uma senha forte para o
+primeiro acesso administrativo da plataforma local.
+
+A senha é digitada sem aparecer na tela e a confirmação mostra apenas o nome e
+o e-mail. Essa ação só funciona quando ainda não existe outro Super Admin na
+instalação; para alterar um acesso já criado, use os recursos administrativos
+da própria plataforma.
+
 ## Sincronização com o cliente
 
 A instalação faz polling autenticado por mTLS para buscar o estado desejado e
@@ -48,4 +59,3 @@ tratamento de QR Code e o checklist de aceite.
 
 > A captura de tela do painel será adicionada quando houver um ambiente de
 > homologação autenticado disponível para captura.
-
