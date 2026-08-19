@@ -45,6 +45,12 @@ o e-mail. Essa ação só funciona quando ainda não existe outro Super Admin na
 instalação; para alterar um acesso já criado, use os recursos administrativos
 da própria plataforma.
 
+Aguarde a mensagem **Atualização aplicada e validada** antes de criar esse
+primeiro acesso. Essa confirmação é exibida apenas quando a API local está
+pronta. Se a atualização não for validada ou a API estiver indisponível, use a
+opção **Diagnóstico** e envie ao suporte somente o erro, sem senhas, tokens ou
+outras credenciais.
+
 ## Sincronização com o cliente
 
 A instalação faz polling autenticado por mTLS para buscar o estado desejado e
