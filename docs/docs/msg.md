@@ -87,6 +87,22 @@ Na parte inferior da conversa fica a barra de envio, com os seguintes recursos:
 - **Melhorar com IA** → Sugere melhorias na mensagem digitada antes de enviar, com base no contexto da conversa.
 - **Gravação de áudio** → Grava e envia um áudio diretamente para o cliente.
 
+#### Sussurros internos e marcações
+
+Use **Nota interna** quando precisar orientar a equipe sem enviar nada ao cliente.
+O sussurro aparece no próprio histórico da conversa, com identificação visual
+em amarelo, para todas as pessoas que já têm permissão de acompanhar aquele
+atendimento.
+
+Para chamar a atenção de alguém específico, digite `@` no texto do sussurro e
+escolha a pessoa na lista. A lista mostra somente atendentes que podem abrir a
+mesma conversa naquele momento. Depois do envio, a pessoa marcada recebe um
+aviso na central de notificações; se ela já tiver ativado os alertas do
+navegador, o mesmo aviso também poderá aparecer fora da aba.
+
+Marcar uma pessoa não muda quem pode ler o sussurro. O cliente nunca vê esse
+conteúdo, e pessoas sem acesso à conversa não recebem o aviso.
+
 #### Mensagem sugerida de aniversário
 
 Quando você abre uma notificação de aniversário pelo botão **Revisar mensagem
