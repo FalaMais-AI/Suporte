@@ -103,6 +103,15 @@ navegador, o mesmo aviso também poderá aparecer fora da aba.
 Marcar uma pessoa não muda quem pode ler o sussurro. O cliente nunca vê esse
 conteúdo, e pessoas sem acesso à conversa não recebem o aviso.
 
+Quando a barra de envio estiver mais compacta, use **Mais opções de envio**
+para abrir os recursos complementares sem reduzir o espaço para escrever.
+
+Para manter uma orientação importante visível durante o atendimento, use o
+ícone de **fixar** no sussurro. Ele passa a aparecer no topo da conversa para
+as pessoas autorizadas a acompanhá-la. Use o mesmo ícone para desafixar quando
+a orientação não for mais necessária; essa ação nunca envia mensagem ao
+cliente.
+
 #### Mensagem sugerida de aniversário
 
 Quando você abre uma notificação de aniversário pelo botão **Revisar mensagem
