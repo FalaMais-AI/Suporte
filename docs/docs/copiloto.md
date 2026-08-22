@@ -2,16 +2,19 @@
 sidebar_position: 11
 sidebar_label: 'Copiloto Interno'
 title: "Assistente IA (Copiloto Interno)"
-description: "O **Assistente IA** é o copiloto interno do FalaMais.AI."
+description: "Consulte dados, analise conversas e execute ações autorizadas pelo Assistente IA."
 ---
 
 # Assistente IA (Copiloto Interno)
 
-O **Assistente IA** é o copiloto interno do FalaMais.AI.
+O **Assistente IA** é o copiloto interno do FalaMais.AI. Ele consulta os dados
+que seu perfil pode acessar e ajuda a transformar pedidos em análises ou ações
+dentro da plataforma.
 
-Ele atua como um **suporte inteligente dentro da plataforma**, com conhecimento completo do sistema e autonomia para executar ações operacionais conforme as permissões configuradas.
+![Assistente IA exibindo uma análise e a consulta realizada](img/copiloto-assistente-ia.png)
 
-Seu objetivo é acelerar tarefas, organizar processos e auxiliar usuários na gestão de contatos, negociações e funis.
+Seu objetivo é acelerar tarefas, organizar processos e auxiliar usuários na
+gestão de conversas, contatos, negociações e funis.
 
 ---
 
@@ -20,12 +23,15 @@ Seu objetivo é acelerar tarefas, organizar processos e auxiliar usuários na ge
 O Assistente IA é um chat interno integrado ao sistema que pode:
 
 - Responder dúvidas sobre funcionalidades
-- Orientar sobre boas práticas
+- Consultar indicadores e dados autorizados
+- Resumir conversas de um período
+- Orientar sobre boas práticas e próximos passos
 - Criar e organizar estruturas no CRM
-- Executar ações diretamente no sistema
+- Executar ações permitidas diretamente no sistema
 - Automatizar tarefas operacionais
 
-Ele entende comandos em linguagem natural, como se você estivesse conversando com um especialista da ferramenta.
+Ele entende comandos em linguagem natural. As consultas respeitam a empresa,
+o perfil de acesso e as permissões de cada usuário.
 
 ## O que ele consegue fazer
 
@@ -55,9 +61,23 @@ O Assistente IA pode:
 - Segmentar base de contatos
 - Criar estruturas de acompanhamento
 
+### Análises de conversas
+
+- Resumir conversas das últimas 24 horas ou dos últimos 7 dias
+- Informar quantas conversas foram encontradas e analisadas
+- Sinalizar quando a consulta não encontrou dados ou teve cobertura parcial
+- Organizar riscos, oportunidades e próximos passos sem inventar números
+
 ## Interface do Assistente
 
-O Assistente funciona em formato de chat.
+O Assistente funciona em formato de chat. Durante uma consulta, ele mostra a
+etapa em andamento — por exemplo, planejamento, consulta e síntese — e atualiza
+o tempo decorrido em análises mais longas. Isso permite acompanhar o trabalho
+sem depender de uma animação genérica.
+
+Quando uma ferramenta é usada, o resultado aparece em um bloco próprio com o
+status da execução. A resposta aceita títulos, listas, tabelas, links seguros e
+blocos de código, quando necessários.
 
 Ao abrir, ele exibe sugestões rápidas como:
 
@@ -69,6 +89,10 @@ Você pode:
 
 - Clicar em uma sugestão
 - Ou digitar um comando personalizado
+- Interromper uma resposta em andamento
+- Copiar ou gerar novamente a última resposta
+- Avaliar a resposta como útil ou não útil
+- Consultar conversas anteriores do Assistente
 
 Exemplo de comandos:
 
@@ -76,6 +100,21 @@ Exemplo de comandos:
 - "Adicione a tag Cliente VIP para todos os contatos com negociação ativa"
 - "Organize leads sem responsável"
 - "Crie um follow-up para clientes parados há 15 dias"
+- "Analise as conversas das últimas 24 horas e informe a cobertura"
+- "Resuma as conversas dos últimos 7 dias sem inventar números"
+
+## Confirmações e segurança
+
+Consultas não alteram dados. Ações que podem modificar o sistema passam pelas
+permissões do usuário e podem exigir confirmação antes da execução.
+
+Se uma ação já confirmada for interrompida, o Assistente não a repete
+automaticamente. Confirme novamente somente depois de verificar o resultado.
+
+Quando uma consulta não tiver dados suficientes, a resposta deve informar a
+limitação com clareza. Não é necessário “liberar uma ferramenta” manualmente no
+chat: se uma capacidade não estiver disponível para seu perfil, o Assistente
+mostrará a restrição aplicável.
 
 ## Benefícios Estratégicos
 
@@ -101,7 +140,9 @@ Ele funciona como um **analista operacional interno**, disponível 24 horas.
 ## Boas Práticas
 
 - Use comandos claros e objetivos
+- Informe o período desejado nas análises
 - Comece no modo Híbrido
 - Valide estrutura antes de liberar Controle Total
+- Revise ações que alteram dados antes de confirmar
 - Utilize para tarefas repetitivas
 - Peça sugestões de organização periodicamente
