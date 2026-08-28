@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 3
 sidebar_label: 'Notificações'
 title: "Notificações"
 description: "A aba Notificações permite controlar como e quando você recebe alertas dentro da plataforma."

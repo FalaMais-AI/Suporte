@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+sidebar_position: 16
 title: "Integrações"
 description: "A aba Integrações permite conectar sistemas externos e configurar autenticações técnicas."
 ---
@@ -55,23 +55,11 @@ Informações exibidas:
 Para criar um webhook:
 Clique em Novo Webhook.
 
-## Admed
+## Integrações Externas
 
-Em **Ajustes → Integrações externas → Admed**, configure a confirmação automática
-de consultas por WhatsApp. Depois de validar as credenciais e buscar as agendas,
-o sistema lista as unidades e os profissionais encontrados.
-
-Cada regra pode atender:
-
-- **Todos os profissionais**;
-- **Somente profissionais selecionados**;
-- **Todos, exceto os profissionais selecionados**.
-
-Nos dois últimos modos, marque um ou mais nomes retornados pela agenda Admed. O
-filtro é aplicado tanto na prévia da regra quanto nos envios programados. Se um
-profissional ainda não aparecer, use novamente a busca de unidades e agendas
-antes de editar a regra.
-
+Conecte sistemas de terceiros como Admed, Digital Grid e Maqplan. Consulte a
+seção [Integrações Externas](./integracoes-externas/admed.md) para o passo a
+passo de cada uma.
 
 ## Chaves de API (API Keys)
 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 9
 sidebar_label: 'Canais'
 title: "Canais — WhatsApp"
 description: "A seção **Canais** permite gerenciar as conexões de WhatsApp utilizadas no sistema."
@@ -110,7 +110,7 @@ Em contas habilitadas, as linhas UAZAPI mostram a seção **Chamadas**. Use
 trocar credenciais, gerar outro webhook e desativar a telefonia da linha.
 
 O status **Pronta** aparece somente depois que o dispositivo confirma a conexão.
-Veja o passo a passo em [Chamadas pelo WhatsApp](../chamadas-whatsapp.md).
+Veja o passo a passo em [Chamadas pelo WhatsApp](./chamadas-whatsapp.md).
 
 ### Editar nome
 Permite alterar o nome exibido da instância.

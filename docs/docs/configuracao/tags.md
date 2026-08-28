@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 12
 title: "Tags"
 description: "As Tags permitem organizar, segmentar e classificar contatos dentro da plataforma."
 ---

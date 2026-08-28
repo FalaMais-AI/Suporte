@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 title: "Mensagens"
 description: "Guia da aba Mensagens: filas, conversa ativa, painel lateral e fluxo de atendimento."
 ---

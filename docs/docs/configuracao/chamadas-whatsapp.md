@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 11
 title: "Chamadas pelo WhatsApp"
 description: "Inicie, receba e acompanhe chamadas do WhatsApp no FalaMais.AI usando uma linha UAZAPI habilitada."
 ---
@@ -10,7 +10,7 @@ Contas habilitadas podem iniciar e receber chamadas sem sair do FalaMais.AI. A
 telefonia direta funciona nas linhas **UAZAPI** liberadas para a empresa. Não é
 necessário acessar a Wavoip, copiar tokens ou configurar webhooks manualmente.
 
-![Configuração e histórico de chamadas no FalaMais.AI](chamadas-whatsapp-v1-35.png)
+![Configuração e histórico de chamadas no FalaMais.AI](img/chamadas-whatsapp-v1-35.png)
 
 ## Antes de começar
 
@@ -125,5 +125,5 @@ Volte a **Configurações → Empresa → Canais → Chamadas → Configurar** e
 **Desativar**. O dispositivo gerenciado é cancelado e novas ligações deixam de
 funcionar, sem interromper as mensagens do canal.
 
-Veja também: [Canais — WhatsApp](configuracao/canais.md) e
-[Funções e permissões](configuracao/usuarios/funcao.md).
+Veja também: [Canais — WhatsApp](./canais.md) e
+[Funções e permissões](./usuarios/funcao.md).

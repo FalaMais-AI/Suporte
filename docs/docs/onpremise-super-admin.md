@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 12
 title: Integração On-Premise para parceiros
 description: Como a Sócios AI acompanha clientes, limites e operações On-Premise pela API Super Admin.
 ---

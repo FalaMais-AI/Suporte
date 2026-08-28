@@ -1,10 +1,10 @@
 ---
-sidebar_position: 1
-title: "Contatos importados pela Maqplan"
+sidebar_position: 2
+title: "Maqplan"
 description: "Entenda como o FalaMais identifica os contatos sincronizados pela integração Maqplan."
 ---
 
-# Contatos importados pela Maqplan
+# Maqplan
 
 Quando uma pessoa é sincronizada pela integração Maqplan, o FalaMais identifica
 o contato com a etiqueta **Maqplan**. Assim, fica mais fácil reconhecer a origem
@@ -33,4 +33,4 @@ da Maqplan que tenha informações suficientes para criar ou localizar o contato
 Não é necessário adicionar a etiqueta manualmente para esses casos.
 
 Para conhecer as demais opções do cadastro, consulte a página de
-[Contatos](../contatos.md).
+[Contatos](../../contatos.md).

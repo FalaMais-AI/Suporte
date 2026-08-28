@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5.1
+sidebar_position: 10
 sidebar_label: 'Instagram'
 title: "Canais — Instagram Direct"
 description: "Conecte o Instagram Direct como canal de atendimento na plataforma."

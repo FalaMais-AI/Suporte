@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 title: "Contatos"
 description: "O módulo Contatos centraliza todas as informações relacionadas aos leads e clientes da plataforma."
 ---

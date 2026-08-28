@@ -1,5 +1,5 @@
 ---
-sidebar_position: 12
+sidebar_position: 17
 title: "Mensagens rápidas"
 description: "Permite criar atalhos para respostas usadas com frequência no atendimento."
 ---

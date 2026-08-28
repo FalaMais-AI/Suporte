@@ -1,4 +1,5 @@
 ---
+sidebar_position: 19
 title: "Mídia no cabeçalho de templates do WhatsApp"
 description: "Como anexar imagem, vídeo ou documento ao cabeçalho de um template oficial."
 ---

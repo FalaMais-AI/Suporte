@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7.1
+sidebar_position: 9
 title: "Campanhas e Disparos"
 description: "Centro de Campanhas: criação de campanhas, disparos em massa pelo WhatsApp, públicos e custos de envio."
 ---

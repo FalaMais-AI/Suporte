@@ -1,13 +1,17 @@
 ---
-sidebar_position: 7.1
+sidebar_position: 4
 title: "Planos e preços"
-description: "Conheça os planos Essencial, Expansão e Scale e as formas de pagamento mensal, semestral e anual."
+description: "Conheça os planos Essencial, Expansão e Scale, compare recursos e formas de pagamento e saiba quando falar com vendas."
 ---
 
 # Planos e preços
 
 O FalaMais.AI tem três planos, pensados para acompanhar o crescimento da sua
-operação.
+operação. A comparação completa e os valores atualizados ficam no site
+institucional:
+**Site institucional → Planos**
+
+![Página de planos da FalaMais.AI](img/planos.png)
 
 ## Os planos
 
@@ -42,6 +46,37 @@ provedor da sua conta.
 
 Todos os planos incluem **7 dias de teste grátis**, sem necessidade de cartão
 de crédito.
+
+## O que comparar primeiro
+
+Para decidir com mais rapidez, observe estes pontos:
+
+### 1. Usuários
+
+Veja quantas pessoas da sua equipe vão usar a plataforma no dia a dia.
+
+### 2. Canais
+
+Compare quantos canais de atendimento sua operação precisa hoje e no curto
+prazo.
+
+### 3. Automações e IA
+
+Se você quer mais fluxos, mais autonomia e recursos avançados de IA, olhe com
+atenção a evolução do Essencial para o Expansão e para o Scale.
+
+### 4. Estrutura comercial
+
+A comparação mostra quando entram recursos voltados para uma operação mais
+robusta, como mais automações, mais canais e suporte mais próximo.
+
+## Quando vale falar com vendas
+
+Falar com vendas faz mais sentido quando:
+
+- você quer desenhar a melhor estrutura para sua equipe;
+- precisa de uma operação com mais canais ou onboarding mais próximo;
+- quer confirmar qual plano encaixa melhor no seu volume atual.
 
 :::tip
 Para gerenciar sua assinatura e formas de pagamento, veja a página de

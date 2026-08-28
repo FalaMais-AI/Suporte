@@ -1,17 +1,17 @@
 ---
-sidebar_position: 8
-title: "Webhooks de entrada"
+sidebar_position: 1
+title: "Digital Grid"
 description: "Receba eventos da Digital Grid no FalaMais.AI, identifique contatos e envie mensagens de WhatsApp com regras seguras."
 ---
 
-# Webhooks de entrada
+# Digital Grid
 
 Os webhooks de entrada permitem que a Digital Grid envie eventos para um
 endereço exclusivo da sua empresa no FalaMais.AI. Cada evento pode identificar
 ou criar um contato e disparar uma mensagem de WhatsApp conforme uma regra
 configurada.
 
-![Integrações Externas com a Digital Grid no FalaMais.AI](webhooks-de-entrada-v1-35.png)
+![Integrações Externas com a Digital Grid no FalaMais.AI](img/digital-grid-v1-35.png)
 
 ## Abrir a integração
 
@@ -74,4 +74,4 @@ a linha, a regra ou o conteúdo recebido.
 - rotacione o segredo quando uma pessoa responsável deixar a operação;
 - consulte o histórico após alterações feitas na Digital Grid.
 
-Veja também: [Canais — WhatsApp](configuracao/canais.md).
+Veja também: [Canais — WhatsApp](../canais.md).

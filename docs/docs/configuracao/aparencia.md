@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 4
 sidebar_label: 'Aparência'
 title: "Aparência"
 description: "Permite personalizar o tema visual da interface."

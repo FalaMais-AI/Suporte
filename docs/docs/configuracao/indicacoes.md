@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7.2
+sidebar_position: 8
 title: "Programa de Indicações"
 description: "Indique o FalaMais.AI, acompanhe suas indicações e ganhe créditos."
 ---
@@ -27,5 +27,5 @@ possível acompanhar o programa e administrar os créditos concedidos.
 
 :::tip
 Os créditos do programa podem ser usados na sua assinatura — veja a página de
-[Pagamentos](./configuracao/pagamentos.md).
+[Pagamentos](./pagamentos.md).
 :::

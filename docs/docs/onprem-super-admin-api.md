@@ -1,5 +1,5 @@
 ---
-sidebar_position: 19
+sidebar_position: 17
 title: "API de Super Admin On-Premise"
 description: "Orientações para usar com segurança os recursos administrativos em uma instalação On-Premise."
 ---

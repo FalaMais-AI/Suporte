@@ -152,7 +152,7 @@ Permissões administrativas como:
 - Ver chamadas da equipe
 
 Veja como ativar uma linha e operar as ligações em
-[Chamadas pelo WhatsApp](../../chamadas-whatsapp.md).
+[Chamadas pelo WhatsApp](../chamadas-whatsapp.md).
 
 ### IA e Automação
 

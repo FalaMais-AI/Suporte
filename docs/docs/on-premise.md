@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 11
 title: "FalaMais On-Premise"
 description: "Como funciona a edição FalaMais On-Premise, sua ativação e as atualizações verificadas."
 ---

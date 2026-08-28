@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 title: "Integrações personalizadas"
 description: "Configure integrações HTTP para que a IA execute ações autorizadas em sistemas externos."
 ---

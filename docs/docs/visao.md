@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 title: "Visão Geral"
 description: "Tour rápido e visão integrada dos módulos e recursos do FalaMais.AI."
 ---

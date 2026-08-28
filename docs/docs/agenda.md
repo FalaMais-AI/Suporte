@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 8
 title: "Agenda"
 description: "Eventos, tarefas, follow-ups e mensagens programadas em um único lugar"
 ---

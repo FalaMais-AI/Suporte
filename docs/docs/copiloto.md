@@ -1,5 +1,5 @@
 ---
-sidebar_position: 11
+sidebar_position: 15
 sidebar_label: 'Copiloto Interno'
 title: "Assistente IA (Copiloto Interno)"
 description: "Consulte dados, analise conversas e execute ações autorizadas pelo Assistente IA."
