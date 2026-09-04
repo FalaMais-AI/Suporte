@@ -1,10 +1,10 @@
 ---
-sidebar_position: 21
-title: "Integração Controle Odonto"
+sidebar_position: 4
+title: "Controle Odonto"
 description: "Como a integração com o Controle Odonto envia lembretes e confirmações de consultas pelo WhatsApp."
 ---
 
-# Integração Controle Odonto
+# Controle Odonto
 
 A integração com o **Controle Odonto** usa a agenda da clínica para enviar
 lembretes e confirmações de consultas pelo WhatsApp automaticamente.

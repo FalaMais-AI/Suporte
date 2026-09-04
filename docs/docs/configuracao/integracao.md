@@ -57,7 +57,8 @@ Clique em Novo Webhook.
 
 ## Integrações Externas
 
-Conecte sistemas de terceiros como Admed, Digital Grid e Maqplan. Consulte a
+Conecte sistemas de terceiros como Admed, Controle Odonto, Digital Grid e
+Maqplan. Consulte a
 seção [Integrações Externas](./integracoes-externas/admed.md) para o passo a
 passo de cada uma.
 
