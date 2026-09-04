@@ -125,6 +125,23 @@ Controle sobre:
 - Deletar
 - Criar etapas
 - Reordenar etapas
+- Escolher entre **todos os funis** ou **somente funis selecionados**
+
+Quando você limita os funis de uma função, as pessoas desse cargo deixam de
+ver as negociações, valores, etapas e indicadores dos demais funis. Essa
+regra também vale para pesquisas, relatórios, agenda e recursos de IA.
+
+Ver um funil não libera automaticamente a edição ou a exclusão. Cada ação
+continua dependendo da permissão correspondente.
+
+### Acesso administrativo aos dados
+
+A opção **Ver e gerir todos os dados** ignora os filtros de funil, equipe e
+responsável dentro da empresa. Ela deve ser usada apenas em cargos que
+realmente administram toda a operação.
+
+Somente Super Admin ou Administrador pode conceder ou remover esse acesso.
+Ter permissão para editar funções, sozinho, não permite ativá-lo.
 
 #### Agenda
 - Criar
