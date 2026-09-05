@@ -102,3 +102,7 @@ salvos. O menu não faz essa cópia por você.
 Na seleção de modelos de IA, o nome selecionado aparece separado dos recursos,
 das descrições e dos preços das opções. As configurações de roteamento e de
 escalonamento permanecem disponíveis em telas menores.
+
+![Seleção de modelos nas configurações gerais](./img/onprem-configuracoes-gerais.png)
+
+_Captura ilustrativa da interface de configurações gerais._
