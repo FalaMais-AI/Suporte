@@ -92,6 +92,41 @@ Conexão oficial via WhatsApp Business Cloud API.
 3. Autorizar a conta Meta
 4. Finalizar integração
 
+## Canais por conector em instalações habilitadas
+
+Em instalações que usam um conector de canais, o administrador define a conexão
+utilizada pela empresa. A empresa continua gerenciando seus canais pela mesma tela.
+
+### Escolher um canal já conectado
+
+Ao iniciar a conexão, o sistema consulta os canais disponíveis para a empresa.
+Se houver um canal conectado, selecione-o para adicioná-lo sem repetir o
+assistente. Para conectar outro canal, escolha a opção de criar uma nova conexão.
+Canais vinculados a outra empresa não ficam disponíveis para adoção.
+
+Se um canal for conectado por outro caminho autorizado, ele também pode aparecer
+na empresa quando o sistema receber a confirmação da conexão.
+
+### Modo da credencial
+
+O Super Admin encontra o seletor **Modo da key** nas configurações da plataforma:
+
+- **Tenant:** padrão para novas configurações. Use uma conta dedicada à instalação;
+  cada empresa recebe uma subconta própria, com limite de canais e recebimento
+  separados.
+- **Subconta:** use uma credencial exclusiva de uma empresa.
+
+Ao salvar, o sistema confere se a credencial corresponde ao modo selecionado.
+Em caso de divergência, a configuração anterior é preservada e o aviso informa
+qual modo escolher. **Testar usage** identifica a conta e o tipo da credencial.
+
+### Verificação do recebimento
+
+Antes de iniciar uma conexão, o sistema verifica se consegue receber um evento
+de teste. Se a confirmação estiver pendente, aguarde alguns segundos e tente
+novamente. Se a entrega falhar, peça ao administrador para conferir a configuração
+de recebimento e repita a tentativa após o ajuste.
+
 ## Cartão da Instância
 
 Cada instância exibida na tela mostra:
