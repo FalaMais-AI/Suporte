@@ -65,3 +65,40 @@ tratamento de QR Code e o checklist de aceite.
 
 > A captura de tela do painel será adicionada quando houver um ambiente de
 > homologação autenticado disponível para captura.
+
+## Contato comercial por empresa
+
+No Super Admin, selecione a empresa e informe o telefone comercial com código
+do país e DDD. Nas configurações gerais, defina o contato global para empresas
+sem número próprio. O número da empresa tem prioridade. Sem nenhum dos dois,
+o botão de WhatsApp comercial não aparece. Essa personalização é exclusiva
+das instalações On-Premise.
+
+## Armazenamento S3 sem reinstalar
+
+A partir da versão 1.71.0, com aplicação e instalador atualizados, execute
+`sudo falamais-onprem armazenamento` no servidor ou escolha
+**Variáveis → Armazenamento S3** no menu.
+
+Preencha bucket, região, endpoint (opcional para AWS), access key, secret key,
+URL pública/CDN e path-style. Cache e validade dos links são opcionais. Enter
+mantém o valor atual; `-` limpa um campo opcional. As chaves ficam ocultas.
+
+O sistema testa gravação, leitura e exclusão no bucket antes de pedir a
+confirmação. Depois, guarda um backup da configuração e reinicia os serviços
+da aplicação. Se a validação falhar, restaura a configuração anterior.
+
+Os arquivos antigos continuam no armazenamento local; os novos usam S3.
+Mantenha o volume local e seus backups. Essa operação não transfere arquivos
+antigos automaticamente e não reinstala a aplicação.
+
+Para trocar de bucket ou endpoint de um S3 existente, interrompa novos uploads
+e copie os objetos mantendo as mesmas chaves. Confirme com **COPIADO** apenas
+quando terminar. Preserve o bucket e a URL pública antigos para links já
+salvos. O menu não faz essa cópia por você.
+
+## Configurações gerais
+
+Na seleção de modelos de IA, o nome selecionado aparece separado dos recursos,
+das descrições e dos preços das opções. As configurações de roteamento e de
+escalonamento permanecem disponíveis em telas menores.

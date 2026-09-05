@@ -209,3 +209,10 @@ Os possíveis estados são:
 - Connecting
 
 O status impacta diretamente no recebimento e envio de mensagens.
+
+### Telefone de canais conectados pelo conector
+
+A sincronização consulta os detalhes do canal para exibir o telefone completo,
+incluindo o código do país. Se um canal conectado estiver sem número, execute
+a sincronização novamente. O número depende das informações disponibilizadas
+pelo provedor; a sincronização não altera o telefone conectado.
