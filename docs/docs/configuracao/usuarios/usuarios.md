@@ -103,3 +103,9 @@ negociação for marcada, os cards permanecem onde estão.
 ### Remover Usuário
 
 É possível remover usuários do sistema, conforme permissões da função.
+
+## Acesso pelas equipes
+
+Além da função e das restrições individuais, a equipe pode limitar os funis
+visíveis para membros e líder. Consulte [Equipes](./equipe.md#limitar-funis-por-equipe)
+para configurar esse acesso.
