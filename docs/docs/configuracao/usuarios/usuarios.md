@@ -64,7 +64,41 @@ Ao editar um usuário, é possível:
 
 - Alterar nome
 - Trocar função
-- Ajustar permissões via template de função
+- Restringir áreas e ações liberadas pela função
+- Restringir os funis visíveis
+- Limitar contatos e negociações para equipe ou somente próprios
+- Escolher os canais que a pessoa pode operar
+
+## Restrições individuais
+
+O cargo sempre define o acesso máximo. A configuração individual pode apenas
+reduzir esse acesso; ela nunca libera um funil, canal ou ação que o cargo não
+possui.
+
+Na edição do usuário, abra a aba **Dados** para escolher:
+
+- **Herdar do cargo:** mantém o mesmo alcance da função.
+- **Restringir para itens específicos:** permite marcar somente parte dos
+  funis já liberados para a função.
+- **Escopo de contatos e negociações:** limita o usuário para dados da equipe
+  ou somente os próprios, conforme o teto do cargo.
+
+Na aba **Canais**, selecione quais conexões a pessoa poderá operar.
+
+### Contatos, conversas e negociações
+
+Quando um atendimento é atribuído a uma pessoa ou à equipe dela, o contato
+fica visível enquanto essa atribuição existir. O histórico completo do contato
+pode ser consultado, inclusive conversas anteriores de outros canais.
+
+Isso não libera o envio de mensagens em canais proibidos e não libera as
+negociações do contato. Para operar uma conversa, o usuário ainda precisa ter
+acesso ao canal. Para ver uma negociação, precisa ter acesso ao funil e ao
+escopo do responsável.
+
+Ao transferir um canal, também é possível selecionar negociações do contato e
+escolher o funil e a etapa de destino. Essa etapa é opcional: se nenhuma
+negociação for marcada, os cards permanecem onde estão.
 
 ### Remover Usuário
 
