@@ -78,7 +78,11 @@ das instalações On-Premise.
 
 A partir da versão 1.71.0, com aplicação e instalador atualizados, execute
 `sudo falamais-onprem armazenamento` no servidor ou escolha
-**Variáveis → Armazenamento S3** no menu.
+**Armazenamento S3** no menu principal ou **Variáveis → Armazenamento S3**.
+
+Desde a versão 1.71.1 do instalador, o S3 é a primeira opção de Variáveis.
+As ações aparecem imediatamente. Para revisar configurações ainda vazias,
+escolha **Preencher variáveis ausentes**; essa etapa é opcional.
 
 Preencha bucket, região, endpoint (opcional para AWS), access key, secret key,
 URL pública/CDN e path-style. Cache e validade dos links são opcionais. Enter
