@@ -417,3 +417,7 @@ A nota ficará registrada abaixo do campo, com o nome do autor e a data.
 
 **Última Atividade:**
 - Data e descrição da última interação registrada no contato
+
+## Privacidade dos contatos
+
+Administradores podem restringir usuários e cargos inferiores em contatos confidenciais. Veja [como configurar a privacidade](contatos/privacidade.md).
