@@ -216,3 +216,23 @@ A sincronização consulta os detalhes do canal para exibir o telefone completo,
 incluindo o código do país. Se um canal conectado estiver sem número, execute
 a sincronização novamente. O número depende das informações disponibilizadas
 pelo provedor; a sincronização não altera o telefone conectado.
+
+
+### Templates nos canais conectados pelo Hub
+
+Nas instalações com o conector habilitado, abra o canal oficial e acesse a aba **Templates**. A criação e a sincronização usam a conta vinculada ao próprio canal.
+
+1. Crie o template com nome, idioma, categoria e conteúdo.
+2. Preencha os exemplos das variáveis quando solicitados e salve.
+3. Use a sincronização para atualizar o catálogo e acompanhar a análise do WhatsApp.
+4. Aguarde o status **Aprovado** antes de enviar o template.
+
+![Template de teste criado pelo Hub aguardando aprovação do WhatsApp](img/hub-template-pendente.png)
+
+Um template **Pendente** foi recebido pelo provedor, mas ainda não está liberado para envio. A sincronização preserva o conteúdo e o status recebido; ela não aprova o template.
+
+O envio pelo conector aceita variáveis de texto no corpo. Cabeçalhos de mídia e parâmetros de botões não são suportados nesse envio. O carregamento de amostras de mídia para criar templates também não está disponível pelo conector. Quando um formato não é suportado, o sistema informa a limitação.
+
+Os envios de templates ficam registrados no histórico da conversa. Se houver recusa do provedor, confira o erro apresentado antes de tentar novamente. O registro no histórico, por si só, não confirma que a mensagem foi entregue: acompanhe o status do envio.
+
+Nos detalhes do canal, informações de qualidade e limites aparecem quando fornecidas pelo conector. A ausência desses dados não significa que o canal esteja com problemas.
