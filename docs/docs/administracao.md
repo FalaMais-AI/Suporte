@@ -8,6 +8,8 @@ description: "Gerencie empresas, limites dos planos, condições especiais e per
 
 Esta área está disponível para administradores da plataforma. As alterações afetam o acesso e as condições comerciais das empresas.
 
+![Comparação de planos no painel administrativo](img/administracao-planos.png)
+
 ## Planos
 
 Em **Planos**, busque pelo nome, filtre pelo estado ativo ou inativo e use **Comparar planos** para conferir preços, limites e recursos. A opção **Somente diferenças** reduz a comparação aos itens que variam.
