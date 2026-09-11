@@ -42,8 +42,8 @@ anual. É a plataforma comercial completa, sem IA:
 ### Essencial
 
 O **Essencial** inclui tudo do Start e adiciona IA para atendimento e apoio à
-gestão. Ele mantém os limites de 2 usuários, 2.500 contatos, 500 negociações
-abertas, 1 WhatsApp e 1 Instagram. O valor é R$ 499/mês, com ciclos semestral
+gestão. Inclui 2 usuários, 1 WhatsApp e 1 Instagram, com contatos e negociações
+abertas ilimitados. O valor é R$ 499/mês, com ciclos semestral
 e anual disponíveis.
 
 ### Expansão
