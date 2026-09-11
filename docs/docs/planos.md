@@ -118,3 +118,7 @@ Falar com vendas faz mais sentido quando:
 Para gerenciar sua assinatura e formas de pagamento, veja a página de
 [Pagamentos](./configuracao/pagamentos.md).
 :::
+
+## Limites e condições da sua conta
+
+A tela de cobrança mostra o acesso vigente e, durante o teste, o plano para contratação e a data de término separadamente. Condições negociadas podem alterar os limites da sua empresa; consulte os valores efetivos na conta. Estender um teste ativo acrescenta dias ao prazo restante.

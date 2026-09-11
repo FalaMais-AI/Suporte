@@ -35,8 +35,8 @@ lista vazia.
 
 Clique em **Nova regra** e escolha:
 
-- **Usar um template** — começa com uma estrutura pronta
 - **Começar do zero** — configura todos os passos manualmente
+- **Usar um template** — começa com uma estrutura pronta
 
 Quando ainda não há nenhuma regra, essas duas opções aparecem na orientação
 inicial da página.
