@@ -23,6 +23,39 @@ Aqui é possível:
 - Adicionar notas internas
 - Iniciar conversas
 
+## Importar contatos em segundo plano
+
+Use **Importar** na área de Contatos para enviar uma planilha CSV ou XLSX.
+Na configuração padrão, são aceitos arquivos com até **100 mil linhas**, sujeitos
+ao tamanho permitido do arquivo e aos limites de contatos da sua empresa.
+
+1. Envie o arquivo e aguarde a preparação da prévia.
+2. Confira o mapeamento das colunas e escolha como tratar contatos existentes.
+3. Revise as opções de bloqueio da IA e de inclusão em um funil, se necessário.
+4. Aguarde a validação, confira os avisos e inicie a importação.
+
+Depois de iniciada, a importação continua em segundo plano, em pequenos lotes.
+Você pode fechar a janela e continuar trabalhando. Ao abrir **Importar** novamente,
+selecione o arquivo em **Importações recentes** para acompanhar o andamento e
+consultar os totais de contatos criados, atualizados, ignorados e com erro.
+O histórico fica disponível para a pessoa que enviou o arquivo, na mesma empresa,
+por um período limitado.
+
+### Cancelar ou conferir um resultado parcial
+
+**Cancelar importação** interrompe os próximos lotes. Os contatos já salvos
+permanecem cadastrados; cancelar não desfaz as alterações anteriores.
+O mesmo vale se uma importação parar por erro ou por mudança nos limites ou nas
+permissões da empresa. Confira o resultado antes de enviar outro arquivo.
+
+Telefones repetidos dentro da mesma planilha são sinalizados, inclusive quando
+aparecem em partes diferentes do arquivo. As linhas envolvidas são ignoradas.
+O resumo de erros é limitado e pode não listar todas as linhas com problema.
+
+Se houver uma importação em andamento, aguarde a conclusão ou o cancelamento
+antes de enviar outra. O tempo varia com o volume, os dados e as automações
+associadas; não há um prazo fixo de conclusão.
+
 ## Pessoas e Empresas
 
 O módulo Contatos é dividido em duas visões:

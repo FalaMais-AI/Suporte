@@ -10,6 +10,17 @@ Quando uma pessoa é sincronizada pela integração Maqplan, o FalaMais identifi
 o contato com a etiqueta **Maqplan**. Assim, fica mais fácil reconhecer a origem
 do cadastro, localizar esses contatos e usar a etiqueta nas rotinas do time.
 
+## Acompanhar a sincronização
+
+As entradas recebidas da Maqplan são processadas em segundo plano. Em períodos
+com muitos registros, o contato e a etiqueta podem aparecer após a confirmação
+de recebimento. O processamento gradual ajuda a reduzir o impacto no atendimento.
+
+Se uma entrada ainda estiver pendente, evite cadastrar o mesmo contato novamente
+para tentar acelerar a sincronização. Se a atualização não aparecer, informe ao
+suporte um exemplo do contato e o horário aproximado do envio. Quando o limite
+de recebimento é atingido, o sistema de origem precisa tentar novamente mais tarde.
+
 ## Onde encontrar a etiqueta
 
 1. Abra **Contatos** no menu principal.

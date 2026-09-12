@@ -45,6 +45,18 @@ manual.
 - Os campos do formulário são mapeados automaticamente para telefone, nome,
   e-mail e empresa quando disponíveis.
 
+## Recebimento em períodos de maior movimento
+
+Os leads recebidos entram em processamento em segundo plano. A confirmação de
+recebimento pode acontecer antes de o contato, o funil ou o fluxo aparecerem
+atualizados. Consulte o histórico da integração para acompanhar o resultado e
+os erros de cada lead.
+
+Durante picos de entrada, os leads são processados gradualmente para reduzir a
+competição com o atendimento. Se a capacidade de recebimento estiver ocupada,
+a integração solicita uma nova tentativa ao sistema de origem. Não é necessário
+recriar o mesmo lead manualmente enquanto seu processamento está pendente.
+
 ## Webhook e verificação
 
 O FalaMais.AI recebe os eventos do Facebook por webhook. A verificação do
