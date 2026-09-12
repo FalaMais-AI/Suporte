@@ -36,7 +36,12 @@ contatos, conversas, mensagens ou credenciais para o painel da FalaMais.
 
 ## Atualizações
 
-Use a opção **Atualizar** do menu do instalador. Ela busca somente uma versão
+Baixe novamente o instalador oficial fornecido pela FalaMais antes de atualizar
+uma instalação existente. Uma cópia antiga do arquivo não recebe automaticamente
+as melhorias do próprio instalador. Abra a nova cópia no servidor da instalação
+e use a opção **Atualizar**, mantendo a configuração existente.
+
+Essa opção busca somente uma versão
 publicada e verificada para sua instalação, valida a integridade antes de
 aplicar a atualização e executa as verificações necessárias ao final.
 
