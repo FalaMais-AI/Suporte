@@ -228,3 +228,18 @@ início, mesmo que o rascunho ou a produção sejam alterados depois.
 Mensagens livres dependem da janela de 24 horas. Fora dela, configure
 explicitamente um template oficial aprovado; o fluxo não faz troca automática.
 :::
+
+## Entradas de sistemas externos em segundo plano
+
+Quando um fluxo recebe uma entrada externa sem precisar responder com o resultado
+imediatamente, o recebimento e a execução acontecem em etapas separadas. A entrada
+é registrada primeiro e o fluxo é executado em segundo plano. Uma confirmação de
+recebimento não significa que todas as ações do fluxo já terminaram.
+
+Em períodos de maior movimento, as entradas aguardam processamento. Se o limite
+de recebimento for atingido, o sistema que envia os dados deve tentar novamente
+mais tarde, preservando a identificação do evento para evitar duplicações.
+
+Fluxos configurados para devolver uma resposta imediata ao sistema de origem
+mantêm esse comportamento. Acompanhe a execução antes de repetir manualmente uma
+ação que possa enviar mensagens ou alterar cadastros.
