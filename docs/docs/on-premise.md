@@ -49,6 +49,26 @@ Antes de atualizar, mantenha um backup recente do banco de dados. Se uma
 verificação técnica falhar, os serviços retornam à versão anterior; os dados
 nunca são restaurados automaticamente.
 
+## Ajuste automático de recursos
+
+A partir do instalador da versão 1.76, a instalação e a atualização calculam
+limites conservadores conforme a CPU, a memória e a configuração do banco.
+O cálculo ajusta conexões e tarefas simultâneas para preservar espaço para o
+atendimento enquanto importações e outras tarefas são processadas.
+
+Os valores definidos manualmente pelo administrador são preservados. Bancos e
+serviços externos continuam usando seus endereços configurados. Se não for
+possível medir os recursos com segurança, o instalador mantém a configuração
+existente e apresenta uma orientação.
+
+O administrador pode desativar novos cálculos no menu **Variáveis**. Isso não
+remove serviços ou configurações já aplicados. Para receber esse comportamento
+em uma instalação anterior, baixe a nova cópia do instalador antes de escolher
+**Atualizar**.
+
+O dimensionamento não substitui o acompanhamento do uso: o volume de contatos,
+mensagens, mídias e integrações influencia a capacidade de cada instalação.
+
 ## Conexão com a FalaMais
 
 A instalação confirma sua autorização periodicamente. Se ela ficar sem conexão
