@@ -122,6 +122,7 @@ Configure:
 - política de reentrada
 - condições de saída
 - envio durante atendimento humano, quando esse comportamento for desejado
+- envio após a finalização do atendimento, quando esse comportamento for desejado
 
 ![Regra com envio durante atendimento humano ativado](atendimento-humano.png)
 
@@ -143,6 +144,17 @@ continuam valendo normalmente.
 
 Quando a opção está desativada, a intervenção humana mantém o comportamento de
 interromper ou reagendar o follow-up de acordo com a configuração atual.
+
+### Enviar após finalizar o atendimento
+
+Ative **Enviar também após finalizar o atendimento** se a regra deve continuar
+enviando mensagens para uma conversa finalizada. A opção começa desligada.
+Assim, um follow-up já programado é cancelado se o atendimento for finalizado
+antes do envio.
+
+Essa escolha é independente de **Enviar durante atendimento humano**. Mesmo
+quando o envio após a finalização está ativo, respostas do cliente, limites da
+regra, canal e horários permitidos continuam sendo considerados.
 
 Se o horário estiver habilitado, o início precisa ser anterior ao fim. Quando a
 restrição de horário está desligada, os dias ocultos não bloqueiam o envio.
