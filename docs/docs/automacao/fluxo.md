@@ -141,6 +141,40 @@ Enviam mensagens, usam template oficial ou mensagem rápida, adicionam ou
 removem tags, notificam a equipe, movem uma negociação, criam uma negociação,
 pausam a IA, chamam integrações ou fazem requisições HTTP.
 
+#### Criar Negociação
+
+A etapa **Criar Negociação** escolhe o contato da negociação em **Origem do
+contato**:
+
+- **Contato do contexto (gatilho)** — usa o contato da conversa ou do evento
+  que iniciou o fluxo. É o padrão.
+- **Dados recebidos no payload** — usa o telefone enviado por um gatilho de
+  webhook (por exemplo, o formulário do site). Informe o caminho do telefone
+  nos dados recebidos e, se quiser, os caminhos de nome, e-mail e empresa. Use
+  o seletor de dados para inserir o campo correto sem digitar JSON.
+
+Com a origem vinda do payload, o fluxo:
+
+1. procura um contato pelo telefone recebido, aceitando formatos com ou sem
+   `+55`, com máscara, com `0` inicial ou prefixo `00`;
+2. reutiliza o contato encontrado, completando nome, e-mail e empresa **sem
+   apagar** o que já estava preenchido (a opção **Atualizar contato existente**
+   pode ser desligada para não alterar nada);
+3. cria um contato novo quando não encontra nenhum. Nesse caso, as automações
+   de **Contato Criado** são disparadas.
+
+O telefone é obrigatório nesse modo: sem um telefone válido nos dados
+recebidos, a etapa falha com uma mensagem clara na execução. No teste do fluxo,
+a etapa mostra se o contato seria reaproveitado ou criado, e avisa quando
+faltaria contato ou quando já existe uma negociação aberta para ele.
+
+:::info[Publicação protegida]
+Fluxos iniciados por webhook que usam etapas dependentes de contato (enviar
+mensagem, tag, mudar etapa ou criar negociação sem payload) só podem ser
+publicados quando existe uma etapa **Criar Negociação** resolvendo o contato
+pelos dados recebidos. O editor mostra a pendência antes de publicar.
+:::
+
 ### Controle e dados
 
 Incluem espera, espera por resposta, fim, merge, mapeamento de campos e resposta
