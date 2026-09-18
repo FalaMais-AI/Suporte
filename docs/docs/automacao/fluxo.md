@@ -77,6 +77,21 @@ O Studio oferece somente opções compatíveis com aquele ponto:
 
 O novo componente já é conectado ao caminho escolhido.
 
+## Enviar mensagens após finalizar o atendimento
+
+Em **Configurações do fluxo**, escolha **Enviar também após finalizar o atendimento**
+se as ações de mensagem devem continuar para uma conversa finalizada. A opção
+começa desligada. Com ela desligada, mensagens ainda pendentes no fluxo são
+ignoradas quando o atendimento é finalizado antes do envio.
+
+A escolha vale para mensagens comuns, mensagens rápidas e templates oficiais.
+Salve o rascunho e publique uma nova versão para aplicar a alteração ao fluxo
+ativo. As demais condições de envio continuam valendo.
+
+Nos fluxos criados no editor antigo, use a opção exibida no aviso **Fluxo legado
+detectado** e clique em **Aplicar ao fluxo ativo**. Isso publica apenas essa
+preferência, sem alterar os componentes do fluxo.
+
 ## Configurar uma etapa
 
 Clique em um componente para abrir o painel lateral. Use:

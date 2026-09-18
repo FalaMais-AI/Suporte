@@ -122,6 +122,7 @@ Configure:
 - política de reentrada
 - condições de saída
 - envio durante atendimento humano, quando esse comportamento for desejado
+- envio após a finalização do atendimento, quando esse comportamento for desejado
 
 ![Regra com envio durante atendimento humano ativado](atendimento-humano.png)
 
@@ -144,6 +145,17 @@ continuam valendo normalmente.
 Quando a opção está desativada, a intervenção humana mantém o comportamento de
 interromper ou reagendar o follow-up de acordo com a configuração atual.
 
+### Enviar após finalizar o atendimento
+
+Ative **Enviar também após finalizar o atendimento** se a regra deve continuar
+enviando mensagens para uma conversa finalizada. A opção começa desligada.
+Assim, um follow-up já programado é cancelado se o atendimento for finalizado
+antes do envio.
+
+Essa escolha é independente de **Enviar durante atendimento humano**. Mesmo
+quando o envio após a finalização está ativo, respostas do cliente, limites da
+regra, canal e horários permitidos continuam sendo considerados.
+
 Se o horário estiver habilitado, o início precisa ser anterior ao fim. Quando a
 restrição de horário está desligada, os dias ocultos não bloqueiam o envio.
 
@@ -154,9 +166,18 @@ pausar a IA ou notificar a equipe.
 
 ## Validação por IA
 
-Quando ativada, a IA reavalia o contexto imediatamente antes do envio. Se o
-follow-up não fizer mais sentido, ele não é enviado e o motivo disponível
+Quando ativada, a IA reavalia o contexto imediatamente antes do envio, levando
+em conta o gatilho da regra. Em regras de **Sem resposta**, o silêncio do cliente
+é esperado e, sozinho, não impede a mensagem.
+
+A revisão pode aprovar o envio, adiá-lo por até 72 horas (no máximo duas vezes)
+ou cancelar a mensagem quando houver um impedimento definitivo e explícito,
+como um pedido do cliente para não receber mais mensagens. O motivo disponível
 aparece em **Em andamento** e no **Histórico**.
+
+Se a revisão por IA estiver indisponível ou o limite de dois adiamentos for
+atingido, a mensagem segue para as demais proteções de envio da regra. Uma
+resposta do cliente ou outra condição de bloqueio ainda pode impedir o envio.
 
 Mensagens geradas pela IA também passam por uma proteção contra repetição de
 instruções internas. Quando houver apenas uma suspeita, uma revisão semântica
