@@ -273,6 +273,40 @@ As mudanças de filtro são aplicadas na hora, sem precisar confirmar.
 
 ---
 
+## Conectar a Google Agenda
+
+Você pode conectar sua conta do Google para que os compromissos apareçam dentro
+da Agenda do FalaMais.AI e passem a **bloquear horários automaticamente**.
+
+1. Abra **Configurações > Integrações**.
+2. Localize o card da Google Agenda e clique em **Conectar**.
+3. Faça login na conta Google e autorize o acesso à agenda.
+
+Depois de conectada:
+
+- Os compromissos do Google (dos últimos 30 dias até 180 dias à frente)
+  aparecem na Agenda, com identificação de que vieram da integração.
+- Esses horários ficam **indisponíveis para agendamentos**, evitando marcar em
+  cima de reuniões existentes.
+- Eventos criados, alterados ou **cancelados no Google** são atualizados na
+  Agenda automaticamente. Use **Sincronizar agora** para atualizar na hora.
+- Se a autorização expirar, o card avisa e permite **reconectar** sem perder o
+  que já foi sincronizado.
+- Ao **desconectar**, os dados da conta conectada são removidos e os
+  compromissos espelhados deixam de ser atualizados.
+
+:::info[Contas conectadas pela Sócios AI]
+Quando a conexão do WhatsApp é feita pela **Sócios AI**, a Google Agenda é
+conectada pelo mesmo caminho: o card em Configurações > Integrações aparece como
+**Google Agenda via Sócios AI** e cuida da autorização no lugar do Google.
+:::
+
+:::warning[Sobre a imagem desta página]
+A captura de tela desta seção ainda precisa ser adicionada.
+:::
+
+---
+
 ## Tipos de Evento (Links Públicos)
 
 Tipos de evento criam links públicos de agendamento que podem ser enviados para clientes ou disponibilizados no site.
