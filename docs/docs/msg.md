@@ -141,6 +141,27 @@ Durante uma conversa, alguns eventos do sistema aparecem no meio das mensagens:
 
 Mensagens enviadas automaticamente pela IA aparecem com um ícone de robô ao lado, facilitando identificar o que foi respondido pelo atendente e o que foi respondido pelo assistente.
 
+#### Agendamentos na conversa
+
+Quando existe uma mensagem programada para esta conversa, ela aparece em um
+painel fixo logo acima do campo de mensagem, com o ícone de relógio e o título
+**Agendamentos**.
+
+- Fechado, o painel mostra quantos agendamentos existem e qual é o próximo
+  envio.
+- Ao abrir, você vê a data e a hora de cada envio, um resumo do conteúdo e os
+  botões **Editar** e **Cancelar** — sem precisar rolar o histórico.
+- O painel fica sempre no mesmo lugar, mesmo que a conversa continue andando.
+- No ponto da conversa em que o agendamento foi criado, uma marca discreta
+  indica **"Agendamento criado às HH:mm"**. Clique nela para abrir o painel.
+- Quando chega a hora, a mensagem é enviada e passa a aparecer no histórico da
+  conversa, no horário do envio.
+- Sem agendamentos ativos, o painel não aparece.
+- No celular, o painel abre como uma folha deslizante na parte de baixo da tela.
+
+Para criar um novo agendamento, use **Agendar follow-up** no ícone de relógio no
+topo da conversa.
+
 ### Painel Lateral
 
 Exibe informações estratégicas do contato durante o atendimento.
