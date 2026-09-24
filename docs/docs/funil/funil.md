@@ -172,6 +172,12 @@ Você pode:
 Negociações em etapas ganhas ou perdidas continuam abrindo os detalhes ao
 clique, mas ficam protegidas contra arraste e mudança indevida de etapa.
 
+Quando uma negociação é sinalizada como **duplicata acidental** e vinculada à
+original, o card mostra um ícone de vínculo. Nos detalhes, você pode abrir a
+negociação original, se tiver acesso a ela. A duplicata continua visível no
+funil e entra normalmente nas contagens e indicadores; a marcação não exclui
+nem mescla negociações.
+
 ## Detalhes da Negociação
 
 Ao clicar em um card, abre a tela completa da negociação. Ela é dividida em seções:

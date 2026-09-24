@@ -96,6 +96,23 @@ Nos fluxos criados no editor antigo, use a opção exibida no aviso **Fluxo lega
 detectado** e clique em **Aplicar ao fluxo ativo**. Isso publica apenas essa
 preferência, sem alterar os componentes do fluxo.
 
+## Cancelar envios quando o atendimento mudar
+
+Nas opções avançadas do **gatilho**, você pode ativar duas proteções para cada
+fluxo:
+
+- **Cancelar ao sair das etapas selecionadas** — exige etapas configuradas no
+  gatilho **Etapa Alterada** ou na condição **Em Etapa?**. Se o contato sair
+  dessas etapas, as mensagens pendentes são canceladas. A etapa é conferida
+  novamente imediatamente antes de cada envio. Uma negociação ganha ou perdida
+  no mesmo funil também deixa de ser elegível.
+- **Cancelar se a IA da conversa for pausada** — cancela a sequência quando a
+  IA daquela conversa for pausada.
+
+As duas opções começam desligadas nos fluxos existentes. Salve o rascunho e
+publique uma nova versão para aplicá-las. Publicar um fluxo inativo não o
+ativa; a ativação continua sendo uma ação separada.
+
 ## Configurar uma etapa
 
 Clique em um componente para abrir o painel lateral. Use:
