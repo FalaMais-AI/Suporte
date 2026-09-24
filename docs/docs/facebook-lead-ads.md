@@ -31,9 +31,21 @@ manual.
    recebe os leads. Também é possível conectar manualmente com o ID da
    página e um token de acesso.
 3. Em **Mapeamentos por Formulário**, clique em **Novo mapeamento**, informe
-   o ID do formulário e escolha o destino (Contatos, Funil/Etapa, Fluxo ou
-   ambos).
+   o ID do formulário, escolha o destino (Contatos, Funil/Etapa, Fluxo ou
+   ambos) e confira os campos desse formulário.
 4. Ative a integração no interruptor **Ativar integração**.
+
+### Escolher os campos do formulário
+
+Em cada mapeamento, escolha a pergunta de origem para **telefone**, **nome**,
+**e-mail** e **empresa**. Também é possível associar perguntas aos campos
+personalizados de contato da sua empresa.
+
+Ao editar um mapeamento, as escolhas anteriores são preservadas. Se uma pergunta
+for removida ou deixar de estar disponível na Meta, ela aparece como
+indisponível para que você escolha outra origem. Sem uma escolha explícita, o
+sistema continua procurando automaticamente os dados básicos que o formulário
+fornece.
 
 ## Como o lead é tratado
 
@@ -43,7 +55,11 @@ manual.
 - O contato pode ser movido para o funil/etapa escolhido e o fluxo
   selecionado é disparado.
 - Os campos do formulário são mapeados automaticamente para telefone, nome,
-  e-mail e empresa quando disponíveis.
+  e-mail e empresa quando disponíveis, se você não tiver escolhido outra origem.
+- Somente os campos personalizados associados ao formulário são atualizados;
+  os outros valores já preenchidos no contato são preservados.
+- Se nenhuma resposta fornecer um telefone válido, o lead ainda aparece no
+  histórico da integração, mas não pode ser associado a um contato pelo número.
 
 ## Recebimento em períodos de maior movimento
 

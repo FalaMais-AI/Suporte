@@ -49,6 +49,15 @@ Podem ser usadas dentro do prompt:
 
 Essas variáveis tornam a conversa personalizada.
 
+## Buscar no prompt
+
+Use a **lupa** do editor ou pressione **Ctrl+F** (Windows/Linux) ou **Cmd+F**
+(Mac) com o foco no texto. A busca percorre todo o prompt, inclusive menções e
+trechos fora da área visível. O painel mostra o número de resultados; use
+**Anterior** e **Próximo** para navegar. Pressione **Esc** para fechar a busca e
+voltar ao texto. A busca também está disponível quando o prompt está somente
+para leitura.
+
 ## Gerenciar Prompts
 
 É possível ter vários prompts salvos na plataforma — por exemplo, um para o time comercial e outro para o suporte.
