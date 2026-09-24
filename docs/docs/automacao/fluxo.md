@@ -77,6 +77,10 @@ O Studio oferece somente opções compatíveis com aquele ponto:
 
 O novo componente já é conectado ao caminho escolhido.
 
+Em componentes de decisão, **Sim** aparece à esquerda e **Não** à direita. Se
+houver mais saídas, os caminhos seguem a ordem configurada, inclusive depois de
+editar, desfazer ou reabrir o fluxo.
+
 ## Enviar mensagens após finalizar o atendimento
 
 Em **Configurações do fluxo**, escolha **Enviar também após finalizar o atendimento**
@@ -194,6 +198,11 @@ pelos dados recebidos. O editor mostra a pendência antes de publicar.
 
 Incluem espera, espera por resposta, fim, merge, mapeamento de campos e resposta
 de webhook.
+
+Em **Aguardar**, **Pausar Bot**, **Aguardar Resposta** e **Sem Resposta**, escolha
+a duração em **minutos**, **horas** ou **dias**. O resumo no componente mostra a
+unidade selecionada. Ao reabrir um fluxo antigo, a duração continua valendo
+como foi configurada.
 
 ## Testar com segurança
 

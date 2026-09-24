@@ -20,6 +20,12 @@ Revise as alterações antes de confirmar. A mudança de capacidade alcança as 
 
 ## Empresas
 
+No seletor de empresa do superadmin, escolha **Todas** ou **Ativas**. A busca
+pelo nome funciona junto com esse filtro, e cada opção mostra a situação da
+conta. O filtro **Ativas** segue a mesma classificação operacional da lista de
+clientes; contas com pagamento pendente ainda podem aparecer enquanto a conta
+continuar operacional.
+
 A página de cada empresa reúne:
 
 - **Visão Geral:** situação da conta e consumo.
