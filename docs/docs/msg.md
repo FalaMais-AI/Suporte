@@ -84,6 +84,9 @@ Na parte inferior da conversa fica a barra de envio, com os seguintes recursos:
 - **Emoji** → Abre o seletor de emojis para enriquecer a mensagem.
 - **Nota interna** → Envia uma mensagem que só os atendentes conseguem ver, sem o cliente receber.
 - **Anexo** → Permite enviar arquivos, imagens ou documentos.
+- No WhatsApp, o envio manual aceita arquivos de até **50 MiB**, inclusive
+  documentos `.txt`. Na API Oficial, imagens, áudios e vídeos também devem
+  respeitar os limites próprios do canal.
 - **Melhorar com IA** → Sugere melhorias na mensagem digitada antes de enviar, com base no contexto da conversa.
 - **Gravação de áudio** → Grava e envia um áudio diretamente para o cliente.
 

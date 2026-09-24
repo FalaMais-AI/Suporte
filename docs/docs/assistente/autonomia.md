@@ -61,6 +61,8 @@ Entre as opções:
 - Adicionar Nota Interna
 - Atualizar Perfil do Contato
 - Gerenciar Tags
+- Adicionar Tag Existente
+- Criar Tag
 - Adicionar Nota na Negociação
 - Ler Notas da Negociação
 - Criar Negociação
@@ -79,6 +81,12 @@ Entre as opções:
 - Criar Agendamento (confirmado)
 
 Cada ação pode ser ativada ou desativada individualmente.
+
+**Adicionar Tag Existente** permite somente aplicar ao contato uma tag já
+cadastrada. **Criar Tag** autoriza a criação de novas tags. São permissões
+independentes: conceder apenas a primeira não permite que a IA aumente a
+lista de tags. **Gerenciar Tags** continua disponível para as operações de
+gerenciamento já configuradas.
 
 ## Controle Total
 
