@@ -135,6 +135,20 @@ Tipos de botão disponíveis:
 Botões manuais ficam disponíveis apenas em conversas enviadas por conexões UAZAPI. Em outros canais, use mensagens de texto, mídia, templates oficiais ou respostas rápidas compatíveis com o canal.
 :::
 
+#### Mensagens rápidas em sequência
+
+Em **Configurações → Mensagens rápidas**, crie uma mensagem com blocos de texto,
+botões ou mídia. Você pode definir um intervalo após cada bloco para que a
+sequência seja enviada no ritmo desejado. Confira a prévia e a conexão antes de
+salvar.
+
+Um Fluxo também pode usar uma mensagem rápida em um componente **Enviar
+mensagem**. Se a conversa deixar de atender às condições de envio do Fluxo
+enquanto a sequência aguarda, os próximos blocos não são enviados. Uma falha em
+um bloco também interrompe os seguintes. A atividade do cliente durante a
+espera é considerada; os blocos automáticos já enviados pela própria sequência
+não contam como intervenção humana.
+
 #### Eventos especiais no chat
 
 Durante uma conversa, alguns eventos do sistema aparecem no meio das mensagens:
