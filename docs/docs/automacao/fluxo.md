@@ -113,6 +113,29 @@ As duas opções começam desligadas nos fluxos existentes. Salve o rascunho e
 publique uma nova versão para aplicá-las. Publicar um fluxo inativo não o
 ativa; a ativação continua sendo uma ação separada.
 
+## Recomeçar a espera após atividade
+
+No componente **Aguardar**, a opção avançada **Reiniciar espera após atividade
+na conversa** conta o prazo novamente a partir da mensagem mais recente,
+recebida ou enviada. Ela começa desligada. Use-a quando o próximo contato deve
+ocorrer apenas depois de um período sem mensagens. Salve e publique o fluxo
+para aplicar a mudança.
+
+O fluxo também confere se houve nova atividade antes de enviar uma mensagem
+associada a essa espera. As proteções de etapa e pausa configuradas no gatilho
+continuam valendo.
+
+## IA nos componentes do fluxo
+
+Os componentes **Decisão IA** e **Enviar mensagem** com geração por IA levam
+em conta o prompt principal publicado para a conexão da conversa, as mensagens
+recentes e a instrução escrita no componente. Quando não houver prompt ativo
+específico para a conexão, é usado o prompt global ativo da empresa.
+
+A instrução do componente define a tarefa daquela etapa. Uma decisão da IA
+precisa resultar claramente em **Sim** ou **Não**; se não houver uma decisão
+clara, o fluxo não segue pelo caminho que envia a mensagem.
+
 ## Configurar uma etapa
 
 Clique em um componente para abrir o painel lateral. Use:
