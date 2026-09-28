@@ -25,6 +25,19 @@ associados a um contato. Com o **mapeamento inteligente de campos**, os dados
 enviados pelo formulário são reconhecidos e direcionados automaticamente para
 os campos corretos do contato.
 
+### Anexos após o envio
+
+Na edição de um formulário, você pode adicionar até cinco arquivos para que o
+visitante os receba na tela de confirmação depois de enviar os dados. Cada
+arquivo pode ter até 20 MB. São aceitos PDF, imagens JPG, PNG, WebP e GIF,
+documentos Word, planilhas Excel, apresentações PowerPoint e arquivos TXT ou
+CSV.
+
+Você pode definir um nome para o link de cada anexo. Confira a prévia do
+formulário antes de publicá-lo para verificar a mensagem de confirmação e os
+arquivos oferecidos. Se o formulário redirecionar o visitante para outra página
+após o envio, a tela de confirmação com os anexos não será exibida.
+
 ## Listas de rastreamento
 
 As listas de rastreamento permitem agrupar contatos a partir do comportamento
