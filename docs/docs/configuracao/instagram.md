@@ -20,6 +20,22 @@ atendimento.
 - As identidades do Instagram aparecem listadas como **canais** na ficha do
   contato.
 
+## Quando a conexão expira
+
+O acesso que o Instagram concede à plataforma tem validade e pode ser
+revogado na própria conta do Instagram. Quando isso acontece:
+
+- O canal passa a aparecer como **desconectado**.
+- As mensagens que não puderam ser entregues ficam marcadas como **falha** na
+  conversa, para você saber exatamente o que não chegou ao cliente.
+- Quando o Instagram apenas limita temporariamente o volume de envios, as
+  mensagens não são marcadas como falha de imediato.
+
+Para voltar a atender, conecte a conta do Instagram novamente. Assim que o
+acesso é renovado, o canal volta a ficar ativo.
+
+{/* Screenshot pendente: captura do cartão do Instagram Direct com o canal desconectado. */}
+
 ## Disponibilidade
 
 As opções de canal disponíveis dependem dos **recursos do seu plano**. Se o

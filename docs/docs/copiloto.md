@@ -108,6 +108,58 @@ Exemplo de comandos:
 Consultas não alteram dados. Ações que podem modificar o sistema passam pelas
 permissões do usuário e podem exigir confirmação antes da execução.
 
+### Ações que pedem confirmação
+
+Quando você pede uma ação sensível, o Assistente **não a executa na hora**.
+Ele mostra a ação proposta na conversa e aguarda o seu clique de aprovação.
+Antes de executar, o sistema confere de novo se o seu perfil continua com
+permissão para aquela ação.
+
+Pedem confirmação:
+
+- Enviar mensagens, mídias, reações ou respostas para clientes
+- Agendar envios e follow-ups para clientes e confirmar mensagens agendadas
+- Criar ou confirmar eventos na agenda
+- Aplicar ou remover tags de contatos
+- Atualizar dados de um contato
+- Criar, mover de etapa, ganhar ou perder negociações
+- Disparar, salvar, publicar, ativar ou pausar fluxos, regras e prompts
+- Excluir, arquivar ou cancelar itens e fazer alterações em massa
+- Assumir, transferir ou liberar conversas
+- Alterar configurações da empresa, de funis, equipes e canais
+
+São executadas direto, sem confirmação, as ações internas e fáceis de
+desfazer, como:
+
+- Criar notas e tarefas, e concluir tarefas
+- Criar rascunhos, inclusive de mensagens agendadas
+- Criar ou duplicar fluxos, que começam inativos
+- Criar e editar tags (sem aplicá-las a contatos)
+- Criar contatos, empresas e funis
+- Editar campos de uma negociação
+
+:::tip
+Revise o que aparece na confirmação — destinatário, conteúdo e horário —
+antes de aprovar. Se algo estiver diferente do que você pediu, recuse e
+ajuste o pedido.
+:::
+
+{/* Screenshot pendente: captura do Assistente IA exibindo uma ação aguardando confirmação. */}
+
+### Permissões nos envios
+
+Mensagens enviadas pelo Assistente seguem as mesmas regras de quando você
+envia pela tela de conversas: privacidade de contatos, conversas atribuídas a
+outras pessoas ou times, acesso aos canais e pausa da IA ao envio manual.
+Respostas a uma mensagem saem sempre pelo mesmo canal da conversa original.
+
+### Datas e horários
+
+O Assistente considera a data e o horário atuais no **fuso horário da
+empresa**. Quando você informa um horário sem fuso, ele usa o fuso da
+empresa. Um follow-up com horário que já passou não é agendado: o Assistente
+avisa para você informar um novo horário.
+
 Se uma ação já confirmada for interrompida, o Assistente não a repete
 automaticamente. Confirme novamente somente depois de verificar o resultado.
 
