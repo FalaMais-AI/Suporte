@@ -8,7 +8,33 @@ description: "A área de **Relatórios** permite criar análises personalizadas 
 
 A área de **Relatórios** permite criar análises personalizadas a partir dos dados do sistema e organizá-las visualmente em **Dashboards**.
 
-Existem duas abas principais:
+## Agora, Equipe e Negócio
+
+Ao abrir **Relatórios**, você chega às visões prontas, que mostram os
+principais indicadores sem precisar montar nada:
+
+- **Agora**: o atendimento em tempo real — conversas ativas, conversas do dia,
+  tempo de primeira resposta, follow-ups pendentes e alertas operacionais;
+- **Equipe**: o desempenho de cada atendente — volume, tempo de resposta,
+  satisfação, status online e as demandas que cada um recebeu;
+- **Negócio**: o resultado comercial — funil, valor em aberto e fechado,
+  conversão, ticket médio, desempenho por vendedor, motivos de perda e o
+  tempo que as negociações ficam paradas em cada etapa.
+
+Os indicadores de **Negócio** acompanham as negociações que entraram no período
+escolhido (por exemplo, quantas das negociações criadas no mês já foram
+ganhas), em vez de mostrar só a foto do momento.
+
+### Personalizar os indicadores
+
+Em cada visão, clique em **Personalizar KPIs** para escolher quais indicadores
+aparecem e em que ordem. Mantenha pelo menos 4 indicadores ativos; não há
+limite máximo. A escolha fica salva na sua conta e vale sempre que você abrir
+a visão.
+
+## Relatórios e Dashboards
+
+Além das visões prontas, existem duas abas para análises próprias:
 
 - **Relatórios**
 - **Dashboards**
