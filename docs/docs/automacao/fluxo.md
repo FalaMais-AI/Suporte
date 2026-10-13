@@ -181,6 +181,32 @@ diagnóstico, mas não são a forma principal de configurar a etapa.
 Linhas com chave repetida, valor inválido ou campo obrigatório ausente mostram
 o erro no próprio controle e bloqueiam o teste daquela etapa.
 
+### Assinar requisições HTTP (HMAC)
+
+Alguns sistemas externos, como CRMs, só aceitam envios assinados com uma chave
+secreta. Na etapa **Requisição HTTP**, em **Autenticação**, escolha
+**Assinatura HMAC** e preencha:
+
+- **Chave secreta** — informada pelo sistema de destino
+- **Algoritmo** e **codificação** — normalmente `SHA-256` e `hex`
+- **Cabeçalho da assinatura** e **cabeçalho do timestamp** — os nomes pedidos
+  pelo sistema de destino
+- **Texto a assinar** — o padrão é método, caminho, timestamp e corpo, um por
+  linha; ajuste conforme a documentação do sistema de destino
+
+A chave é digitada uma única vez. Depois de salvar o fluxo, ela aparece apenas
+com os primeiros caracteres (por exemplo, `9bfr••••••••`). Use
+**Trocar chave** para informar outra ou **Remover chave** para apagá-la.
+
+:::warning[Chave vinculada ao destino]
+Se você alterar o endereço de destino ou o texto a assinar, a chave salva é
+descartada e precisa ser digitada de novo. Isso impede que a assinatura seja
+enviada para outro endereço.
+:::
+
+No campo avançado **Repetir nos status**, informe quais respostas de erro
+devem gerar uma nova tentativa. Cada tentativa é assinada de novo.
+
 ## Tipos de componentes
 
 ### Gatilhos
