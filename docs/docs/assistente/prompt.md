@@ -75,6 +75,31 @@ Como a IA se comporta:
 
 {/* Screenshot pendente: captura do editor com uma menção de mídia e a ação de autonomia habilitada. */}
 
+## Quando a IA passa a conversa para a equipe
+
+A ação **Notificar Humano** chama alguém da equipe e pausa a IA naquela
+conversa até uma pessoa assumir. O sistema só obriga a IA a usar essa ação
+quando o seu prompt manda isso de forma clara, em três situações:
+
+- **O cliente pede para falar com uma pessoa** — por exemplo: "Se o cliente
+  pedir um atendente, passe para a equipe."
+- **O cliente pergunta preço, desconto ou forma de pagamento** — por exemplo:
+  "Perguntas de valor vão para o time comercial."
+- **O cliente pede para agendar** — por exemplo: "Quando o cliente quiser
+  marcar um horário, passe para a equipe de agendamento." Isso vale quando a
+  IA não tem a agenda habilitada.
+
+Se o seu prompt manda a IA conduzir primeiro (acolher, tirar dúvidas, criar a
+negociação e coletar a preferência de dia e horário) e só depois passar o
+agendamento para a equipe, a IA segue essa ordem. Um pedido de agendamento,
+inclusive a mensagem pronta de um anúncio como "Quero agendar uma avaliação",
+não pausa a IA sozinho.
+
+Dica: deixe claro no prompt em quais casos a IA deve chamar a equipe. Depois
+de editar, publique o prompt para que a regra passe a valer.
+
+{/* Screenshot pendente: editor do prompt com a ação Notificar Humano mencionada. */}
+
 ## Buscar no prompt
 
 Use a **lupa** do editor ou pressione **Ctrl+F** (Windows/Linux) ou **Cmd+F**
