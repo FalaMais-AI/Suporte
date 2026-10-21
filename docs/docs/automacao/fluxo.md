@@ -164,6 +164,25 @@ Etapas futuras, ramos que não chegam ao componente e etapas desativadas não s�
 oferecidos como fonte, pois não produzem um valor válido naquele ponto.
 :::
 
+### Dados do contato nas mensagens
+
+Nas mensagens das etapas **Enviar mensagem**, **Notificar equipe**, **Enviar
+WhatsApp para número** e **Enviar WhatsApp para grupo**, os dados do contato
+aparecem como etiquetas com nome, por exemplo **Nome do contato** ou **Última
+nota do negócio**, em vez de códigos entre chaves.
+
+- Clique em **Inserir dado** ou digite **/** no meio do texto para abrir a
+  lista de dados. Use a busca; cada opção mostra um exemplo do que vai
+  aparecer.
+- Cada etiqueta se apaga inteira com uma tecla, então não tem como digitar o
+  dado errado.
+- Abaixo do campo, a prévia mostra como a mensagem vai chegar no WhatsApp,
+  preenchida com um contato de exemplo.
+
+Quando o contato não tem um dado usado na mensagem, o fluxo envia o texto sem
+esse dado. O cliente nunca recebe um código entre chaves. Fluxos criados antes
+continuam funcionando e passam a mostrar as etiquetas.
+
 ### Campos em vez de código
 
 As configurações mais comuns usam controles visuais:
@@ -222,9 +241,36 @@ troque o caminho existente.
 
 ### Ações
 
-Enviam mensagens, usam template oficial ou mensagem rápida, adicionam ou
-removem tags, notificam a equipe, movem uma negociação, criam uma negociação,
-pausam a IA, chamam integrações ou fazem requisições HTTP.
+Enviam mensagens, enviam WhatsApp para um grupo, usam template oficial ou
+mensagem rápida, adicionam ou removem tags, notificam a equipe, movem uma
+negociação, criam uma negociação, pausam a IA, chamam integrações ou fazem
+requisições HTTP.
+
+#### Enviar WhatsApp para grupo
+
+A etapa **Enviar WhatsApp para grupo** avisa um grupo do WhatsApp quando algo
+acontece no fluxo, por exemplo a recepção quando um paciente agenda. O contato
+do fluxo não recebe nada.
+
+1. Em **Enviar pelo número**, escolha um número conectado por QR Code.
+2. Em **Grupo que vai receber**, procure pelo nome. A lista mostra os grupos
+   em que esse número participa, com a quantidade de participantes. Grupos que
+   você não tem permissão para ver não aparecem.
+3. Escreva a **Mensagem**. Use **Inserir dado** para incluir dados do contato ou
+   da negociação, e confira a prévia antes de salvar.
+4. Deixe ligada a opção **Enviar uma vez por entrada na etapa** para o grupo
+   receber uma mensagem só, mesmo que a negociação dispare o fluxo duas vezes
+   ao entrar na etapa.
+
+A mensagem enviada aparece na conversa do grupo, não dispara fluxos de
+**Mensagem enviada** e a IA não responde em grupos. Se o número sair do grupo
+ou o grupo for apagado, a etapa falha com o motivo no histórico de execução,
+sem tentar de novo.
+
+:::warning[Todos do grupo leem]
+Todos os participantes do grupo leem a mensagem. Se ela tiver dados de saúde
+ou outros dados sensíveis do contato, use apenas grupos da sua equipe.
+:::
 
 #### Criar Negociação
 
