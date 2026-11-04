@@ -23,7 +23,7 @@ proposta para preencher o documento automaticamente. A lista mostra todos os
 campos disponíveis para o contexto atual.
 
 Listas com marcadores, listas numeradas e citações criadas no editor são
-mantidas no documento gerado. Antes de enviar, use a prévia para conferir todas
+mantidas no documento gerado. Antes de publicar, use a prévia para conferir todas
 as páginas do PDF dentro do próprio sistema. Se necessário, **Abrir** e **Baixar**
 continuam disponíveis como alternativas.
 
@@ -33,10 +33,17 @@ Cada proposta gera um **link público** que pode ser enviado ao cliente. Por
 esse link o cliente visualiza a proposta e pode **assiná-la** digitalmente,
 sem precisar de conta na plataforma.
 
+Ao publicar, você escolhe como o documento chega ao cliente:
+
+- **Só publicar:** deixe WhatsApp e e-mail desmarcados. Nada é enviado pelo
+  sistema. Depois, copie o link e mande pelo canal que preferir.
+- **Publicar e enviar:** marque WhatsApp ou e-mail para o sistema enviar o link.
+  Esse envio só é possível na hora de publicar.
+
 :::warning
-Se a proposta ainda estiver em **rascunho**, o link público deve ser tratado
-como prévia. Nesse estado, o cliente consegue visualizar o documento, mas o
-aceite e a assinatura só ficam disponíveis depois que a proposta for enviada.
+Enquanto o documento estiver em **rascunho**, o link público não abre para o
+cliente. Clique em **Publicar** para liberar o documento, o aceite e a
+assinatura.
 :::
 
 ## Histórico e acompanhamento
