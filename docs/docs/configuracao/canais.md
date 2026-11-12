@@ -13,7 +13,7 @@ Você pode:
 
 - Criar novas instâncias
 - Conectar via QR Code
-- Conectar via API oficial (Meta)
+- Conectar via API oficial (Meta, configuração manual ou 360dialog)
 - Atualizar status
 - Editar nome da instância
 - Ativar chamadas nas linhas compatíveis
@@ -87,10 +87,35 @@ Conexão oficial via WhatsApp Business Cloud API.
 - Número de telefone verificado
 
 #### Processo:
-1. Selecionar API Oficial
-2. Clicar em **Conectar com Facebook**
-3. Autorizar a conta Meta
-4. Finalizar integração
+1. Selecione o card **WhatsApp API Oficial**.
+2. Escolha como conectar:
+   - **Cadastro com a Meta**: você entra com a sua conta do Facebook e escolhe o número. Indicado para números novos na API Oficial.
+   - **Configurar manualmente**: você informa os IDs e o token de um número que já está na API Oficial.
+   - **Conectar com 360dialog**: você cola a chave de API do número gerada no painel da 360dialog (veja abaixo).
+3. Siga os passos da opção escolhida. Quando uma opção não está disponível para a sua conta, o motivo aparece logo abaixo dela.
+
+### 3. API Oficial pela 360dialog
+
+Para números do WhatsApp que estão na 360dialog. O canal funciona como a API Oficial: valem a janela de 24 horas, os modelos de mensagem e as confirmações de entrega e leitura.
+
+#### Antes de começar
+- Gere a chave de API do número no painel da 360dialog (Hub). Cada número tem a sua chave.
+- Se o número já funciona em outro sistema, use a mesma chave que esse sistema usa. Gerar uma chave nova no Hub desliga a chave anterior, e o outro sistema para de funcionar.
+
+#### Processo:
+1. Selecione **WhatsApp API Oficial** e depois **Conectar com 360dialog**.
+2. Informe o nome do canal, a cor e cole a chave de API.
+3. Clique em **Validar e conectar**.
+4. Se o número já envia mensagens para outro sistema, escolha:
+   - **Manter os dois recebendo**: o outro sistema continua funcionando enquanto você faz a troca. As respostas enviadas pelo outro sistema não aparecem no FalaMais.
+   - **Usar só o FalaMais**: o outro sistema deixa de receber as mensagens deste número.
+
+Para conectar vários números, repita o processo para cada um.
+
+#### Depois de conectado
+- O card mostra **via 360dialog** e o número conectado.
+- O perfil público do número (foto, descrição e site) é editado no painel da 360dialog.
+- Se a chave deixar de valer, o card mostra **Atualizar chave**: cole a chave nova para reconectar.
 
 ## Canais por conector em instalações habilitadas
 
